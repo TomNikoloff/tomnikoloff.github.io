@@ -26,14 +26,77 @@
     <!--Load Google Charts API-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
+    <!-- Google Fonts --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
     </header>
     <main>
-        <section>
-            <h1>Tom Nikoloff</h1>
-        </section>
+        <div class="uk-container">
+            <div class="uk-margin-top">
+                <div>
+                    <span class="html-tags">
+                      &lt;html&gt;  
+                    </span>
+                </div>
+                <div class="uk-margin-left">
+                    <span class="html-tags">
+                        &lt;body&gt;  
+                    </span>
+                </div>
+            </div>
+            <div id="main_content_container" class="uk-margin-left">
+                <section class="intro-section">
+                    <h1>
+                        <span>H</span>
+                        <span>i</span>
+                        <span>,</span>
+                        <br>
+                        <span>I</span>
+                        <span>'</span>
+                        <span class="uk-margin-right">m</span>
+                        <span class="text-pop-up-top">T</span>
+                        <span>o</span>
+                        <span>m</span>
+                        <span>,</span>
+                        <br>
+                        <span>W</span>
+                        <span>e</span>
+                        <span class="uk-margin-right">b</span>
+                        <span>d</span>
+                        <span>e</span>
+                        <span>v</span>
+                        <span>e</span>
+                        <span>l</span>
+                        <span>o</span>
+                        <span>p</span>
+                        <span>e</span>
+                        <span>r</span>
+                    </h1>
+                    <p>
+
+                    </p>
+                </section>
+            </div>
+            <div>
+                <div class="uk-margin-left">
+                    <span class="html-tags">
+                        &lt;body&gt;  
+                    </span>
+                </div>
+                <div>
+                    <span class="html-tags">
+                      &lt;html&gt;  
+                    </span>
+                </div>
+            </div>
+        </div>
     </main>
+    <footer>
+    </footer>
 </body>
 </html>
