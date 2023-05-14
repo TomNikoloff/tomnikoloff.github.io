@@ -55,8 +55,45 @@ h1 > span:hover {
     color: var(--tn-primary);
     -webkit-animation: jello-vertical 0.9s both;
     animation: jello-vertical 0.9s both;
+    cursor: pointer;
 }
 
+h2 {
+    margin: 0;
+    color: var(--tn-secondary);
+    font-weight: 500;
+    font-family: 'Manrope', sans-serif;
+}
+
+h4 {
+    margin: 0;
+    color: var(--tn-secondary);
+}
+
+p {
+    color: var(--tn-text-color);
+    margin: 0;
+
+}
+
+.logo {
+    position: absolute;
+    right: 0;
+    top: 20%;
+    transform: rotateZ(-30deg);
+    z-index: 1;
+}
+
+.logo img{
+    width: 700px;
+
+}
+
+.full-height-section .html-tags {
+    margin-left: -30px;
+}
+
+/*
 h1:before {
     content: '<h1>';
     font-family: 'La Belle Aurore', cursive;
@@ -82,6 +119,7 @@ h1:after {
     font-weight: 500;
     letter-spacing: 1px;
 }
+*/
 
 .html-tags {
     font-size: 1.8rem;
@@ -91,7 +129,15 @@ h1:after {
     font-weight: 500;
 }
 
-.intro-section {
+.small-html-tags {
+    font-size: 1rem;
+    font-family: 'La Belle Aurore', cursive;
+    text-transform: lowercase;
+    color: black;
+    font-weight: 500;
+}
+
+.full-height-section  {
     height: 100vh;
     overflow: hidden;
     display: flex;
@@ -102,7 +148,7 @@ h1:after {
 
 section {
     min-height: 100vh;
-    padding: 9rem 3rem;
+    padding: 9rem 3.5rem;
     position: relative;
     transition: opacity 0.4s;
 }
@@ -111,3 +157,18 @@ section {
         text-shadow: 0 1px 0 #8c52ff, 0 2px 0 #8c52ff, 0 3px 0 #8c52ff, 0 4px 0 #8c52ff, 0 5px 0 #8c52ff, 0 6px 0 #8c52ff, 0 7px 0 #8c52ff, 0 8px 0 #8c52ff, 0 9px 0 #8c52ff, 0 50px 30px rgba(0, 0, 0, 0.3);
 }
 
+.skills-bar {
+    height: 3px;
+    background-color: var(--tn-lighter-main);
+}
+
+.skill-level {
+    background-color: var(--tn-primary);
+    height: 100%;
+}
+
+.experience-card {
+    border-radius: 10px;
+    border-left: 4px solid var(--tn-primary);
+    background-color: var(--tn-lighter-main);
+}

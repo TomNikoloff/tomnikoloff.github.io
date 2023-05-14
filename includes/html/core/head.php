@@ -6,12 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tom Nikoloff Portfolio</title>
 
-    <!-- Google Fonts 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
-    -->
-
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/0ff32d8fcb.js" crossorigin="anonymous"></script>
 
@@ -25,11 +19,17 @@
     <!-- CSS  -->
     <link rel="stylesheet" href="./library/css/core.css?<?php echo(time()); ?>">
     <link rel="stylesheet" href="./library/css/responsive.css?<?php echo(time()); ?>">
+    <link rel="stylesheet" href="./library/css/animations.css?<?php echo(time()); ?>">
 
     <!-- CORE JS -->
     <script src="./library/js/core.js?<?php echo(time()); ?>"></script>
 
     <!--Load Google Charts API-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <!-- Google Fonts --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 </head>
