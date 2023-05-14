@@ -19,6 +19,7 @@
     <!-- CSS  -->
     <link rel="stylesheet" href="./library/css/core.css?<?php echo(time()); ?>">
     <link rel="stylesheet" href="./library/css/responsive.css?<?php echo(time()); ?>">
+    <link rel="stylesheet" href="./library/css/animations.css?<?php echo(time()); ?>">
 
     <!-- CORE JS -->
     <script src="./library/js/core.js?<?php echo(time()); ?>"></script>
@@ -36,8 +37,8 @@
     <header>
     </header>
     <main>
-        <div class="uk-container">
-            <div class="uk-margin-top">
+        <div class="uk-container bounce-in-left">
+            <div class="uk-margin-top uk-position-absolute" style="top: 0;">
                 <div>
                     <span class="html-tags">
                       &lt;html&gt;  
@@ -51,7 +52,7 @@
             </div>
             <div id="main_content_container" class="uk-margin-left">
                 <section class="intro-section">
-                    <h1>
+                    <h1 class="flicker-in-1">
                         <span>H</span>
                         <span>i</span>
                         <span>,</span>
@@ -59,12 +60,12 @@
                         <span>I</span>
                         <span>'</span>
                         <span class="uk-margin-right">m</span>
-                        <span class="text-pop-up-top">T</span>
+                        <span class="text-shadow">T</span>
                         <span>o</span>
                         <span>m</span>
-                        <span>,</span>
+                        <span>.</span>
                         <br>
-                        <span>W</span>
+                        <span class="">W</span>
                         <span>e</span>
                         <span class="uk-margin-right">b</span>
                         <span>d</span>
@@ -82,7 +83,7 @@
                     </p>
                 </section>
             </div>
-            <div>
+            <div class="uk-position-absolute" style="bottom: 0;">
                 <div class="uk-margin-left">
                     <span class="html-tags">
                         &lt;body&gt;  
