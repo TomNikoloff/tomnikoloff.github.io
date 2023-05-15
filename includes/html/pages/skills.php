@@ -1,4 +1,5 @@
-<section id="skills_section" class="full-height-section uk-position-relative">
+<section id="skills_section" class="skills-section full-height-section uk-position-relative">
+
     <div class="uk-margin-top uk-position-absolute" style="top: 50px;">
         <div>
             <span class="html-tags">
@@ -6,6 +7,11 @@
             </span>
         </div>
     </div>
+
+    <div class="background-text">
+        Skills
+    </div>
+
     <div class="section-content uk-margin-left">
         <div uk-grid class="uk-child-width-1-2">
             <div>
@@ -14,7 +20,7 @@
                         &lt;h2&gt;  
                     </span>
                 </div>
-                <h2 uk-scrollspy="cls: uk-animation-slide-left-small; repeat: true">
+                <h2 data-aos="zoom-out-up">
                     <span>S</span>
                     <span>k</span>
                     <span>i</span>
@@ -45,7 +51,7 @@
                             &lt;p&gt;  
                         </span>
                     </div>
-                    <p uk-scrollspy="cls: uk-animation-slide-left-small; repeat: true">
+                    <p data-aos="zoom-out-up">
                         I create successful responsive websites that are fast, easy to use, and built with best practices. The main area of my expertise is front-end development, HTML, CSS, JS, building small and medium web apps, custom plugins, features, animations, and coding interactive layouts.
                     </p>
                     <div style="margin-top: -10px;">
@@ -61,7 +67,7 @@
                         <div class="uk-margin">
                             Javascript
                             <div class="skills-bar">
-                                <div class="skill-level uk-width-5-6"></div>
+                                <div class="skill-level"></div>
                             </div>
                         </div>
                         <div class="uk-margin">
@@ -85,7 +91,7 @@
                     </div>
                 </div>
                 <div class="experience-section uk-padding">
-                    <div class="uk-padding-small experience-card" uk-scrollspy="cls: uk-animation-scale-up; repeat: true">
+                    <div class="uk-padding-small experience-card" data-aos="fade-up-left">
                         <div>
                             <div style="margin-bottom: -10px">
                                 <span class="small-html-tags">
@@ -93,7 +99,7 @@
                                 </span>
                             </div>
                             <h4 class="uk-margin-left">
-                                Powered By Hakiu
+                                Powered By Hakiu Ltd
                             </h4>
                             <div style="margin-top: -5px;">
                                 <span class="small-html-tags">

@@ -1,8 +1,8 @@
-<section id="projects_section" class="full-height-section">
+<section id="contact_section" class="contact-section full-height-section">
     <div class="uk-position-absolute" style="top: 50px;">
         <div>
             <span class="html-tags">
-                &lt;section id = "projects_section"&gt;  
+                &lt;section id = "contact_section"&gt;  
             </span>
         </div>
     </div>

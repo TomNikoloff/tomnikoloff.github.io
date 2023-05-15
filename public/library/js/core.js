@@ -344,6 +344,9 @@ _CORE={
         init: function(){
 
             console.log('JS Working');
+
+            AOS.init();
+
             _CORE.funcs.buildElementReferences();      
 
         },

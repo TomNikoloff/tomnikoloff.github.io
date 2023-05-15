@@ -17,13 +17,17 @@ html, body {
 body {
     font-family: plus jakarta sans,sans-serif;
     color: var(--tn-secondary);
-    background: var(--tn-main-bg-color);
+    /*background: var(--tn-main-bg-color);*/
+    background-image: url("../../images/grain-background.png");
+    background-color: black;
     line-height: 1.6;
     font-size: 16px;
 }
 
 main {
-    background: var(--tn-main-bg-color);
+    /*background: var(--tn-main-bg-color);*/
+    background-image: url("../../images/grain-background.png");
+    background-color: black;
     scroll-snap-type: x mandatory;
 }
 
@@ -73,6 +77,14 @@ h2 {
     font-family: 'Manrope', sans-serif;
     font-size: 5rem;
     letter-spacing: -8px;
+    line-height: 1;
+}
+
+h2 > span:hover {
+    color: var(--tn-primary);
+    -webkit-animation: jello-vertical 0.9s both;
+    animation: jello-vertical 0.9s both;
+    cursor: pointer;
 }
 
 h4 {
@@ -192,10 +204,53 @@ h1:after {
 .skill-level {
     background-color: var(--tn-primary);
     height: 100%;
+    transition: width 1.3s ease-out;
+    width: 0%;
+}
+
+.skill-level:hover {
+    height: 100%;
+    width: 95%;
 }
 
 .experience-card {
     border-radius: 10px;
-    border-left: 4px solid var(--tn-primary);
+    border-left: 5px solid var(--tn-primary);
     background-color: var(--tn-lighter-main);
 }
+
+.background-text {
+    font-family: 'Manrope', sans-serif;
+    position: absolute;
+    color: rgba(255,255,255,0.04);
+    font-weight: 900;
+    font-size: 27rem;
+}
+
+.intro-section .background-text {
+    font-size: 5rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    bottom: 2rem;
+}
+
+.about-section .background-text {
+    right: 0;
+    bottom: -3rem;
+}
+
+.skills-section .background-text {
+    left: 5rem;
+    top: 10rem;
+    transform: rotateZ(-30deg);
+}
+
+.projects-section .background-text {
+    left: 0rem;
+    bottom: 10rem;
+    transform: rotateZ(5deg);
+}
+

@@ -24,12 +24,13 @@
     <!-- CORE JS -->
     <script src="./library/js/core.js?<?php echo(time()); ?>"></script>
 
-    <!--Load Google Charts API-->
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
     <!-- Google Fonts --> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>

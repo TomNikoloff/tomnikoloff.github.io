@@ -1,4 +1,5 @@
-<section class="full-height-section uk-position-relative">
+<section id="intro-section" class="intro-section full-height-section uk-position-relative">
+
     <div class="uk-position-absolute" style="top: 100px;">
         <div>
             <span class="html-tags">
@@ -6,6 +7,11 @@
             </span>
         </div>
     </div>
+
+    <div class="background-text vibrate-1">
+        Scroll Down
+    </div>
+
     <div class="uk-margin-left">
         <div>
             <div style="margin-bottom: -20px;">
@@ -13,7 +19,7 @@
                     &lt;h1&gt;  
                 </span>
             </div>
-            <h1 class="flicker-in-1">
+            <h1>
                 
                 <span>H</span>
                 <span>i</span>
@@ -25,7 +31,7 @@
                 <span>'</span>
                 <span class="uk-margin-right">m</span>
     
-                <img src="./images/t-logo.png" style="width: 60px; margin-right: -10px; margin-top: -20px;">
+                <img class="flicker-in-1" src="./images/t-logo.png" style="width: 60px; margin-right: -10px; margin-top: -20px;">
                 <span>o</span>
                 <span>m</span>
                 <span>.</span>
@@ -59,7 +65,7 @@
                     &lt;p&gt;  
                 </span>
             </div>
-            <p class="intro-text flicker-in-1">
+            <p class="intro-text">
                 A design-minded <span class="purple-text">Web Developer</span> focused on
                 <br> 
                 building beautiful interfaces & experiences. 
@@ -71,7 +77,7 @@
             </div>
         </div>
         <div class="logo flicker-in-1">
-            <img src="./images/logo.png">
+            <img src="./images/logo1.png">
         </div>
     </div>
     <div class="uk-position-absolute" style="bottom: 50px;">

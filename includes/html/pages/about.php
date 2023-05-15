@@ -1,4 +1,4 @@
-<section id="about_section" class="full-height-section uk-position-relative">
+<section id="about_section" class="about-section full-height-section uk-position-relative">
 
     <div class="uk-margin-top uk-position-absolute" style="top: 50px;">
         <div>
@@ -6,6 +6,10 @@
                 &lt;section id = "about_section"&gt;  
             </span>
         </div>
+    </div>
+
+    <div class="background-text">
+        About
     </div>
 
     <div class="section-content uk-margin-left">
@@ -16,7 +20,7 @@
                         &lt;h2&gt;  
                     </span>
                 </div>
-                <h2 uk-scrollspy="cls: uk-animation-slide-left-small; repeat: true">
+                <h2 data-aos="zoom-out-up">
                     <span>A</span>
                     <span>b</span>
                     <span>o</span>
@@ -37,7 +41,7 @@
                             &lt;p&gt;  
                         </span>
                     </div>
-                    <p uk-scrollspy="cls: uk-animation-slide-left-small; repeat: true">
+                    <p data-aos="zoom-out-up">
                         I've always had passion for technology and computers. Originating from a love of PC gaming at a young age. Its about time I made a career in doing what I enjoy. After starting to learn web development in lockdown and using my free time to progress my skills, it has only served to solidify what role I would like to fulfil. I can't wait to truly get started and dig my teeth into some real world projects.
                     </p>
                     <div style="margin-top: -10px;">
@@ -47,9 +51,9 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <div class="uk-padding">
-                    <img src="./images/workspace-removebg.png">
+            <div class="uk-flex uk-flex-center">
+                <div class="" data-aos="fade-up-left">
+                    <img src="./images/workspace.png">
                 </div>
             </div>
         </div>
