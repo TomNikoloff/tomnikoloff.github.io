@@ -41,9 +41,17 @@
                             &lt;p&gt;  
                         </span>
                     </div>
-                    <p data-aos="zoom-out-up">
-                        I've always had passion for technology and computers. Originating from a love of PC gaming at a young age. Its about time I made a career in doing what I enjoy. After starting to learn web development in lockdown and using my free time to progress my skills, it has only served to solidify what role I would like to fulfil. I can't wait to truly get started and dig my teeth into some real world projects.
-                    </p>
+                    <div data-aos="zoom-out-up">
+                        <p>
+                            I've always had passion for technology and computers. Originating from a love of PC gaming at a young age. After starting to learn web development in lockdown and using my free time to progress my skills, it had only served to solidify what role I wanted to fulfil. So at the beginning of 2022, I took the plunge and made it my goal to become a developer fulltime. By early May of that year, I landed my first job as a Web developer and haven't looked back since.
+                        </p>
+                        <p>
+                            I am a reliable, conscientious and hardworking individual, who is equally confident working as part of a team and on my own initiative. I feel that I would bring enthusiasm and commitment to any job that arises. I like tackling a problem head on and and working towards a solution.
+                        </p>
+                        <p class="uk-margin-remove">
+                            When I'm not at my computer, I'm am usually in the gym, hanging out with family or going for long walks with my golden retriever, Lola.
+                        </p>
+                    </div>
                     <div style="margin-top: -10px;">
                         <span class="html-tags">
                             &lt;/p&gt;  

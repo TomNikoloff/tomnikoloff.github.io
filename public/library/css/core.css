@@ -94,7 +94,6 @@ h4 {
 
 p {
     color: var(--tn-text-color);
-    margin: 0;
 
 }
 
@@ -205,7 +204,7 @@ h1:after {
     background-color: var(--tn-primary);
     height: 100%;
     transition: width 1.3s ease-out;
-    width: 0%;
+    /*width: 0%;*/
 }
 
 .skill-level:hover {

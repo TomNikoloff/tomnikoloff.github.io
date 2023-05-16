@@ -51,9 +51,17 @@
                             &lt;p&gt;  
                         </span>
                     </div>
-                    <p data-aos="zoom-out-up">
-                        I create successful responsive websites that are fast, easy to use, and built with best practices. The main area of my expertise is front-end development, HTML, CSS, JS, building small and medium web apps, custom plugins, features, animations, and coding interactive layouts.
-                    </p>
+                    <div data-aos="zoom-out-up">
+                        <p>
+                            Since beginning my journey as a Web Developer, I have greatly expanded my knowledge and improved efficency in both languages used and the in many tools I have added to my belt.
+                        </p>
+                        <p>
+                            I create successful responsive websites that are fast, easy to use, and built with best practices. The main area of my expertise is front-end development, HTML, CSS, JS, building small to medium web apps, and coding interactive layouts.
+                        </p>
+                        <p class="uk-margin-remove">
+                            I have also been using php and sqlite more frequently. Learning frameworks such as ReactJS.
+                        </p>
+                    </div>
                     <div style="margin-top: -10px;">
                         <span class="html-tags">
                             &lt;/p&gt;  
@@ -67,7 +75,7 @@
                         <div class="uk-margin">
                             Javascript
                             <div class="skills-bar">
-                                <div class="skill-level"></div>
+                                <div class="skill-level uk-width-5-6"></div>
                             </div>
                         </div>
                         <div class="uk-margin">
