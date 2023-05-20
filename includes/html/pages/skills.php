@@ -52,7 +52,7 @@
                                 &lt;p&gt;  
                             </span>
                         </div>
-                        <div uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                        <div  data-aos="zoom-out-up">
                             <p>
                                 Since beginning my journey as a Web Developer, I have greatly expanded my knowledge and improved efficency in both languages used and the in many tools I have added to my belt.
                             </p>

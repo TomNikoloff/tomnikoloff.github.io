@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <div class="uk-flex uk-flex-center">
-                    <div class="" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                    <div class="" data-aos="zoom-out-up">
                         <img src="./images/workspace.png">
                     </div>
                 </div>

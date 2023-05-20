@@ -43,5 +43,13 @@
         ?>
 
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-out-back', // default easing for AOS animations
+        duration: 750, // values from 0 to 3000, with step 50ms
+      });
+    </script>
+    
 </body>
 </html>
