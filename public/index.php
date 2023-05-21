@@ -48,6 +48,7 @@
       AOS.init({
         easing: 'ease-out-back', // default easing for AOS animations
         duration: 750, // values from 0 to 3000, with step 50ms
+        mirror: true
       });
     </script>
     

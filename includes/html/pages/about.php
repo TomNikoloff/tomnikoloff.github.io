@@ -14,20 +14,21 @@
         </div>
 
         <div class="section-content uk-margin-left">
-        <div uk-grid class="uk-child-width-1-2@m">
+        <div uk-grid class="uk-child-width-1-2@l">
                 <div>
                     <div style="margin-bottom: -10px;">
                         <span class="html-tags">
                             &lt;h2&gt;  
                         </span>
                     </div>
-                    <h2 uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                    <h2 data-aos="fade-right">
                         <span>A</span>
                         <span>b</span>
                         <span>o</span>
                         <span>u</span>
                         <span>t</span>
-                        <br>
+                        <span class="uk-hidden@l">&nbsp</span>
+                        <br class="uk-visible@l">
                         <span>M</span>
                         <span>e</span>
                     </h2>
@@ -42,7 +43,7 @@
                                 &lt;p&gt;  
                             </span>
                         </div>
-                        <div uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                        <div data-aos="fade-right">
                             <p>
                                 I've always had passion for technology and computers. Originating from a love of PC gaming at a young age. After starting to learn web development in lockdown and using my free time to progress my skills, it had only served to solidify what role I wanted to fulfil. So at the beginning of 2022, I took the plunge and made it my goal to become a developer fulltime. By early May of that year, I landed my first job as a Web developer and haven't looked back since.
                             </p>
@@ -60,7 +61,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="uk-flex uk-flex-center">
+                <div class="uk-flex uk-flex-center uk-flex-middle">
                     <div class="" data-aos="zoom-out-up">
                         <img src="./images/workspace.png">
                     </div>

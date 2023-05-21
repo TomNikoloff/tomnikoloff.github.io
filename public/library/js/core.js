@@ -389,6 +389,32 @@ _CORE={
             });
 */
 
+            let util = UIkit.util;
+            let skills = util.$('#skill_animation_trigger');
+
+            UIkit.scrollspy(skills, { repeat: true });
+            
+            util.on(skills,'inview', function(){
+                
+                _CORE.utils.forEach('[data-skill-level]', function(index, skill){
+
+                    let skillLvl = skill.getAttribute('data-skill-level');
+                    skill.style.width = skillLvl;
+
+                });
+
+                //UIkit.notification('Trigger Inview!', 'success');
+
+            });
+            util.on(skills,'outview', function(){
+
+                _CORE.utils.forEach('[data-skill-level]', function(index, skill){
+                    skill.style.width = '0%';
+                });
+
+                //UIkit.notification('Trigger Outview!', 'warning');
+
+            });
 
             _CORE.funcs.buildElementReferences();      
 

@@ -14,22 +14,24 @@
         </div>
 
         <div class="section-content uk-margin-left">
-            <div uk-grid class="uk-child-width-1-2">
+            <div uk-grid class="uk-child-width-1-2@l">
                 <div>
                     <div style="margin-bottom: -10px;">
                         <span class="html-tags">
                             &lt;h2&gt;  
                         </span>
                     </div>
-                    <h2 uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                    <h2 data-aos="fade-right">
                         <span>S</span>
                         <span>k</span>
                         <span>i</span>
                         <span>l</span>
                         <span>l</span>
                         <span>s</span>
+                        <span>&nbsp</span>
                         <span>&</span>
-                        <br>
+                        <span class="uk-hidden@l">&nbsp</span>
+                        <br class="uk-visible@l">
                         <span>E</span>
                         <span>x</span>
                         <span>p</span>
@@ -52,7 +54,7 @@
                                 &lt;p&gt;  
                             </span>
                         </div>
-                        <div  data-aos="zoom-out-up">
+                        <div  data-aos="fade-right">
                             <p>
                                 Since beginning my journey as a Web Developer, I have greatly expanded my knowledge and improved efficency in both languages used and the in many tools I have added to my belt.
                             </p>
@@ -72,35 +74,41 @@
                 </div>
                 <div>
                     <div class="skills-section">
-                        <div>
+                        <div id="skill_animation_trigger">
+                            <div class="uk-margin">
+                                HTML5
+                                <div class="skills-bar">
+                                    <div id="js_skill" class="skill-level" data-skill-level="95%"></div>
+                                </div>
+                            </div>
                             <div class="uk-margin">
                                 Javascript
                                 <div class="skills-bar">
-                                    <div class="skill-level uk-width-5-6"></div>
+                                    <div id="js_skill" class="skill-level" data-skill-level="85%"></div>
                                 </div>
                             </div>
                             <div class="uk-margin">
                                 PHP
                                 <div class="skills-bar">
-                                    <div class="skill-level uk-width-1-2"></div>
+                                    <div class="skill-level" data-skill-level="50%"></div>
                                 </div>
                             </div>
                             <div class="uk-margin">
                                 ReactJS
                                 <div class="skills-bar">
-                                    <div class="skill-level uk-width-1-6"></div>
+                                    <div class="skill-level" data-skill-level="30%"></div>
                                 </div>
                             </div>
                             <div class="uk-margin">
-                                CSS
+                                CSS3
                                 <div class="skills-bar">
-                                    <div class="skill-level uk-width-5-6"></div>
+                                    <div class="skill-level" data-skill-level="90%"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="experience-section uk-padding">
-                        <div class="uk-padding-small experience-card" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                        <div class="uk-padding-small experience-card" data-aos="zoom-out-left">
                             <div>
                                 <div style="margin-bottom: -10px">
                                     <span class="small-html-tags">

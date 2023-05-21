@@ -91,7 +91,7 @@
                     </span>
                 </div>
             </div>
-            <div class="logo flicker-in-1">
+            <div class="logo flicker-in-1 uk-flex uk-flex-center">
                 <img src="./images/logo1.png">
             </div>
         </div>
