@@ -43,6 +43,12 @@
         ?>
 
     </div>
+    <div class="vertical-container">
+        <div>
+            <a href="mailto:tomnikoloff@hotmail.co.uk">tomnikoloff@hotmail.co.uk</a>
+        </div>
+    </div>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({
