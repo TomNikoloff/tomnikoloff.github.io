@@ -94,7 +94,7 @@
                                 </div>
                             </div>
                             <div class="uk-margin">
-                                ReactJS
+                                React
                                 <div class="skills-bar">
                                     <div class="skill-level" data-skill-level="30%"></div>
                                 </div>
