@@ -59,7 +59,7 @@
                                 Since beginning my journey as a Web Developer, I have greatly expanded my knowledge and improved efficency in both languages used and the in many tools I have added to my belt.
                             </p>
                             <p>
-                                I create successful responsive websites that are fast, easy to use, and built with best practices. The main area of my expertise is front-end development, HTML, CSS, JS, building small to medium web apps, and coding interactive layouts.
+                                I create successful responsive websites that are fast, easy to use, and built with the best practices. The main area of my expertise is front-end development, HTML, CSS, JS, building small to medium web apps, and coding interactive layouts.
                             </p>
                             <p class="uk-margin-remove">
                                 I have also been using php and sqlite more frequently. Learning frameworks such as ReactJS.

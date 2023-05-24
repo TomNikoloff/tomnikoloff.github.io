@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tom Nikoloff Portfolio</title>
+    <title>Tom Nikoloff</title>
 
     <link rel="icon" href="./images/favicon.png" type="image/x-icon" />
 
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/0ff32d8fcb.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2eaf1545d9.js" crossorigin="anonymous"></script>
 
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.24/dist/css/uikit.min.css" />

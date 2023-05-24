@@ -66,6 +66,9 @@ body {
 
     --tn--bg--light: #ffffff;
     --tn--text--light: #1b232a;
+
+    --box--shadow--large: 0px 0px 100px 25px black;
+    --box--shadow--small: 0 10px 30px 5px black;
 }
 
 h1 {
@@ -194,7 +197,7 @@ a:hover {
     color: var(--tn-secondary);
 }
 
-.full-height-section  {
+.full-height-section {
     height: 100%;
     padding: 9rem 3.5rem 9rem 4rem;
     transition: opacity 0.4s;
@@ -284,7 +287,7 @@ h1:after {
     border-radius: 10px;
     border-left: 6px solid var(--tn-primary);
     background-color: #323232;
-    box-shadow: 0px 0px 100px 1px black;
+    box-shadow: var(--box--shadow--large);
 }
 
 .background-text {
@@ -324,50 +327,79 @@ h1:after {
 
 /* Projects */
 
+.project-container {
+
+}
+
 .project-image > img {
     border-radius: 5px;
-    box-shadow: 0px 0px 100px 1px black;
+    box-shadow: var(--box--shadow--large);
 }
 
-.project-content {
+.project-type {
+    margin: 0 0 -10px 0;
+    color: var(--tn-primary);
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 1.5rem;
 
 }
 
-.project-content:nth-of-type(2n+1) {
+.project-title {
+    color: var(--tn-secondary);
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.project-container .project-content{
+    text-align: left;
+    margin-right: -100px;
+    margin-left: 0;
+    position: relative;
+    z-index: 10;
+}
+
+.project-container:nth-of-type(2n+1) .project-content {
     text-align: right;
     margin-left: -100px;
+    margin-right: 0;
 }
 
-.project-description {
-    box-shadow: 0 10px 30px 1px black;
-    position: relative;
-    z-index: 2;
+.project-container  .project-description {
+    box-shadow: var(--box--shadow--small);
     padding: 25px;
     border-radius: 10px;
     background-color: #323232;
     font-size: 18px;
+    border-right: 6px solid var(--tn-primary);
+    border-left: 0;
 }
 
-.project-description:nth-of-type(2n+1){
+
+.project-container:nth-of-type(2n+1) .project-description{
     border-left: 6px solid var(--tn-primary);
+    border-right: 0;
 }
 
 .project-tech-stack {
     display: flex;
     flex-wrap: wrap;
-    position: relative;
-    z-index: 2;
     margin: 25px 0px 10px;
     padding: 0px;
     list-style: none;
+    font-family: 'Manrope', sans-serif;
+
 }
 
-.project-tech-stack:nth-of-type(2n+1) {
+.project-tech-stack li {
+    margin: 0px 20px 5px 0px;
+}
+
+.project-container:nth-of-type(2n+1) .project-tech-stack {
     justify-content: end;
     -webkit-box-pack: end;
 }
 
-.project-tech-stack:nth-of-type(2n+1) li{
+.project-container:nth-of-type(2n+1) .project-tech-stack li {
     margin: 0px 0px 5px 20px;
 }
 
@@ -380,6 +412,18 @@ h1:after {
     border: 2px solid var(--tn-primary);
     width: 45px;
     height: 45px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer p {
+    color: var(--tn-primary);
 }
 
 /* custom scrollbar */

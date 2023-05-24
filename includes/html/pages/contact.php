@@ -19,6 +19,9 @@
     </section>
 
     <div class="uk-position-relative">
+        <div class="footer">
+            <p>Handcrafted by me <i class="fa-regular fa-copyright"></i> twentyTwentyThree</p>
+        </div>
         <div class="uk-position-absolute" style="bottom: 0;">
             <div class="uk-margin-left">
                 <span class="html-tags">
@@ -32,5 +35,4 @@
             </div>
         </div>
     </div>
-
 </div>   
