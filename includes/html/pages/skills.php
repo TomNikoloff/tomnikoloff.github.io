@@ -1,7 +1,7 @@
-<div class="bounce-in-left slides">   
+<div class="bounce-in-left slides skills-container">   
     <section id="skills_section" class="skills-section full-height-section uk-position-relative">
 
-        <div class="uk-margin-top uk-position-absolute" style="top: 50px;">
+        <div class="html-tag-section-top">
             <div>
                 <span class="html-tags">
                     &lt;section id = "skills_section"&gt;  
@@ -13,15 +13,15 @@
             Skills
         </div>
 
-        <div class="section-content uk-margin-left">
-            <div uk-grid class="uk-child-width-1-2@l">
+        <div class="section-content">
+            <div uk-grid class="uk-grid uk-child-width-1-2@l uk-grid-row-collapse">
                 <div>
                     <div style="margin-bottom: -10px;">
                         <span class="html-tags">
                             &lt;h2&gt;  
                         </span>
                     </div>
-                    <h2 data-aos="fade-right">
+                    <h2 data-aos="fade-right" class="">
                         <span>S</span>
                         <span>k</span>
                         <span>i</span>
@@ -31,7 +31,7 @@
                         <span>&nbsp</span>
                         <span>&</span>
                         <span class="uk-hidden@l">&nbsp</span>
-                        <br class="uk-visible@l">
+                        <br class="uk-visible@s">
                         <span>E</span>
                         <span>x</span>
                         <span>p</span>
@@ -56,7 +56,7 @@
                         </div>
                         <div  data-aos="fade-right">
                             <p>
-                                Since beginning my journey as a Web Developer, I have greatly expanded my knowledge and improved efficency in both languages used and the in many tools I have added to my belt.
+                                Since beginning my journey as a Web Developer, I have greatly expanded my knowledge and improved efficency in both languages used and in the many tools I have added to my belt.
                             </p>
                             <p>
                                 I create successful responsive websites that are fast, easy to use, and built with the best practices. The main area of my expertise is front-end development, HTML, CSS, JS, building small to medium web apps, and coding interactive layouts.
@@ -96,7 +96,7 @@
                             <div class="uk-margin">
                                 React
                                 <div class="skills-bar">
-                                    <div class="skill-level" data-skill-level="30%"></div>
+                                    <div class="skill-level" data-skill-level="20%"></div>
                                 </div>
                             </div>
                             <div class="uk-margin">
@@ -107,7 +107,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="experience-section uk-padding">
+                    <div class="experience-section">
                         <div class="uk-padding-small experience-card" data-aos="zoom-out-left">
                             <div>
                                 <div style="margin-bottom: -10px">
@@ -132,12 +132,12 @@
                                 </div>
                                 <div class="uk-flex uk-flex-between">
                                     <div class="uk-margin-left">
-                                        <p>
+                                        <p class="uk-margin-remove">
                                             Web Developer
                                         </p>
                                     </div>
                                     <div class="uk-margin-right">
-                                        <p>
+                                        <p class="uk-margin-remove">
                                             May 2022 - Present
                                         </p>
                                     </div>
@@ -153,7 +153,7 @@
                 </div>
             </div>
         </div>
-        <div class="uk-position-absolute" style="bottom: 50px;">
+        <div class="html-tag-section-bottom">
             <div>
                 <span class="html-tags">
                     &lt;/section&gt;  

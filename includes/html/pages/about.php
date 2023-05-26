@@ -1,7 +1,7 @@
-<div class="bounce-in-left slides">     
+<div class="bounce-in-left slides about-container">     
     <section id="about_section" class="about-section full-height-section uk-position-relative">
 
-        <div class="uk-margin-top uk-position-absolute" style="top: 50px;">
+        <div class="html-tag-section-top">
             <div>
                 <span class="html-tags">
                     &lt;section id = "about_section"&gt;  
@@ -13,25 +13,25 @@
             About
         </div>
 
-        <div class="section-content uk-margin-left">
-        <div uk-grid class="uk-child-width-1-2@l">
+        <div class="section-content">
+            <div style="margin-bottom: -10px;">
+                <span class="html-tags">
+                    &lt;h2&gt;  
+                </span>
+            </div>
+            <h2 data-aos="fade-right">
+                <span>A</span>
+                <span>b</span>
+                <span>o</span>
+                <span>u</span>
+                <span>t</span>
+                <span class="uk-hidden@l">&nbsp</span>
+                <br class="uk-visible@l">
+                <span>M</span>
+                <span>e</span>
+            </h2>
+            <div uk-grid class="uk-grid uk-child-width-1-2@m uk-grid-row-collapse">
                 <div>
-                    <div style="margin-bottom: -10px;">
-                        <span class="html-tags">
-                            &lt;h2&gt;  
-                        </span>
-                    </div>
-                    <h2 data-aos="fade-right">
-                        <span>A</span>
-                        <span>b</span>
-                        <span>o</span>
-                        <span>u</span>
-                        <span>t</span>
-                        <span class="uk-hidden@l">&nbsp</span>
-                        <br class="uk-visible@l">
-                        <span>M</span>
-                        <span>e</span>
-                    </h2>
                     <div>
                         <span class="html-tags">
                             &lt;/h2&gt;  
@@ -63,13 +63,13 @@
                 </div>
                 <div class="uk-flex uk-flex-center uk-flex-middle">
                     <div class="" data-aos="zoom-out-up">
-                        <img src="./images/workspace.png">
+                        <img class="about-section-img" src="./images/workspace.png">
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="uk-position-absolute" style="bottom: 50px;">
+        <div class="html-tag-section-bottom">
             <div>
                 <span class="html-tags">
                     &lt;/section&gt;  

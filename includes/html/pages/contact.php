@@ -1,15 +1,31 @@
-<div class="bounce-in-left slides">      
+<div class="bounce-in-left slides contact-container">      
     <section id="contact_section" class="contact-section full-height-section">
-        <div class="uk-position-absolute" style="top: 50px;">
+        <div class="html-tag-section-top uk-visible@s">
             <div>
                 <span class="html-tags">
                     &lt;section id = "contact_section"&gt;  
                 </span>
             </div>
         </div>
-        <div class="section-content uk-margin-left">
+        <div class="section-content">
+            <div class="uk-flex uk-flex-center uk-flex-middle uk-text-center">
+                <div class="uk-width-1-2@m uk-width-1-3@xl">
+                    <div data-aos="zoom-out-up">
+                        <div>
+                            <h4 class="color-text">Thanks for dropping by!</h4>
+                            <h2>Get In Touch</h2>
+                        </div>
+                        <p>
+                            I am currently looking for new exciting opportunities. Feel free to leave me a message. My inbox is always open and I look forward to hearing from you!
+                        </p>
+                        <div class="uk-flex uk-flex-center">
+                            <a class="btn email-btn" href="mailto:tomnikoloff@hotmail.co.uk">Say Hello!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="uk-position-absolute" style="bottom: 70px;">
+        <div class="html-tag-section-bottom uk-visible@s">
             <div>
                 <span class="html-tags">
                     &lt;/section&gt;  
@@ -20,9 +36,9 @@
 
     <div class="uk-position-relative">
         <div class="footer">
-            <p>Handcrafted by me <i class="fa-regular fa-copyright"></i> twentyTwentyThree</p>
+            <p class="uk-text-center">Handcrafted by me <br class="uk-hidden@s"><i class="fa-regular fa-copyright"></i> twentyTwentyThree</p>
         </div>
-        <div class="uk-position-absolute" style="bottom: 0;">
+        <div class="html-tags-bottom">
             <div class="uk-margin-left">
                 <span class="html-tags">
                     &lt;/body&gt;  

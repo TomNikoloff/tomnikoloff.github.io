@@ -43,7 +43,7 @@
         ?>
 
     </div>
-    <div class="vertical-container">
+    <div class="vertical-container uk-visible@s">
         <div>
             <a href="mailto:tomnikoloff@hotmail.co.uk">tomnikoloff@hotmail.co.uk</a>
         </div>
