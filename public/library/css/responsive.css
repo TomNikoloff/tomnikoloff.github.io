@@ -114,6 +114,7 @@
 
     .about-section-img {
         width: 40vw;
+        max-width: 900px;
     }    
 
 }
@@ -200,7 +201,11 @@
     
     .logo img{
         width: 700px;
-    
     }
 
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
