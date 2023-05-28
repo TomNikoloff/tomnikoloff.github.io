@@ -284,10 +284,27 @@ a:hover {
     top: 2%;
     transform: rotateZ(-30deg);
     z-index: 1;
+    perspective: 25px;
+}
+
+.logo div {
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
 }
 
 .logo img{
     width: 100px;
+}
+
+.t-logo-container {
+    display: inline-block;
+    perspective: 25px;
+}
+
+.t-logo-container div {
+
 }
 
 .t-logo {

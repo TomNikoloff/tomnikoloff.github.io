@@ -1,3 +1,12 @@
+/* className for the trail elements */
+.trail { 
+  position: absolute;
+  height: 6px; width: 6px;
+  border-radius: 3px;
+  background: var(--tn-primary);
+  cursor: pointer;
+}
+
 /*Link Animations Start*/
 
 .link {

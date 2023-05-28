@@ -77,7 +77,9 @@
         </div>
 
         <div class="logo flicker-in-1 uk-flex uk-flex-center">
-            <img src="./images/logo1.png">
+            <div>
+                <img src="./images/logo1.png" alt="logo">
+            </div>
         </div>
 
         <div class="html-tag-section-bottom">

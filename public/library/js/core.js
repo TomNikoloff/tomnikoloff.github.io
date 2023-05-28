@@ -1,21 +1,21 @@
 _CORE={
     extend:function(what, where){
-        var newNode = _CORE;
+        let newNode = _CORE;
         if(where&&where!=''){
-            var whereTree = where.split('.');
-            for(var w=0,we=whereTree.length;w<we;w++){
+            let whereTree = where.split('.');
+            for(let w=0,we=whereTree.length;w<we;w++){
                 if(!newNode[whereTree[w]])newNode[whereTree[w]]={};
                 newNode = newNode[whereTree[w]];
             }
         } 
-        for(var whatKey in what){
+        for(let whatKey in what){
             newNode[whatKey] = what[whatKey];
         }			
     },
     info:{"title":"Tom Nikoloff Portfolio","code":"tomnikoloff.co.uk","copy":"Copyright (c) tomnikoloff.co.uk","year":"2023"},
     cache:{},
     utils:{
-        bcheck: function(regex){var agent = navigator.userAgent.toLowerCase();return (agent.match(regex) !== null);},
+        bcheck: function(regex){let agent = navigator.userAgent.toLowerCase();return (agent.match(regex) !== null);},
         isFirefox: (typeof InstallTrigger !== 'undefined'),
         isIE: (navigator.userAgent.indexOf("Trident/")>-1&&navigator.userAgent.indexOf("rv:")>-1),
         isIOS: function(a){return a?_CHARWIN.utils.bcheck(RegExp("iP(hone|ad|od).+\\sOS\\s"+a,"i")):_CHARWIN.utils.bcheck(/iP(hone|ad|od)/i)},
@@ -24,11 +24,11 @@ _CORE={
         isMobile: function(){return 'ontouchstart' in window || navigator.msMaxTouchPoints},
         isAndroid: function(a,e){return e&&_CHARWIN.utils.bcheck(/chrome\/[123456789]/i)&&!_CHARWIN.utils.bcheck(/chrome\/18/)?!1:a?(_CHARWIN.utils.isInt(a)&&!/\./.test(a)&&(a=""+a+"."),_CHARWIN.utils.bcheck(RegExp("Android\\s*"+a,"i"))):_CHARWIN.utils.bcheck(/Android/i)},
         isInt: function(a){return 0===parseFloat(a)%1},
-        hexToRgba: function(a,c){var b="rgb",e=[parseInt(a.substr(1,2),16),parseInt(a.substr(3,2),16),parseInt(a.substr(5,2),16)];void 0!==c&&100!==c&&(b+="a",e.push(c/100));return b+"("+e.join(",")+")"},
+        hexToRgba: function(a,c){let b="rgb",e=[parseInt(a.substr(1,2),16),parseInt(a.substr(3,2),16),parseInt(a.substr(5,2),16)];void 0!==c&&100!==c&&(b+="a",e.push(c/100));return b+"("+e.join(",")+")"},
         hasClass: function(oEl, sClass){
-            var classIncluded = false;
+            let classIncluded = false;
             if(oEl){
-                var sClassName = oEl.getAttribute("class");				
+                let sClassName = oEl.getAttribute("class");				
                 if(sClassName && sClassName!=""){
                     sClassName = " " + sClassName + " ";
                     if(sClassName.indexOf(" " + sClass + " ") > -1){					
@@ -40,7 +40,7 @@ _CORE={
         },
         addClass: function(oEl, sClass){
                if(oEl){
-                   var sClassName = oEl.getAttribute("class");				
+                   let sClassName = oEl.getAttribute("class");				
                    if(sClassName && sClassName!=""){
                        sClassName = " " + sClassName + " ";
                        if(sClassName.indexOf(" " + sClass + " ")==-1){					
@@ -56,43 +56,43 @@ _CORE={
            },
            removeClass: function(oEl, sClass){
                if(oEl){
-                   var sClassName = oEl.getAttribute("class");
-                   var aNewClass = [];
+                   let sClassName = oEl.getAttribute("class");
+                   let aNewClass = [];
                    if(sClassName && sClassName!=""){
-                       var aClasses = sClassName.split(' ');	
-                       for(var iC = 0, iCE = aClasses.length; iC<iCE;iC++){
+                       let aClasses = sClassName.split(' ');	
+                       for(let iC = 0, iCE = aClasses.length; iC<iCE;iC++){
                            if(aClasses[iC]!=sClass){
                                aNewClass.push(aClasses[iC]);
                            }
                        }
-                       var sNewClass = aNewClass.join(' ');
+                       let sNewClass = aNewClass.join(' ');
                        oEl.setAttribute("class",sNewClass);					
                    }
                }
            },		   
         addDays: function(date, days) {
-            var result = new Date(date);
+            let result = new Date(date);
             result.setDate(result.getDate() + days);
             return result;
         },
            minutesToDuration: function(minutes){
-            var intMins = parseInt(minutes,10);
-            var oneHour = 60;
-            var oneDay = (oneHour*24);
+            let intMins = parseInt(minutes,10);
+            let oneHour = 60;
+            let oneDay = (oneHour*24);
             
-            var days = 0;
-            var hours = 0;
-            var mins = 0;
+            let days = 0;
+            let hours = 0;
+            let mins = 0;
             
             if(intMins>=oneDay) days = parseInt((intMins/oneDay),10);
-            var justDays = (days*oneDay);
+            let justDays = (days*oneDay);
             if((intMins-justDays) > 0) intMins = (intMins-justDays);
             
             if(intMins>=oneHour) hours = parseInt((intMins/oneHour),10);
-            var justHours = (hours*oneHour);
+            let justHours = (hours*oneHour);
             if((intMins-justHours) > 0) mins = (intMins-justHours);
             
-            var duration = {};
+            let duration = {};
             duration.days = days;
             duration.hours = hours;
             duration.mins = mins;
@@ -112,26 +112,26 @@ _CORE={
             return text;
         },
         cleanText: function(text){
-            var txt = document.createElement("textarea");
+            let txt = document.createElement("textarea");
             txt.innerHTML = text;
             return txt.value;
         },
         safeText: function(inText){
             inText = inText || "";
-            var outText = _CHARWIN.utils.cleanQuotes(inText);
+            let outText = _CHARWIN.utils.cleanQuotes(inText);
             outText = _CHARWIN.utils.cleanUTF(outText);
             return outText;
         },
         cleanQuotes: function(badQuotes){
-            var goodQuotes = badQuotes
+            let goodQuotes = badQuotes
             .replace(/[\u2018\u2019]/g, "'")
             .replace(/[\u201C\u201D]/g, '"')
             .replace(/[\u2014]/g, '-');
             return goodQuotes;
         },
         cleanUTF: function(input){
-            var output = "";
-            for (var i=0; i<input.length; i++) {
+            let output = "";
+            for (let i=0; i<input.length; i++) {
                 if (input.charCodeAt(i) <= 127) {
                     output += input.charAt(i);
                 }
@@ -139,18 +139,18 @@ _CORE={
             return output;
         },
         isExistingValue: function(existingValues,checkValue){
-            var exists = false;
-            for(var e=0,ee=existingValues.length;e<ee;e++){
+            let exists = false;
+            for(let e=0,ee=existingValues.length;e<ee;e++){
                 if(existingValues[e] == checkValue) exists = true;
             }
             return exists;
         },
         makeId: function(len, prefix){
-            var sID = "";
-            var iLen = (len?len:5);
-            var sPoss = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-            var iPosLen = sPoss.length;
-            for( var i=0; i < iLen; i++ ){
+            let sID = "";
+            let iLen = (len?len:5);
+            let sPoss = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            let iPosLen = sPoss.length;
+            for( let i=0; i < iLen; i++ ){
                 sID += sPoss.charAt(Math.floor(Math.random() * iPosLen));
             }
             return (prefix?prefix:'')+sID;
@@ -160,17 +160,17 @@ _CORE={
         },
         forEach: function(objectArray, callback, parentObj){
             if(typeof(objectArray) === "string"){
-                var selector = objectArray;
+                let selector = objectArray;
                 objectArray = (parentObj?parentObj:document).querySelectorAll(selector);
             }
             if(objectArray.keys){
                 // array
-                for(var s=0,sl=objectArray.length;s<sl;s++){
+                for(let s=0,sl=objectArray.length;s<sl;s++){
                     callback(s,objectArray[s]);
                 }
             } else {
                 // object
-                for(var key in objectArray){
+                for(let key in objectArray){
                     callback(key,objectArray[key]);
                 }
             }
@@ -183,7 +183,7 @@ _CORE={
             }
         },		
         getURL: function(sURL, callback, synchronous, customHeaders){
-            var xmlHTTP;
+            let xmlHTTP;
 
             if(_CHARWIN.utils.checkXDomain(sURL) && window.XDomainRequest) {
                 // IE8 / 9
@@ -192,7 +192,7 @@ _CORE={
                 xmlHTTP.timeout = 5000;
                 try{
                     xmlHTTP.open("GET",sURL,!synchronous);
-                    for(var hdr in customHeaders){
+                    for(let hdr in customHeaders){
                         xmlHTTP.setRequestHeader(hdr,customHeaders[hdr]);
                     }
                     xmlHTTP.onload=function(){
@@ -212,7 +212,7 @@ _CORE={
                 try{
                     if(xmlHTTP.overrideMimeType) xmlHTTP.overrideMimeType("text/plain");
                     xmlHTTP.open("GET",sURL,!synchronous);
-                    for(var hdr in customHeaders){
+                    for(let hdr in customHeaders){
                         xmlHTTP.setRequestHeader(hdr,customHeaders[hdr]);
                     }
                     xmlHTTP.onreadystatechange=function(){	
@@ -232,7 +232,7 @@ _CORE={
             }
         },
         postURL: function(sURL, callback, synchronous, customHeaders, postData){
-            var xmlHTTP;
+            let xmlHTTP;
 
             if(_CHARWIN.utils.checkXDomain(sURL) && window.XDomainRequest) {
                 // IE8 / 9
@@ -241,7 +241,7 @@ _CORE={
                 xmlHTTP.timeout = 5000;
                 try{
                     xmlHTTP.open("POST",sURL,!synchronous);
-                    for(var hdr in customHeaders){
+                    for(let hdr in customHeaders){
                         xmlHTTP.setRequestHeader(hdr,customHeaders[hdr]);
                     }
                     xmlHTTP.onload=function(){
@@ -261,7 +261,7 @@ _CORE={
                 try{
                     //if(xmlHTTP.overrideMimeType) xmlHTTP.overrideMimeType("text/plain");				
                     xmlHTTP.open("POST",sURL,!synchronous);
-                    for(var hdr in customHeaders){
+                    for(let hdr in customHeaders){
                         xmlHTTP.setRequestHeader(hdr,customHeaders[hdr]);
                     }
                     xmlHTTP.onreadystatechange=function(){	
@@ -293,7 +293,7 @@ _CORE={
               });
         },
         properCase: function(text){
-            var firstChar = text.substring(0,1);
+            let firstChar = text.substring(0,1);
             firstChar = firstChar.toUpperCase();
             return firstChar+text.substring(1);
         },
@@ -345,6 +345,106 @@ _CORE={
 
             console.log('JS Working');
 
+            _CORE.funcs.buildLogoAnimations();
+
+            _CORE.funcs.buildSkillsAnimations();
+
+            _CORE.funcs.buildHeaderAnimations();
+
+            //_CORE.funcs.buildMouseAnimations();
+
+            //_CORE.funcs.buildElementReferences();      
+
+        },
+        buildElementReferences: function(type){
+            _CORE.utils.forEach('[data-field]', function(index, field){
+                let fieldType = field.getAttribute('data-field');
+                
+                _CORE.refs[fieldType] = field;
+            });		
+            
+        },
+        buildLogoAnimations: function(){
+
+            // Init
+            let container = document.querySelector(".logo");
+            let inner = container.querySelector("div");
+            
+            // Mouse
+            let mouse = {
+                _x: 0,
+                _y: 0,
+                x: 0,
+                y: 0,
+                updatePosition: function(event) {
+                let e = event || window.event;
+                this.x = e.clientX - this._x;
+                this.y = (e.clientY - this._y) * -1;
+                },
+                setOrigin: function(e) {
+                this._x = e.offsetLeft + Math.floor(e.offsetWidth / 2);
+                this._y = e.offsetTop + Math.floor(e.offsetHeight / 2);
+                },
+                show: function() {
+                return "(" + this.x + ", " + this.y + ")";
+                }
+            };
+            
+            // Track the mouse position relative to the center of the container.
+            mouse.setOrigin(container);
+            
+            //-----------------------------------------
+            
+            let counter = 0;
+            let updateRate = 10;
+            let isTimeToUpdate = function() {
+                return counter++ % updateRate === 0;
+            };
+            
+            //-----------------------------------------
+            
+            let onMouseEnterHandler = function(event) {
+                update(event);
+            };
+            
+            let onMouseLeaveHandler = function() {
+                inner.style = "";
+            };
+            
+            let onMouseMoveHandler = function(event) {
+                if (isTimeToUpdate()) {
+                update(event);
+                }
+            };
+            
+            //-----------------------------------------
+            
+            let update = function(event) {
+                mouse.updatePosition(event);
+                updateTransformStyle(
+                (mouse.y / inner.offsetHeight / 2).toFixed(2),
+                (mouse.x / inner.offsetWidth / 2).toFixed(2)
+                );
+            };
+            
+            let updateTransformStyle = function(x, y) {
+                let style = "rotateX(" + x + "deg) rotateY(" + y + "deg)";
+                inner.style.transform = style;
+                inner.style.webkitTransform = style;
+                inner.style.mozTransform = style;
+                inner.style.msTransform = style;
+                inner.style.oTransform = style;
+            };
+            
+            //-----------------------------------------
+            
+            container.onmouseenter = onMouseEnterHandler;
+            container.onmouseleave = onMouseLeaveHandler;
+            container.onmousemove = onMouseMoveHandler;
+
+        },
+        buildSkillsAnimations: function(){
+
             let util = UIkit.util;
             let skills = util.$('#skill_animation_trigger');
 
@@ -359,8 +459,6 @@ _CORE={
 
                 });
 
-                //UIkit.notification('Trigger Inview!', 'success');
-
             });
             util.on(skills,'outview', function(){
 
@@ -368,24 +466,81 @@ _CORE={
                     skill.style.width = '0%';
                 });
 
-                //UIkit.notification('Trigger Outview!', 'warning');
-
             });
 
-            _CORE.funcs.buildAnimations();
-
-            _CORE.funcs.buildElementReferences();      
-
         },
-        buildElementReferences: function(type){
-            _CORE.utils.forEach('[data-field]', function(index, field){
-                let fieldType = field.getAttribute('data-field');
-                
-                _CORE.refs[fieldType] = field;
-            });		
+        buildMouseAnimations: function(){
+            // dots is an array of Dot objects,
+            // mouse is an object used to track the X and Y position
+            // of the mouse, set with a mousemove event listener below
+            let dots = [],
+            mouse = {
+                x: 0,
+                y: 0
+            };
+
+            // The Dot object used to scaffold the dots
+            let Dot = function() {
+            this.x = 0;
+            this.y = 0;
+            this.node = (function(){
+            let n = document.createElement("div");
+            n.className = "trail";
+            document.body.appendChild(n);
+            return n;
+            }());
+            };
+            // The Dot.prototype.draw() method sets the position of 
+            // the object's <div> node
+            Dot.prototype.draw = function() {
+            this.node.style.left = this.x + "px";
+            this.node.style.top = this.y + "px";
+            };
+
+            // Creates the Dot objects, populates the dots array
+            for (let i = 0; i < 12; i++) {
+            let d = new Dot();
+            dots.push(d);
+            }
+
+            // This is the screen redraw function
+            function draw() {
+            // Make sure the mouse position is set everytime
+            // draw() is called.
+            let x = mouse.x,
+                y = mouse.y;
             
+            // This loop is where all the 90s magic happens
+            dots.forEach(function(dot, index, dots) {
+            let nextDot = dots[index + 1] || dots[0];
+            
+            dot.x = x;
+            dot.y = y;
+            dot.draw();
+            x += (nextDot.x - dot.x) * .6;
+            y += (nextDot.y - dot.y) * .6;
+
+            });
+            }
+
+            addEventListener("mousemove", function(event) {
+            //event.preventDefault();
+            mouse.x = event.pageX;
+            mouse.y = event.pageY;
+            });
+
+            // animate() calls draw() then recursively calls itself
+            // everytime the screen repaints via requestAnimationFrame().
+            function animate() {
+            draw();
+            requestAnimationFrame(animate);
+            }
+
+            // And get it started by calling animate().
+            animate();
+
         },
-        buildAnimations: function(){
+        buildHeaderAnimations: function(){
             let jellowHeaderMain = document.querySelector('h1').querySelectorAll('span');
 
             _CORE.utils.forEach(jellowHeaderMain, function(index, letter){
