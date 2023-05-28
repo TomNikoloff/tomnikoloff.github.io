@@ -449,6 +449,10 @@
   -moz-animation-name: bounce;
 }
 
+.jello-vertical {
+	-webkit-animation: jello-vertical 0.9s both;
+	        animation: jello-vertical 0.9s both;
+}
 
 .jello-vertical:hover {
 	-webkit-animation: jello-vertical 0.9s both;

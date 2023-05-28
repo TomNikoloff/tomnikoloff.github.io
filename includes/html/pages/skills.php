@@ -3,7 +3,7 @@
 
         <div class="html-tag-section-top">
             <div>
-                <span class="html-tags">
+                <span class="html-tags uk-visible@s">
                     &lt;section id = "skills_section"&gt;  
                 </span>
             </div>
@@ -21,28 +21,31 @@
                             &lt;h2&gt;  
                         </span>
                     </div>
-                    <h2 data-aos="fade-right" class="">
-                        <span>S</span>
-                        <span>k</span>
-                        <span>i</span>
-                        <span>l</span>
-                        <span>l</span>
-                        <span>s</span>
-                        <span>&nbsp</span>
-                        <span>&</span>
-                        <span class="uk-hidden@l">&nbsp</span>
-                        <br class="uk-visible@s">
-                        <span>E</span>
-                        <span>x</span>
-                        <span>p</span>
-                        <span>e</span>
-                        <span>r</span>
-                        <span>i</span>
-                        <span>e</span>
-                        <span>n</span>
-                        <span>c</span>
-                        <span>e</span>
-                    </h2>
+                    <div data-aos="fade-right">
+                        <h2 class="uk-flex">
+                            <span>S</span>
+                            <span>k</span>
+                            <span>i</span>
+                            <span>l</span>
+                            <span>l</span>
+                            <span>s</span>
+                            <span>&nbsp</span>
+                            <span>&</span>
+                            <span class="uk-hidden@l">&nbsp</span>
+                        </h2>
+                        <h2 class="uk-flex">
+                            <span>E</span>
+                            <span>x</span>
+                            <span>p</span>
+                            <span>e</span>
+                            <span>r</span>
+                            <span>i</span>
+                            <span>e</span>
+                            <span>n</span>
+                            <span>c</span>
+                            <span>e</span>
+                        </h2>
+                    </div>
                     <div>
                         <span class="html-tags">
                             &lt;/h2&gt;  
@@ -56,13 +59,10 @@
                         </div>
                         <div  data-aos="fade-right">
                             <p>
-                                Since beginning my journey as a Web Developer, I have greatly expanded my knowledge and improved efficency in both languages used and in the many tools I have added to my belt.
-                            </p>
-                            <p>
-                                I create successful responsive websites that are fast, easy to use, and built with the best practices. The main area of my expertise is front-end development, HTML, CSS, JS, building small to medium web apps, and coding interactive layouts.
+                                Since beginning my journey as a Web Developer, I have greatly expanded my knowledge and improved efficiency in both languages used and in the many tools I have added to my toolbelt.
                             </p>
                             <p class="uk-margin-remove">
-                                I have also been using php and sqlite more frequently. Learning frameworks such as ReactJS.
+                                My main area of expertise is in front-end development. I have a real passion for building pixel-perfect websites and apps that are intuitive, semantic and responsive.
                             </p>
                         </div>
                         <div style="margin-top: -10px;">
@@ -130,14 +130,14 @@
                                         &lt;p&gt;  
                                     </span>
                                 </div>
-                                <div class="uk-flex uk-flex-between">
-                                    <div class="uk-margin-left">
+                                <div uk-grid class="uk-grid uk-child-width-1-2@s uk-margin-remove uk-grid-row-collapse">
+                                    <div>
                                         <p class="uk-margin-remove">
                                             Web Developer
                                         </p>
                                     </div>
-                                    <div class="uk-margin-right">
-                                        <p class="uk-margin-remove">
+                                    <div>
+                                        <p class="uk-margin-remove-bottom uk-text-right@s uk-margin-right">
                                             May 2022 - Present
                                         </p>
                                     </div>
@@ -155,7 +155,7 @@
         </div>
         <div class="html-tag-section-bottom">
             <div>
-                <span class="html-tags">
+                <span class="html-tags uk-visible@s">
                     &lt;/section&gt;  
                 </span>
             </div>

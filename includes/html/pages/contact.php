@@ -1,6 +1,6 @@
 <div class="bounce-in-left slides contact-container">      
     <section id="contact_section" class="contact-section full-height-section">
-        <div class="html-tag-section-top uk-visible@s">
+        <div class="html-tag-section-top section-tags uk-visible@s">
             <div>
                 <span class="html-tags">
                     &lt;section id = "contact_section"&gt;  
@@ -13,7 +13,20 @@
                     <div data-aos="zoom-out-up">
                         <div>
                             <h4 class="color-text">Thanks for dropping by!</h4>
-                            <h2>Get In Touch</h2>
+                            <h2 class="uk-flex uk-flex-center">
+                                <span>G</span>
+                                <span>e</span>
+                                <span>t</span>
+                                <span>&nbsp</span>
+                                <span>I</span>
+                                <span>n</span>
+                                <span>&nbsp</span>
+                                <span>T</span>
+                                <span>o</span>
+                                <span>u</span>
+                                <span>c</span>
+                                <span>h</span>
+                            </h2>
                         </div>
                         <p>
                             I am currently looking for new exciting opportunities. Feel free to leave me a message. My inbox is always open and I look forward to hearing from you!
@@ -25,7 +38,7 @@
                 </div>
             </div>
         </div>
-        <div class="html-tag-section-bottom uk-visible@s">
+        <div class="html-tag-section-bottom section-tags uk-visible@s">
             <div>
                 <span class="html-tags">
                     &lt;/section&gt;  

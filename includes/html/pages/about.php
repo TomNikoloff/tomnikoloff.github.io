@@ -3,7 +3,7 @@
 
         <div class="html-tag-section-top">
             <div>
-                <span class="html-tags">
+                <span class="html-tags uk-visible@s">
                     &lt;section id = "about_section"&gt;  
                 </span>
             </div>
@@ -19,17 +19,20 @@
                     &lt;h2&gt;  
                 </span>
             </div>
-            <h2 data-aos="fade-right">
-                <span>A</span>
-                <span>b</span>
-                <span>o</span>
-                <span>u</span>
-                <span>t</span>
-                <span class="uk-hidden@l">&nbsp</span>
-                <br class="uk-visible@l">
-                <span>M</span>
-                <span>e</span>
-            </h2>
+            <div data-aos="fade-right" class="about-title">
+                <h2 class="uk-flex">
+                    <span>A</span>
+                    <span>b</span>
+                    <span>o</span>
+                    <span>u</span>
+                    <span>t</span>
+                    <span class="uk-hidden@m">&nbsp</span>
+                </h2>
+                <h2 class="uk-flex">
+                    <span>M</span>
+                    <span>e</span>
+                </h2>
+            </div>
             <div uk-grid class="uk-grid uk-child-width-1-2@m uk-grid-row-collapse">
                 <div>
                     <div>
@@ -71,7 +74,7 @@
 
         <div class="html-tag-section-bottom">
             <div>
-                <span class="html-tags">
+                <span class="html-tags uk-visible@s">
                     &lt;/section&gt;  
                 </span>
             </div>

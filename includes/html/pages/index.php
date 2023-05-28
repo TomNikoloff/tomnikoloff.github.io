@@ -17,7 +17,7 @@
 
         <div class="uk-position-absolute" style="top: 100px;">
             <div>
-                <span class="html-tags uk-visible@s">
+                <span class="html-tags section-tags uk-visible@s">
                     &lt;section<span class="uk-visible@s"> id = "intro_section"</span>&gt;  
                 </span>
             </div>
@@ -80,9 +80,9 @@
             <img src="./images/logo1.png">
         </div>
 
-        <div class="uk-position-absolute" style="bottom: 50px;">
+        <div class="html-tag-section-bottom">
             <div>
-                <span class="html-tags uk-visible@s">
+                <span class="html-tags section-tags uk-visible@s">
                     &lt;/section&gt;  
                 </span>
             </div>

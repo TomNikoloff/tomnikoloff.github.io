@@ -372,6 +372,8 @@ _CORE={
 
             });
 
+            _CORE.funcs.buildAnimations();
+
             _CORE.funcs.buildElementReferences();      
 
         },
@@ -383,6 +385,45 @@ _CORE={
             });		
             
         },
+        buildAnimations: function(){
+            let jellowHeaderMain = document.querySelector('h1').querySelectorAll('span');
+
+            _CORE.utils.forEach(jellowHeaderMain, function(index, letter){
+
+                letter.addEventListener('animationend', function(e){
+                    letter.classList.remove('jello-vertical');
+                });
+
+                
+                letter.addEventListener('mouseover', function(e){
+                    letter.classList.add('jello-vertical');
+                });
+                
+            });
+
+            let jelloHeaders = document.querySelectorAll('h2');
+
+            _CORE.utils.forEach(jelloHeaders, function(index, header){
+
+                let jelloLetters =  header.querySelectorAll('span');
+
+
+                _CORE.utils.forEach(jelloLetters, function(index, letter){
+
+                    letter.addEventListener('animationend', function(e){
+                        letter.classList.remove('jello-vertical');
+                    });
+
+                    
+                    letter.addEventListener('mouseover', function(e){
+                        letter.classList.add('jello-vertical');
+                    });
+
+                });
+
+            });
+
+        }
     }
 };
 

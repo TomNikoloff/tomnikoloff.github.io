@@ -68,8 +68,10 @@ h1 > span {
 
 h1 > span:hover {
     color: var(--tn-primary);
+    /*
     -webkit-animation: jello-vertical 0.9s both;
     animation: jello-vertical 0.9s both;
+    */
     cursor: pointer;
 }
 
@@ -79,15 +81,17 @@ h2 {
     font-weight: 700;
     font-family: 'Manrope', sans-serif;
     font-size: 3.5rem;
-    letter-spacing: -8px;
+    letter-spacing: -2px;
     line-height: 1;
     position: relative;
 }
 
 h2 > span:hover {
     color: var(--tn-primary);
+    /*
     -webkit-animation: jello-vertical 0.9s both;
     animation: jello-vertical 0.9s both;
+    */
     cursor: pointer;
 }
 
@@ -102,6 +106,7 @@ h4 {
 
 p {
     color: var(--tn-text-color);
+   font-size: 16px;
 }
 
 a {
@@ -264,6 +269,15 @@ a:hover {
     transform: translateY(-5px);
 }
 
+.scroll-up-container {
+    width: 15px;
+    position: fixed;
+    bottom: 0px;
+    left: auto;
+    right: 20px;
+    z-index: 10;
+}
+
 .logo {
     position: absolute;
     right: 7%;
@@ -333,6 +347,10 @@ h1:after {
         text-shadow: 0 1px 0 #8c52ff, 0 2px 0 #8c52ff, 0 3px 0 #8c52ff, 0 4px 0 #8c52ff, 0 5px 0 #8c52ff, 0 6px 0 #8c52ff, 0 7px 0 #8c52ff, 0 8px 0 #8c52ff, 0 9px 0 #8c52ff, 0 50px 30px rgba(0, 0, 0, 0.3);
 }
 
+.about-title {
+    display: flex;
+}
+
 .skills-bar {
     height: 3px;
     background-color: var(--tn-lighter-main);
@@ -382,21 +400,27 @@ h1:after {
 }
 
 .skills-section .background-text {
-    left: 5rem;
     top: 10rem;
     transform: rotateZ(-30deg);
+    font-size: 15rem;
 }
 
-.projects-section .background-text {
-    left: 0rem;
-    bottom: 10rem;
-    transform: rotateZ(5deg);
-}
+
 
 /* Projects */
 
 .projects-container .full-height-section {
-    padding: 8rem 2rem 6rem 2rem;
+    padding: 3rem 2rem 3rem 2rem;
+}
+
+.projects-title {
+    padding-left: 1rem;
+    width: 100%;
+}
+
+.projects-section .background-text {
+    left: -10rem;
+    transform: rotateZ(50deg);
 }
 
 .project-image > img {

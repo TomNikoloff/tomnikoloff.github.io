@@ -5,7 +5,7 @@
     ## Root will need changing. This root is for use on my virtual server test area.
 ?>
 <body>
-    <div class="container">
+    <div id="main_container" class="container">
 
         <?php
 
@@ -48,6 +48,11 @@
             <a href="mailto:tomnikoloff@hotmail.co.uk">tomnikoloff@hotmail.co.uk</a>
         </div>
     </div>
+    <!--
+    <div class="scroll-up-container uk-hidden@s">
+        <a href="#main_container" uk-scroll><i class="fa-solid fa-circle-arrow-up"></i></a>
+    </div>
+    -->
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

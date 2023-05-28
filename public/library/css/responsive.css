@@ -1,5 +1,3 @@
-
-
 /* Extra small devices (phones, 640px and down) */
 @media only screen and (max-width: 640px) {}
 
@@ -81,7 +79,41 @@
         padding: 8rem 3.5rem 8rem 4rem;
     }
 
+    .projects-title {
+        padding-left: 0;
+    }
+
+    .contact-container .full-height-section {
+        padding: 3rem 3.5rem 3rem 4rem;
+    }
+
 }
+
+/* Small devices in landscape mode */
+@media (orientation:landscape) and (max-height: 600px){
+
+    .vertical-container {
+        display: none;
+    }
+
+    .section-tags {
+        display: none;
+    }
+
+    .slides.intro-container {
+        height: 100%;
+    }
+
+    .full-height-section {
+        padding: 9rem 3.5rem 9rem 4rem;
+        height: auto;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -117,6 +149,11 @@
         max-width: 900px;
     }    
 
+    .skills-section .background-text {
+        font-size: 27rem;
+        left: 5rem;
+    }
+
 }
 
 /* Large devices (laptops/desktops, 960px and up) */
@@ -142,11 +179,24 @@
     .intro-text {
         font-size: 2rem;
     }
+
+    .about-section .background-text {
+        font-size: 16rem;
+    }
+
+    .about-title {
+        display: block;
+    }
     
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+
+
+    p {
+        font-size: 18px;
+    }    
 
     .logo {
         top: 18%;
@@ -173,10 +223,17 @@
         margin-left: -100px;
     }
 
+    .projects-section .background-text {
+        left: 3rem;
+        transform: rotateZ(5deg);
+    }
+
 }
 
 /* Extra large devices (Desktops, 1400px and up) */
 @media only screen and (min-width: 1400px) {
+
+
 
     .logo {
         top: 20%;
