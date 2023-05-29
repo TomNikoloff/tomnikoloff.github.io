@@ -1,9 +1,3 @@
-<?php
-    # HEAD
-    #include($_SERVER['DOCUMENT_ROOT']."/portfolio/includes/html/core/head.php");
-
-    ## Root will need changing. This root is for use on my virtual server test area.
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,12 +19,12 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.24/dist/js/uikit-icons.min.js"></script>
 
     <!-- CSS  -->
-    <link rel="stylesheet" href="./library/css/core.css?<?php echo(time()); ?>">
-    <link rel="stylesheet" href="./library/css/responsive.css?<?php echo(time()); ?>">
-    <link rel="stylesheet" href="./library/css/animations.css?<?php echo(time()); ?>">
+    <link rel="stylesheet" href="./library/css/core.css">
+    <link rel="stylesheet" href="./library/css/responsive.css">
+    <link rel="stylesheet" href="./library/css/animations.css">
 
     <!-- CORE JS -->
-    <script src="./library/js/core.js?<?php echo(time()); ?>"></script>
+    <script src="./library/js/core.js"></script>
 
     <!-- Google Fonts --> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,12 +43,6 @@
     </div>
     <div id="main_container" class="container">
 
-        <?php
-
-            # Index
-            #include($_SERVER['DOCUMENT_ROOT']."/portfolio/includes/html/pages/index.php");
-
-        ?>
         <div class="bounce-in-left slides intro-container">   
             <div class="uk-position-relative">
                 <div class="uk-margin-top uk-position-absolute" style="top: 0;">
@@ -146,12 +134,6 @@
             </section>
         </div>
 
-        <?php
-
-            # About
-            #include($_SERVER['DOCUMENT_ROOT']."/portfolio/includes/html/pages/about.php");
-        
-        ?>
         <div class="bounce-in-left slides about-container">     
             <section id="about_section" class="about-section full-height-section uk-position-relative">
         
@@ -238,12 +220,6 @@
             </section>
         </div>
 
-        <?php
-
-            # Skills
-            #include($_SERVER['DOCUMENT_ROOT']."/portfolio/includes/html/pages/skills.php");
-        
-        ?>
         <div class="bounce-in-left slides skills-container">   
             <section id="skills_section" class="skills-section full-height-section uk-position-relative">
         
@@ -410,12 +386,7 @@
             </section>
         </div>
         
-        <?php
 
-            # Projects
-            #include($_SERVER['DOCUMENT_ROOT']."/portfolio/includes/html/pages/projects.php");
-        
-        ?>
         <div class="bounce-in-left slides projects-container">       
             <section id="projects_section" class="projects-section full-height-section">
         
@@ -590,12 +561,7 @@
             </section>
         </div>   
 
-        <?php
 
-            # Contact
-            #include($_SERVER['DOCUMENT_ROOT']."/portfolio/includes/html/pages/contact.php");
-        
-        ?>
         <div class="bounce-in-left slides contact-container">      
             <section id="contact_section" class="contact-section full-height-section">
                 <div class="html-tag-section-top section-tags uk-visible@s">
@@ -668,10 +634,7 @@
 
     </div>
     
-    <?php
-        # Navbar
-        #include($_SERVER['DOCUMENT_ROOT']."/portfolio/includes/html/core/navigation.php");
-    ?>
+
     <div class="dot-navigation-container">  
 
         <nav id="dot_nav">
