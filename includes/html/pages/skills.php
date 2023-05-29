@@ -12,8 +12,9 @@
         <div class="background-text">
             Skills
         </div>
-
-        <div class="section-content">
+        <div id="scroll_section_C">
+        </div>
+        <div id="skills_section" class="section-content">
             <div uk-grid class="uk-grid uk-child-width-1-2@l uk-grid-row-collapse">
                 <div>
                     <div style="margin-bottom: -10px;">
@@ -59,7 +60,7 @@
                         </div>
                         <div  data-aos="fade-right">
                             <p>
-                                Since beginning my journey as a Web Developer, I have greatly expanded my knowledge and improved efficiency in both languages used and in the many tools I have added to my toolbelt.
+                                Since beginning my journey as a Web Developer, I have greatly expanded my knowledge and improved efficiency, in both languages used and in the many tools I have added to my toolbelt.
                             </p>
                             <p class="uk-margin-remove">
                                 My main area of expertise is in front-end development. I have a real passion for building pixel-perfect websites and apps that are intuitive, semantic and responsive.

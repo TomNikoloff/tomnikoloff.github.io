@@ -17,7 +17,11 @@
     }
 */
     .vertical-container {
-        right: 40px;
+        right: 20px;
+    }
+
+    .vertical-container-top {
+        right: 20px;
     }
     
     .full-height-section {
@@ -154,6 +158,11 @@
         left: 5rem;
     }
 
+    /*
+    #dot_nav a:hover .dot-label {
+        opacity: 1;
+    }
+*/
 }
 
 /* Large devices (laptops/desktops, 960px and up) */

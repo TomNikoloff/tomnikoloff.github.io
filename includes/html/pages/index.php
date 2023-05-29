@@ -13,7 +13,9 @@
             </div>
         </div>
     </div>
-   <section id="intro-section" class="intro-section full-height-section uk-position-relative">
+    <div id="scroll_section_A">
+    </div>
+   <section id="intro_section" class="intro-section full-height-section uk-position-relative">
 
         <div class="uk-position-absolute" style="top: 100px;">
             <div>

@@ -1,4 +1,4 @@
-<div class="bounce-in-left slides projects-container" style="height: 100%">       
+<div class="bounce-in-left slides projects-container">       
     <section id="projects_section" class="projects-section full-height-section">
 
         <div class="uk-position-absolute" style="top: 50px;">
@@ -12,9 +12,9 @@
         <div class="background-text">
             Projects
         </div>
-
-
-        <div class="section-content">
+        <div id="scroll_section_D">
+        </div>
+        <div id="projects_section" class="section-content">
             <div class="uk-margin-medium-bottom projects-title">
                 <div style="margin-bottom: -10px;">
                     <span class="html-tags">
@@ -44,15 +44,17 @@
         
                 <!-- First Project-->
                 <div uk-grid class="uk-grid uk-child-width-1-2@l uk-grid-column-collapse project-container">
-                    <div>
-                        <div class="project-image uk-position-relative">
-                            <img src="./images/kata-flow-example.png" data-aos="fade-right">
-                            <!--
-                            <div class="project-slide-btn">
-                                <button class="uk-icon-button" uk-icon="arrow-right"></button>
+                    <div class="uk-position-relative">
+                        <a>
+                            <div class="project-image-container" data-aos="fade-right">
+                                <div class="project-overlay-contents">
+                                    
+                                </div>
+                                <div class="project-image uk-position-relative">
+                                    <img src="./images/kata-flow-example.png" >
+                                </div>
                             </div>
-                            -->
-                        </div>
+                        </a>
                     </div>
                     <div class="uk-flex uk-flex-middl">
                         <div class="project-content" data-aos="zoom-out-left">
@@ -110,20 +112,29 @@
                             </div>
                         </div>
                     </div>
-                    <div class>
-                        <div class="project-image uk-position-relative">
-                            <img src="./images/norfolk-knights.png" data-aos="fade-left">
-                        </div>
+                    <div class="uk-position-relative">
+                        <a  href="https://www.norfolk-knights-wheelchair-rugby.co.uk/" target="blank" rel="noopener noreferrer">
+                            <div class="project-image-container" data-aos="fade-left">
+                                <div class="overlay"></div>
+                                <div class="project-image">
+                                    <img src="./images/norfolk-knights.png">
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
     
                 <!-- Third Project-->
                 <div uk-grid class="uk-grid uk-child-width-1-2@l uk-grid-column-collapse project-container uk-margin-xlarge-top">
-                    <div>
-                        <div class="project-image uk-position-relative">
-                            <img src="./images/financial-calculators.co.uk" data-aos="fade-right">
-      
-                        </div>
+                    <div class="uk-position-relative">
+                        <a  href="https://financial-calculators.co.uk/" target="blank" rel="noopener noreferrer">
+                            <div class="project-image-container" data-aos="fade-right">
+                                <div class="overlay"></div>
+                                <div class="project-image uk-position-relative">
+                                    <img src="./images/financial-calculators.co.uk" >
+                                </div>
+                            </div>
+                        </a>
                     </div>
                     <div class="uk-flex uk-flex-middle">
                         <div class="project-content" data-aos="zoom-out-left">

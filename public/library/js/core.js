@@ -345,6 +345,13 @@ _CORE={
 
             console.log('JS Working');
 
+            //_CORE.funcs.buildElementReferences();    
+
+            _CORE.funcs.buildDotNavigation();
+
+            window.addEventListener('scroll', _CORE.funcs.sectionScrollHandler);
+
+
             _CORE.funcs.buildLogoAnimations();
 
             _CORE.funcs.buildSkillsAnimations();
@@ -353,16 +360,164 @@ _CORE={
 
             //_CORE.funcs.buildMouseAnimations();
 
-            //_CORE.funcs.buildElementReferences();      
+  
 
         },
         buildElementReferences: function(type){
+
             _CORE.utils.forEach('[data-field]', function(index, field){
                 let fieldType = field.getAttribute('data-field');
                 
                 _CORE.refs[fieldType] = field;
             });		
+
+        },
+        sectionScrollHandler: function(){
+
+            let container = document.getElementById('main_container');
+
+            let introSection = document.querySelector('.intro-container');
+            let aboutSection = document.querySelector('.about-container');
+            let skillsSection = document.querySelector('.skills-container');
+            let projectsSection = document.querySelector('.projects-container');
+            let contactSection = document.querySelector('.contact-container');
+        
+            let pos_section = window.pageYOffset;
+            //console.log(window.pageYOffset);
+
+            let pos_A = introSection.offsetTop + introSection.offsetHeight - 5;
+            let pos_B = aboutSection.offsetTop + aboutSection.offsetHeight - 5;
+            let pos_C = skillsSection.offsetTop + skillsSection.offsetHeight - 5;
+            let pos_D = projectsSection.offsetTop + projectsSection.offsetHeight - 5;
+            let pos_E = contactSection.offsetTop + contactSection.offsetHeight - 5;
+
+           // console.log(pos_A, pos_B, pos_C, pos_D, pos_E)
             
+            let distance_A = pos_A - pos_section;
+            let distance_B = pos_B - pos_section;
+            let distance_C = pos_C - pos_section;
+            let distance_D = pos_D - pos_section;
+            let distance_E = pos_E - pos_section;
+            
+            let min = Math.min(...[distance_A, distance_B, distance_C, distance_D, distance_E].filter(num => num > 0));
+
+            //console.log(min, distance_A, distance_B, distance_C, distance_D, distance_E)
+
+            let dotLinks =  document.querySelectorAll('.dot-link');
+            let dotNavText = document.getElementById('dot_nav_section');
+        
+            if(min === distance_A){
+
+                if(_CORE.cache.currentSection === 'Intro'){
+                } else {
+
+                    _CORE.cache.currentSection = 'Intro';
+                    //console.log('intro');
+
+                    _CORE.funcs.clearActiveDots();
+                    dotNavText.textContent = 'Intro';
+                    dotLinks[0].classList.add('active');
+
+                }
+            }
+
+            if(min === distance_B){
+
+                if(_CORE.cache.currentSection === 'About'){
+                } else {
+
+                    _CORE.cache.currentSection = 'About';
+                    //console.log('about');
+
+                    _CORE.funcs.clearActiveDots();
+                    dotNavText.textContent = 'About';
+                    dotLinks[1].classList.add('active');
+                }
+
+            } 
+
+            if(min === distance_C){
+
+                if(_CORE.cache.currentSection === 'Skils'){ 
+                } else {
+
+                    _CORE.cache.currentSection = 'Skills';
+                    //console.log('skills');
+
+                    _CORE.funcs.clearActiveDots();
+                    dotNavText.textContent = 'Skills';
+                    dotLinks[2].classList.add('active');
+
+                }
+
+            } 
+
+            if(min === distance_D){
+                if(_CORE.cache.currentSection === 'Projects'){
+                    
+                } else {
+                    _CORE.cache.currentSection = 'Projects';
+                    //console.log('projects');
+
+                    _CORE.funcs.clearActiveDots();
+                    dotNavText.textContent = 'Projects';
+                    dotLinks[3].classList.add('active');
+                }
+            } 
+
+            if(min === distance_E){
+                if(_CORE.cache.currentSection === 'Contact'){
+                    
+                } else {
+                    _CORE.cache.currentSection = 'Contact';
+                    //console.log('contact');
+
+                    _CORE.funcs.clearActiveDots();
+                    dotNavText.textContent = 'Contact';
+                    dotLinks[4].classList.add('active');
+                }
+
+            } 
+        },
+        buildDotNavigation: function(){
+            let dotNavText = document.getElementById('dot_nav_section');
+
+            let dotLinks =  document.querySelectorAll('.dot-link');
+
+            _CORE.utils.forEach(dotLinks, function(index, link){
+
+                let sectionName = link.getAttribute('data-nav-dot');
+
+                link.addEventListener('click', function(){
+
+                    _CORE.funcs.clearActiveDots();
+                    dotNavText.textContent = sectionName;
+                    link.classList.add('active');
+                    _CORE.cache.currentSection = sectionName;
+
+                });
+                
+                link.addEventListener('mouseover', function(){
+                    dotNavText.textContent = sectionName; 
+                });
+
+                link.addEventListener('mouseout', function(){
+                    dotNavText.textContent = _CORE.cache.currentSection;
+                });
+                
+            });
+            
+        },
+        clearActiveDots: function(){
+
+            let dotLinks =  document.querySelectorAll('.dot-link');
+
+            _CORE.utils.forEach(dotLinks, function(index, link){
+
+                link.classList.remove('active');
+
+            });
+
         },
         buildLogoAnimations: function(){
 

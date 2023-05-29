@@ -5,6 +5,11 @@
     ## Root will need changing. This root is for use on my virtual server test area.
 ?>
 <body>
+    <div class="vertical-container-top uk-visible@s">
+        <div>
+            <a id="dot_nav_section" href="#intro_section" uk-scroll class="">Intro</a>
+        </div>
+    </div>
     <div id="main_container" class="container">
 
         <?php
@@ -12,6 +17,11 @@
             # Index
             include($_SERVER['DOCUMENT_ROOT']."/portfolio/includes/html/pages/index.php");
 
+        ?>
+
+        <?php
+            # Navbar
+            include($_SERVER['DOCUMENT_ROOT']."/portfolio/includes/html/core/navigation.php");
         ?>
 
         <?php
@@ -43,6 +53,10 @@
         ?>
 
     </div>
+    <?php
+        # Navbar
+        include($_SERVER['DOCUMENT_ROOT']."/portfolio/includes/html/core/navigation.php");
+    ?>
     <div class="vertical-container uk-visible@s">
         <div>
             <a href="mailto:tomnikoloff@hotmail.co.uk">tomnikoloff@hotmail.co.uk</a>

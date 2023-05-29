@@ -12,8 +12,9 @@
         <div class="background-text">
             About
         </div>
-
-        <div class="section-content">
+        <div id="scroll_section_B">
+        </div>
+        <div id="about_section" class="section-content">
             <div style="margin-bottom: -10px;">
                 <span class="html-tags">
                     &lt;h2&gt;  
@@ -48,7 +49,7 @@
                         </div>
                         <div data-aos="fade-right">
                             <p>
-                                I've always had passion for technology and computers. Originating from a love of PC gaming at a young age. After starting to learn web development in lockdown and using my free time to progress my skills, it had only served to solidify what role I wanted to fulfil. So at the beginning of 2022, I took the plunge and made it my goal to become a developer fulltime. By early May of that year, I landed my first job as a Web developer and haven't looked back since.
+                                I've always had a passion for technology and computers. Originating from a love of PC gaming at a young age. After starting to learn web development during lockdown and using my free time to progress my skills. It had only served to solidify what role I wanted to fulfil. So at the beginning of 2022, I took the plunge and made it my goal to become a developer fulltime. By early May of that year, I landed my first job as a Web developer and haven't looked back since.
                             </p>
                             <p>
                                 I am a reliable, conscientious and hardworking individual, who is equally confident working as part of a team and on my own initiative. I feel that I would bring enthusiasm and commitment to any job that arises. I like tackling a problem head on and and working towards a solution.
