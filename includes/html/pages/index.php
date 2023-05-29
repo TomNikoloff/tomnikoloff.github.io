@@ -24,11 +24,6 @@
                 </span>
             </div>
         </div>
-    <!--
-        <div class="background-text vibrate-1">
-            Scroll Down
-        </div>
-    -->
         <div class="section-content">
             <div>
                 <div style="margin-bottom: -20px;">
