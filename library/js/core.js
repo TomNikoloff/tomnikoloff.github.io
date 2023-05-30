@@ -351,7 +351,6 @@ _CORE={
 
             window.addEventListener('scroll', _CORE.funcs.sectionScrollHandler);
 
-
             _CORE.funcs.buildLogoAnimations();
 
             _CORE.funcs.buildSkillsAnimations();
@@ -359,8 +358,6 @@ _CORE={
             _CORE.funcs.buildHeaderAnimations();
 
             //_CORE.funcs.buildMouseAnimations();
-
-  
 
         },
         buildElementReferences: function(type){
@@ -371,6 +368,38 @@ _CORE={
                 _CORE.refs[fieldType] = field;
             });		
 
+        },
+        buildDotNavigation: function(){
+            let dotNavText = document.getElementById('dot_nav_section');
+
+            let dotLinks =  document.querySelectorAll('.dot-link');
+
+            _CORE.utils.forEach(dotLinks, function(index, link){
+
+                let sectionName = link.getAttribute('data-nav-dot');
+
+                link.addEventListener('click', function(){
+
+                    _CORE.funcs.clearActiveDots();
+                    dotNavText.textContent = sectionName;
+                    let targetName = sectionName.toLowerCase();
+                    let targetId = '#' + targetId + '_section';
+                    dotNavText.href = targetId;
+                    link.classList.add('active');
+                    _CORE.cache.currentSection = sectionName;
+
+                });
+                
+                link.addEventListener('mouseover', function(){
+                    dotNavText.textContent = sectionName; 
+                });
+
+                link.addEventListener('mouseout', function(){
+                    dotNavText.textContent = _CORE.cache.currentSection;
+                });
+                
+            });
+            
         },
         sectionScrollHandler: function(){
 
@@ -416,6 +445,7 @@ _CORE={
 
                     _CORE.funcs.clearActiveDots();
                     dotNavText.textContent = 'Intro';
+                    dotNavText.href = '#intro_section';
                     dotLinks[0].classList.add('active');
 
                 }
@@ -431,6 +461,7 @@ _CORE={
 
                     _CORE.funcs.clearActiveDots();
                     dotNavText.textContent = 'About';
+                    dotNavText.href = '#about_section';
                     dotLinks[1].classList.add('active');
                 }
 
@@ -446,6 +477,7 @@ _CORE={
 
                     _CORE.funcs.clearActiveDots();
                     dotNavText.textContent = 'Skills';
+                    dotNavText.href = '#skills_section';
                     dotLinks[2].classList.add('active');
 
                 }
@@ -461,6 +493,7 @@ _CORE={
 
                     _CORE.funcs.clearActiveDots();
                     dotNavText.textContent = 'Projects';
+                    dotNavText.href = '#projects_section';
                     dotLinks[3].classList.add('active');
                 }
             } 
@@ -474,39 +507,11 @@ _CORE={
 
                     _CORE.funcs.clearActiveDots();
                     dotNavText.textContent = 'Contact';
+                    dotNavText.href = '#contact_section';
                     dotLinks[4].classList.add('active');
                 }
 
             } 
-        },
-        buildDotNavigation: function(){
-            let dotNavText = document.getElementById('dot_nav_section');
-
-            let dotLinks =  document.querySelectorAll('.dot-link');
-
-            _CORE.utils.forEach(dotLinks, function(index, link){
-
-                let sectionName = link.getAttribute('data-nav-dot');
-
-                link.addEventListener('click', function(){
-
-                    _CORE.funcs.clearActiveDots();
-                    dotNavText.textContent = sectionName;
-                    link.classList.add('active');
-                    _CORE.cache.currentSection = sectionName;
-
-                });
-                
-                link.addEventListener('mouseover', function(){
-                    dotNavText.textContent = sectionName; 
-                });
-
-                link.addEventListener('mouseout', function(){
-                    dotNavText.textContent = _CORE.cache.currentSection;
-                });
-                
-            });
-            
         },
         clearActiveDots: function(){
 
