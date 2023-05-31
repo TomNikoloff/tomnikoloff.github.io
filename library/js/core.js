@@ -376,6 +376,7 @@ _CORE={
                     this.textContent = 'Hide';
 
                 } else if(curretnState == 'visible'){
+                    
                     _CORE.utils.forEach(kataExpandedSections, function(index, section){
                         section.classList.add('hide');
                     });
