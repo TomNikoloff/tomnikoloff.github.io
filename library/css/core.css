@@ -338,6 +338,14 @@ a:hover {
     transform: translate(-4px, -4px);
 }
 
+button.btn {
+    background-color: transparent;
+    color: var(--tn-primary);
+    font-size: 1rem;
+    padding: 15px;
+    cursor: pointer;
+}
+
 .vertical-container-top {
     width: 40px;
     position: fixed;
@@ -759,6 +767,9 @@ h1:after {
     color: var(--tn-primary);
 }
 
+.hide {
+    display: none;
+}
 
 
 

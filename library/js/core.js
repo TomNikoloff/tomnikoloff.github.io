@@ -359,6 +359,33 @@ _CORE={
 
             //_CORE.funcs.buildMouseAnimations();
 
+            let projectBtn = document.getElementById('kata_flow_expand');
+            projectBtn.addEventListener('click', function(){
+
+                let curretnState = this.getAttribute('data-state');
+
+                let kataExpandedSections = document.querySelectorAll('.kata-expanded');
+
+                if(curretnState == "hidden"){
+
+                    _CORE.utils.forEach(kataExpandedSections, function(index, section){
+                        section.classList.remove('hide');
+                    });
+
+                    this.setAttribute('data-state', 'visible');
+                    this.textContent = 'Hide';
+
+                } else if(curretnState == 'visible'){
+                    _CORE.utils.forEach(kataExpandedSections, function(index, section){
+                        section.classList.add('hide');
+                    });
+
+                    this.setAttribute('data-state', 'hidden');
+                    this.textContent = 'Learn More';
+                }
+
+            });
+
         },
         buildElementReferences: function(type){
 
