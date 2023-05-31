@@ -24,14 +24,17 @@ body {
     height: 100%;
 }
 
-/* custom scrollbar */
+/* Custom Scrollbar - START */
+
 body::-webkit-scrollbar {
     width: 20px;
-    background-color: transparent;
+    background-image: url("../../images/grain-background.png");
+    background-color: black;
 }
   
 body::-webkit-scrollbar-track {
-    background-color: transparent;
+    /*-webkit-box-shadow: none;*/
+    background: transparent;
 }
   
 body::-webkit-scrollbar-thumb {
@@ -44,6 +47,14 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-thumb:hover {
     background-color: var(--tn-text-color);
 }
+
+/*
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--tn-lighter-main) black;
+}
+*/
+/* Custom Scrollbar - END */
 
 :root {
     /* Colors */
