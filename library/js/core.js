@@ -380,7 +380,7 @@ _CORE={
                     UIkit.scroll().scrollTo('#expanded');
 
                     this.setAttribute('data-state', 'visible');
-                    this.textContent = 'Hide';
+                    this.innerHTML = 'Hide Extra <span uk-icon="arrow-up"></span>';
                     AOS.refresh();
 
                 } else if(curretnState == 'visible'){
@@ -390,7 +390,7 @@ _CORE={
                     });
 
                     this.setAttribute('data-state', 'hidden');
-                    this.textContent = 'Learn More';
+                    this.innerHTML = 'Learn More <span uk-icon="arrow-down"></span>';
                     AOS.refresh();
                 }
 

@@ -733,8 +733,12 @@ h1:after {
     transform: translateY(-5px);
 }
 
-.project-links :first-child{
+.project-links a{
     margin-right: 10px;
+}
+
+.project-links a:first-child{
+    margin-right: 20px;
 }
 
 .project-slide-btn {
