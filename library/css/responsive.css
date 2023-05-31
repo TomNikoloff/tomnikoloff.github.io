@@ -227,10 +227,6 @@
     
     }
 
-    .slides.about-container {
-        height: 100vh;
-    }
-
     .slides.skills-container {
         height: 100vh;
     }
@@ -253,7 +249,9 @@
 /* Extra large devices (Desktops, 1400px and up) */
 @media only screen and (min-width: 1400px) {
 
-
+    .slides.about-container {
+        height: 100vh;
+    }
 
     .logo {
         top: 20%;
