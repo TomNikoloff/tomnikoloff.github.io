@@ -359,9 +359,12 @@ _CORE={
 
             //_CORE.funcs.buildMouseAnimations();
 
+            // Temp
             let projectBtn = document.getElementById('kata_flow_expand');
             projectBtn.addEventListener('click', function(){
 
+                //UIkit.modal(document.getElementById('projects_modal')).show();
+                
                 let curretnState = this.getAttribute('data-state');
 
                 let kataExpandedSections = document.querySelectorAll('.kata-expanded');
@@ -369,20 +372,26 @@ _CORE={
                 if(curretnState == "hidden"){
 
                     _CORE.utils.forEach(kataExpandedSections, function(index, section){
+                        
                         section.classList.remove('hide');
+                        
                     });
+
+                    UIkit.scroll().scrollTo('#expanded');
 
                     this.setAttribute('data-state', 'visible');
                     this.textContent = 'Hide';
+                    AOS.refresh();
 
                 } else if(curretnState == 'visible'){
-                    
+
                     _CORE.utils.forEach(kataExpandedSections, function(index, section){
                         section.classList.add('hide');
                     });
 
                     this.setAttribute('data-state', 'hidden');
                     this.textContent = 'Learn More';
+                    AOS.refresh();
                 }
 
             });

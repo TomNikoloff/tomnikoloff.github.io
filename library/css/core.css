@@ -748,7 +748,19 @@ h1:after {
     height: 45px;
 }
 
-/* Projects End */
+/* Projects - END */
+
+/* Modals - START */
+
+.uk-modal-dialog {
+    color: var(--tn-secondary);
+    background-image: url("../../images/grain-background.png");
+    background-color: black;
+    height: 100%;
+}
+
+/* Modals - END */
+
 
 .email-btn {
     padding: 1.25rem 2rem;
