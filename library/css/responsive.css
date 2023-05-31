@@ -15,7 +15,12 @@
     .slides.about-container {
         height: 100vh;
     }
-*/
+    */
+
+    .dot-navigation-container {
+        right: 20px;
+    }
+
     .vertical-container {
         right: 20px;
     }

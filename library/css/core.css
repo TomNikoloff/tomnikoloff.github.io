@@ -48,12 +48,11 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: var(--tn-text-color);
 }
 
-/*
 * {
     scrollbar-width: thin;
     scrollbar-color: var(--tn-lighter-main) black;
 }
-*/
+
 /* Custom Scrollbar - END */
 
 :root {
@@ -200,7 +199,7 @@ a:hover {
     position: fixed;
     top: 50%;
     bottom: auto;
-    right: 20px;
+    right: 5px;
     transform: translateY(-50%);
     z-index: 999;
 }
