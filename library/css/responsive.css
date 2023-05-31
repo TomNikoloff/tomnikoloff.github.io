@@ -11,17 +11,13 @@
     .slides {
         padding: 0 30px;
     }
-    /*
-    .slides.about-container {
-        height: 100vh;
-    }
-    */
 
     /*
     .dot-navigation-container {
         right: 20px;
     }
     */
+
     .vertical-container {
         right: 15px;
     }
@@ -207,6 +203,10 @@
     .about-title {
         display: block;
     }
+
+    .skills-section .background-text {
+        top: 0;
+    }
     
 }
 
@@ -273,6 +273,10 @@
 
 /* Extra large devices (Desktops, 1600px and up) */
 @media only screen and (min-width: 1600px) {
+
+    .skills-section .background-text {
+        top: auto;
+    }
     
     .logo img{
         width: 700px;
