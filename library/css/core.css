@@ -787,6 +787,13 @@ h1:after {
     display: none;
 }
 
+.more-to-come {
+    font-size: 3rem;
+    color: var(--tn-secondary);
+    text-align: center;
+    font-family: 'La Belle Aurore', cursive;
+    margin: 0;
+}
 
 
 
