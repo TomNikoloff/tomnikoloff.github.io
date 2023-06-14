@@ -18,11 +18,11 @@ _CORE={
         bcheck: function(regex){let agent = navigator.userAgent.toLowerCase();return (agent.match(regex) !== null);},
         isFirefox: (typeof InstallTrigger !== 'undefined'),
         isIE: (navigator.userAgent.indexOf("Trident/")>-1&&navigator.userAgent.indexOf("rv:")>-1),
-        isIOS: function(a){return a?_CHARWIN.utils.bcheck(RegExp("iP(hone|ad|od).+\\sOS\\s"+a,"i")):_CHARWIN.utils.bcheck(/iP(hone|ad|od)/i)},
-        isIPad: function(a){return a?_CHARWIN.utils.bcheck(RegExp("iP(ad).+\\sOS\\s"+a,"i")):_CHARWIN.utils.bcheck(/iP(ad)/i)},
-        isSafari: function(){return _CHARWIN.utils.bcheck(/safari/i)&&!_CHARWIN.utils.bcheck(/chrome/i)&&!_CHARWIN.utils.bcheck(/chromium/i)&&!_CHARWIN.utils.bcheck(/android/i)},
+        isIOS: function(a){return a?_CORE.utils.bcheck(RegExp("iP(hone|ad|od).+\\sOS\\s"+a,"i")):_CORE.utils.bcheck(/iP(hone|ad|od)/i)},
+        isIPad: function(a){return a?_CORE.utils.bcheck(RegExp("iP(ad).+\\sOS\\s"+a,"i")):_CORE.utils.bcheck(/iP(ad)/i)},
+        isSafari: function(){return _CORE.utils.bcheck(/safari/i)&&!_CORE.utils.bcheck(/chrome/i)&&!_CORE.utils.bcheck(/chromium/i)&&!_CORE.utils.bcheck(/android/i)},
         isMobile: function(){return 'ontouchstart' in window || navigator.msMaxTouchPoints},
-        isAndroid: function(a,e){return e&&_CHARWIN.utils.bcheck(/chrome\/[123456789]/i)&&!_CHARWIN.utils.bcheck(/chrome\/18/)?!1:a?(_CHARWIN.utils.isInt(a)&&!/\./.test(a)&&(a=""+a+"."),_CHARWIN.utils.bcheck(RegExp("Android\\s*"+a,"i"))):_CHARWIN.utils.bcheck(/Android/i)},
+        isAndroid: function(a,e){return e&&_CORE.utils.bcheck(/chrome\/[123456789]/i)&&!_CORE.utils.bcheck(/chrome\/18/)?!1:a?(_CORE.utils.isInt(a)&&!/\./.test(a)&&(a=""+a+"."),_CORE.utils.bcheck(RegExp("Android\\s*"+a,"i"))):_CORE.utils.bcheck(/Android/i)},
         isInt: function(a){return 0===parseFloat(a)%1},
         hexToRgba: function(a,c){let b="rgb",e=[parseInt(a.substr(1,2),16),parseInt(a.substr(3,2),16),parseInt(a.substr(5,2),16)];void 0!==c&&100!==c&&(b+="a",e.push(c/100));return b+"("+e.join(",")+")"},
         hasClass: function(oEl, sClass){
@@ -118,8 +118,8 @@ _CORE={
         },
         safeText: function(inText){
             inText = inText || "";
-            let outText = _CHARWIN.utils.cleanQuotes(inText);
-            outText = _CHARWIN.utils.cleanUTF(outText);
+            let outText = _CORE.utils.cleanQuotes(inText);
+            outText = _CORE.utils.cleanUTF(outText);
             return outText;
         },
         cleanQuotes: function(badQuotes){
@@ -185,7 +185,7 @@ _CORE={
         getURL: function(sURL, callback, synchronous, customHeaders){
             let xmlHTTP;
 
-            if(_CHARWIN.utils.checkXDomain(sURL) && window.XDomainRequest) {
+            if(_CORE.utils.checkXDomain(sURL) && window.XDomainRequest) {
                 // IE8 / 9
                 xmlHTTP = new window.XDomainRequest();
                 xmlHTTP.ontimeout = xmlHTTP.onprogress = function(){};
@@ -200,7 +200,7 @@ _CORE={
                     };
                     xmlHTTP.send(null);
                 } catch (e) {
-                    _CHARWIN.utils.log('Oops! XDomainRequest: ' + e + ': ' + sURL);
+                    _CORE.utils.log('Oops! XDomainRequest: ' + e + ': ' + sURL);
                 }
             } else{
                 if (window.XMLHttpRequest){ 		
@@ -221,20 +221,20 @@ _CORE={
                                 callback(sURL,xmlHTTP.status,xmlHTTP.responseText);
                             } else {
                                 callback(sURL,xmlHTTP.status,xmlHTTP.responseText);
-                                _CHARWIN.utils.log('Oops! XMLHttpRequest: ' + xmlHTTP.status);	
+                                _CORE.utils.log('Oops! XMLHttpRequest: ' + xmlHTTP.status);	
                             }
                         }
                     };
                     xmlHTTP.send(null);
                 } catch (e) {
-                    _CHARWIN.utils.log('Oops! XMLHttpRequest: ' + e + ': ' + sURL);
+                    _CORE.utils.log('Oops! XMLHttpRequest: ' + e + ': ' + sURL);
                 }
             }
         },
         postURL: function(sURL, callback, synchronous, customHeaders, postData){
             let xmlHTTP;
 
-            if(_CHARWIN.utils.checkXDomain(sURL) && window.XDomainRequest) {
+            if(_CORE.utils.checkXDomain(sURL) && window.XDomainRequest) {
                 // IE8 / 9
                 xmlHTTP = new window.XDomainRequest();
                 xmlHTTP.ontimeout = xmlHTTP.onprogress = function(){};
@@ -249,7 +249,7 @@ _CORE={
                     };
                     xmlHTTP.send(null);
                 } catch (e) {
-                    _CHARWIN.utils.log('Oops! XDomainRequest: ' + e + ': ' + sURL);
+                    _CORE.utils.log('Oops! XDomainRequest: ' + e + ': ' + sURL);
                 }
             } else{
                 if (window.XMLHttpRequest){ 		
@@ -268,13 +268,13 @@ _CORE={
                         if(xmlHTTP.readyState===4){								
                             callback(sURL,xmlHTTP.status,xmlHTTP.responseText);
                             if(xmlHTTP.status!=200&&xmlHTTP.status!=204){
-                                _CHARWIN.utils.log('Oops! XMLHttpRequest: ' + xmlHTTP.status);								
+                                _CORE.utils.log('Oops! XMLHttpRequest: ' + xmlHTTP.status);								
                             }
                         }
                     };
                     xmlHTTP.send(postData);
                 } catch (e) {
-                    _CHARWIN.utils.log('Oops! XMLHttpRequest: ' + e + ': ' + sURL);
+                    _CORE.utils.log('Oops! XMLHttpRequest: ' + e + ': ' + sURL);
                 }
             }
         },
