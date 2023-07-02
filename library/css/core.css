@@ -602,7 +602,7 @@ h1:after {
 }
 
 .project-image-container {
-
+    transition: all ease-in-out 0.15s;
 }
 
 .project-image-container:hover {
@@ -619,6 +619,20 @@ h1:after {
     background-color: var(--tn-hover-overlay-dark);
     z-index: 2;
 }
+
+
+/*
+.projects-area:hover .project-image {
+    transform: scale(0.85);
+    filter: blur(4px);
+}
+
+.project-image:hover {
+    transform: scale(1.1) !important;
+    transition: all ease-in-out 0.15s;
+}
+
+*/
 
 .project-image > img {
     border-radius: 5px;
