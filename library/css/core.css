@@ -609,6 +609,12 @@ h1:after {
     cursor: pointer;
 }
 
+.project-image-container:hover .project-image{
+    opacity: 0.7;
+    transition: .3s ease-in-out;
+    box-shadow: 0px 0px 300px 50px black;
+}
+/*
 .project-image-container:hover::before {
     position: absolute;
     content: "";
@@ -619,7 +625,7 @@ h1:after {
     background-color: var(--tn-hover-overlay-dark);
     z-index: 2;
 }
-
+*/
 
 /*
 .projects-area:hover .project-image {
