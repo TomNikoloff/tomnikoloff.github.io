@@ -114,6 +114,15 @@ h2 > span:hover {
     cursor: pointer;
 }
 
+.purple {
+    color: var(--tn-primary) !important;
+}
+
+.purple > span:hover {
+    color: var(--tn-secondary);
+    cursor: pointer;
+}
+
 .contact-container h2 {
     letter-spacing: -5px;
 }
@@ -607,6 +616,7 @@ h1:after {
 
 .project-image-container:hover {
     cursor: pointer;
+    transform: translateY(-10px) !important;
 }
 
 .project-image-container:hover .project-image{
@@ -669,7 +679,7 @@ h1:after {
 
 .project-title {
     color: var(--tn-secondary);
-    font-size: 3rem;
+    font-size: 2rem;
     margin-top: 0;
 }
 
@@ -771,6 +781,69 @@ h1:after {
     width: 45px;
     height: 45px;
 }
+
+.uk-card {
+    background-color: #323232;
+    border-radius: 10px;
+    border-left: 6px solid var(--tn-primary);
+    box-shadow: var(--box--shadow--small);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.uk-card:hover {
+    box-shadow: var(--box--shadow--large);
+    cursor: pointer;
+    transform: translateY(-10px) !important;
+}
+
+.uk-card:hover .other-projects-title > a {
+    color: var(--tn-primary);
+}
+
+.other-project-header {
+    color: var(--tn-secondary);
+    font-size: 2rem;
+    margin: 0;
+}
+
+.other-projects-title {
+    font-weight: 600;
+    font-family: 'Manrope', sans-serif;
+}
+
+.other-projects-title a{
+    color: var(--tn-secondary);
+}
+
+.other-project-tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px 0px 10px;
+    padding: 0;
+    list-style: none;
+    font-family: 'Manrope', sans-serif;
+}
+
+.other-project-tech-stack li:first-of-type {
+    margin: 0px 0px 5px 0px;
+}
+
+.other-project-tech-stack li {
+    margin: 0px 0px 5px 20px;
+}
+
+.fa-folder {
+    color: var(--tn-primary);
+}
+
+/*
+.uk-card > footer {
+    position: absolute;
+    bottom: 30px;
+}
+*/
 
 /* Projects - END */
 
