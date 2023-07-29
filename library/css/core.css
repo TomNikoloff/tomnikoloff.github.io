@@ -802,6 +802,11 @@ h1:after {
     color: var(--tn-primary);
 }
 
+.uk-card a {
+    position: relative;
+    z-index: 10;
+}
+
 .other-project-header {
     color: var(--tn-secondary);
     font-size: 2rem;
