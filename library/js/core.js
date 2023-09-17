@@ -326,46 +326,12 @@ _CORE={
 
             //_CORE.funcs.buildMouseAnimations();
 
-            // Temp
             let projectBtn = document.getElementById('kata_flow_expand');
             projectBtn.addEventListener('click', function(){
-
-
-                //UIkit.modal(document.getElementById('projects_modal')).show();
                 
-                let curretnState = this.getAttribute('data-state');
-
-                let kataExpandedSections = document.querySelectorAll('.kata-expanded');
-
-                console.log(curretnState, kataExpandedSections)
-
-                if(curretnState == "hidden"){
-
-                    _CORE.utils.forEach(kataExpandedSections, function(index, section){
-                        
-                        section.classList.remove('hide');
-                        
-                    });
-
-                    UIkit.scroll().scrollTo('#expanded');
-
-                    this.setAttribute('data-state', 'visible');
-                    this.innerHTML = 'Hide Extra <span uk-icon="arrow-up"></span>';
-                    AOS.refresh();
-
-                } else if(curretnState == 'visible'){
-
-                    _CORE.utils.forEach(kataExpandedSections, function(index, section){
-                        section.classList.add('hide');
-                    });
-
-                    this.setAttribute('data-state', 'hidden');
-                    this.innerHTML = 'Learn More <span uk-icon="arrow-down"></span>';
-                    AOS.refresh();
-                }
+                _CORE.funcs.expandKataFlowProject(this);
 
             });
-
 
         },
         buildElementReferences: function(type){
@@ -746,6 +712,39 @@ _CORE={
 
             });
 
+        },
+        expandKataFlowProject: function(link){
+
+            let curretnState = link.getAttribute('data-state');
+
+            let kataExpandedSections = document.querySelectorAll('.kata-expanded');
+
+            console.log(curretnState, kataExpandedSections)
+
+            if(curretnState == "hidden"){
+
+                _CORE.utils.forEach(kataExpandedSections, function(index, section){
+                    
+                    section.classList.remove('hide');
+                    
+                });
+
+                UIkit.scroll().scrollTo('#expanded');
+
+                link.setAttribute('data-state', 'visible');
+                link.innerHTML = 'Hide Extra <span uk-icon="arrow-up"></span>';
+                AOS.refresh();
+
+            } else if(curretnState == 'visible'){
+
+                _CORE.utils.forEach(kataExpandedSections, function(index, section){
+                    section.classList.add('hide');
+                });
+
+                link.setAttribute('data-state', 'hidden');
+                link.innerHTML = 'Learn More <span uk-icon="arrow-down"></span>';
+                AOS.refresh();
+            }
         }
     }
 };
