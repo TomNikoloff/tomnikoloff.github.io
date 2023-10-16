@@ -5,7 +5,6 @@
         </samp>
 </h3>
 
-
 <p align="center"> 
   <samp>
     「 A design-minded Web Developer focused on building beautiful interfaces & experiences. 」
@@ -14,21 +13,27 @@
   </samp>
 </p>
 
+<p align="center">
+ <a href="https://tomnikoloff.github.io/" target="blank">
+  <img src="https://img.shields.io/badge/Website-DC143C?style=for-the-badge&logo=medium&logoColor=white" alt="alsiam" />
+ </a>
+</p>
+
 <!-- About Section -->
  # About me
  
 <p>
+   <img align="right" width="300" src="https://i.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.webp" />
+        
+   :open_book: &emsp; I'm always looking to improve and learn more. <br/><br/>
+   📧 &emsp; Reach me anytime: tomnikoloff@hotmail.co.uk<br/>
  
-:open_book: &emsp; I'm always looking to improve and learn more. <br/><br/>
- 📧 &emsp; Reach me anytime: tomnikoloff@hotmail.co.uk<br/>
- 
-When I'm not at my computer, you'll find me:<br/>
-- :muscle: &emsp; In the gym.<br/>
-- :dog2: &emsp; Out walking my dog.<br/>
+   When I'm not at my computer, you'll find me:<br/>
+   - :muscle: &emsp; In the gym.<br/>
+   - :dog2: &emsp; Out walking my dog.<br/>
 
 </p>
 
-<br/>
 <br/>
 <br/>
 
@@ -40,10 +45,13 @@ When I'm not at my computer, you'll find me:<br/>
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![SASS Badge](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
-![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
+![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
+![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
 ![VSCode](https://img.shields.io/badge/Visual_Studio-0078d7?style=for-the-badge&logo=visual%20studio&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
+![Bitbucket](https://img.shields.io/badge/bitbucket-%230047B3.svg?style=for-the-badge&logo=bitbucket&logoColor=white)
 ![Firebase](https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
 ![Babel](https://img.shields.io/badge/Babel-F9DC3E?style=for-the-badge&logo=babel&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
