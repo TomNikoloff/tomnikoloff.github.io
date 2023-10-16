@@ -158,6 +158,8 @@ a:hover {
     height: 100%;
     padding: 0px 10px 0px 10px;
     top: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .slides.intro-container {
@@ -182,6 +184,8 @@ a:hover {
     -webkit-box-align: center;
     -ms-flex-align: center;
     border-bottom: 1px solid var(--tn-lighter-main);
+    width: 100%;
+    max-width: 2560px;
 }
 
 .full-height-section .html-tags {
@@ -330,6 +334,7 @@ a:hover {
 .html-tags-bottom {
     position: absolute;
     bottom: 0;
+    margin-left: 30px;
 }
 
 .btn{

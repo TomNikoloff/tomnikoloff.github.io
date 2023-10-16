@@ -43,6 +43,10 @@
         margin-left: 10px;
     }
 
+    .footer {
+        margin-left: 10px;
+    }
+
     .logo {
         right: 5%;
         top: 13%;
@@ -98,6 +102,10 @@
         font-size: 3rem;
     }
 
+    .html-tags-bottom {
+        margin-left: 20px;
+    }
+
 }
 
 /* Small devices in landscape mode */
@@ -142,6 +150,10 @@
     }
 
     .section-content {
+        margin-left: 20px;
+    }
+
+    .footer {
         margin-left: 20px;
     }
 
