@@ -454,7 +454,7 @@ button.btn {
 .logo {
     position: absolute;
     right: 7%;
-    top: 2%;
+    top: 4%;
     transform: rotateZ(-30deg);
     z-index: 1;
     perspective: 25px;
