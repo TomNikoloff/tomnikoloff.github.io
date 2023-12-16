@@ -787,6 +787,14 @@ h1:after {
     height: 45px;
 }
 
+.uk-position-small {
+    z-index: 999;
+}
+
+[uk-slideshow] .uk-slideshow-items {
+    border-radius: 10px;
+}
+
 .uk-card {
     background-color: #323232;
     border-radius: 10px;
