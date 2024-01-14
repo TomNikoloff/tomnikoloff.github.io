@@ -108,7 +108,7 @@ p {
     font-size: 15px;
     margin: 0;
     font-weight: 300;
-    color: var(--neutral-100)
+    color: var(--neutral-100);
 }
 
 hr {
@@ -157,10 +157,10 @@ hr {
 /* UIKIT Print Overrides */
 @media print{
     *,::after,::before{
-        background:var(--background)!important;
-        color:var(--neutral-100)!important;
-        box-shadow:none!important;
-        text-shadow:none!important
+        background:var(--background) !important;
+        color:var(--neutral-100) !important;
+        box-shadow:none !important;
+        text-shadow:none !important
     }
     h1 {
         color: var(--primary-000) !important;;
@@ -186,4 +186,5 @@ hr {
     .tag-list div {
         background-color: var(--neutral-800) !important;
     }
+
 }
