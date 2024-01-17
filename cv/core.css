@@ -134,6 +134,7 @@ hr {
     padding: 0;
     margin-bottom: 18px;
     line-height: 1.75;
+    flex-wrap: wrap;
 }
 
 .tag-list div {
