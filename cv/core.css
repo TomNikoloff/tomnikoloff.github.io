@@ -21,6 +21,7 @@ body {
 
     --primary-000: #8c52ff;
 
+    --neutral-900: #666;
     --neutral-800: #888;
     --neutral-400: #bbb;
     --neutral-300: #ccc;
@@ -141,7 +142,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--neutral-800);
+    background-color: var(--neutral-900);
     color: var(--neutral-000);
     border-radius: var(--border-radius);
     padding: 6px 8px;
