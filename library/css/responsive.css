@@ -1,5 +1,16 @@
 /* Extra small devices (phones, 640px and down) */
-@media only screen and (max-width: 640px) {}
+@media only screen and (max-width: 640px) {
+    .skill-ring-container {
+        width: 90px;
+        height: 90px;
+    }
+    .ring {
+        width: 90px;
+        height: 90px;
+        line-height: 90px;
+        letter-spacing: 1px;
+    }
+}
 
 /* Small devices (portrait tablets and large phones, 640px and up) */
 @media only screen and (min-width: 640px) {
@@ -176,7 +187,7 @@
     }
 
     .about-section-img {
-        width: 40vw;
+        width: 37vw;
         max-width: 900px;
     }    
 

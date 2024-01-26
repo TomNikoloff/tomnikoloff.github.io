@@ -320,7 +320,7 @@ _CORE={
 
             _CORE.funcs.buildLogoAnimations();
 
-            _CORE.funcs.buildSkillsAnimations();
+            //_CORE.funcs.buildSkillsAnimations();
 
             _CORE.funcs.buildHeaderAnimations();
 

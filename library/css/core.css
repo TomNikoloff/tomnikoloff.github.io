@@ -67,6 +67,15 @@ body::-webkit-scrollbar-thumb:hover {
     --tn-menu-bg-color: #101010;
     --tn--bg--light: #ffffff;
 
+    --neutral-1000: #272727;
+    --neutral-900: #666;
+    --neutral-800: #888;
+    --neutral-400: #bbb;
+    --neutral-300: #ccc;
+    --neutral-200: #eee;
+    --neutral-100: #fcfcfc;
+    --neutral-000: #fff;
+
     --tn-text-color: #b4b4b4;
     --tn--text--light: #1b232a;
 
@@ -313,7 +322,7 @@ a:hover {
     font-size: 1rem;
     font-family: 'La Belle Aurore', cursive;
     text-transform: lowercase;
-    color: black;
+    color: var(--neutral-800);
     font-weight: 500;
 }
 
@@ -560,7 +569,7 @@ h1:after {
 .experience-card {
     border-radius: 10px;
     border-left: 6px solid var(--tn-primary);
-    background-color: #323232;
+    background-color: var(--neutral-1000);
     box-shadow: var(--box--shadow--large);
 }
 
@@ -593,6 +602,22 @@ h1:after {
     top: 10rem;
     transform: rotateZ(-30deg);
     font-size: 15rem;
+}
+
+
+.skills-grid {
+    margin-bottom: -50px;
+}
+
+.skills-grid .skills-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; 
+    margin-left: 120px;
+}
+
+.skills-grid .skills-row:last-of-type {
+    margin-top: 0;
 }
 
 /* Projects */
@@ -706,7 +731,7 @@ h1:after {
     box-shadow: var(--box--shadow--small);
     padding: 25px;
     border-radius: 10px;
-    background-color: #323232;
+    background-color: var(--neutral-1000);
     font-size: 18px;
     border-right: 6px solid var(--tn-primary);
     border-left: 0;
@@ -796,7 +821,7 @@ h1:after {
 }
 
 .uk-card {
-    background-color: #323232;
+    background-color: var(--neutral-1000);
     border-radius: 10px;
     border-left: 6px solid var(--tn-primary);
     box-shadow: var(--box--shadow--small);
@@ -906,16 +931,21 @@ h1:after {
     margin: 0;
 }
 
+.skill-ring-container {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
 
 .ring
 {
-  /*position:absolute;*/
+  position:absolute;
   top:50%;
   left:50%;
   transform:translate(-50%,-50%);
   width:120px;
   height:120px;
-  background:transparent;
+  background:#222;
   border:3px solid #3c3c3c;
   border-radius:50%;
   text-align:center;
@@ -923,10 +953,11 @@ h1:after {
   font-family:sans-serif;
   font-size:16px;
   color:var(--tn-primary);
-  letter-spacing:4px;
+  letter-spacing:2px;
   text-transform:uppercase;
-  text-shadow:0 0 10px var(--tn-primary);;
+  text-shadow:0 0 10px var(--tn-primary);
   box-shadow:0 0 20px rgba(0,0,0,.5);
+  font-weight: 600;
 }
 .ring:before
 {
