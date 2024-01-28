@@ -546,6 +546,74 @@ h1:after {
         text-shadow: 0 1px 0 #8c52ff, 0 2px 0 #8c52ff, 0 3px 0 #8c52ff, 0 4px 0 #8c52ff, 0 5px 0 #8c52ff, 0 6px 0 #8c52ff, 0 7px 0 #8c52ff, 0 8px 0 #8c52ff, 0 9px 0 #8c52ff, 0 50px 30px rgba(0, 0, 0, 0.3);
 }
 
+.toggle-swicther-container {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    display: flex;
+}
+
+.toggle-swicther-container label {
+    height: 30px;
+    width: 60px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 0;
+    position: relative;
+    /*width: max-content;*/
+}
+
+.toggle-swicther-container input {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+}
+
+.toggle-swicther-container input:checked + span::after {
+    transform: translateX(30px);
+}
+
+.toggle-swicther-container span {
+    position: relative;
+    height: 30px;
+    width: 60px;
+}
+
+.toggle-swicther-container span::after {
+    background: var(--tn-text-color);
+    content: "";
+    border-radius: 7px;
+    display: flex;
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    top: 2px;
+    left: 1px;
+    transform: translate(0);
+    transition: transform .25s ease-in-out,opacity .25s ease-in-out;
+}
+
+.toggle-swicther-container i {
+    position: absolute;
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.toggle-swicther-container .bi-moon {
+    left: 5px;
+}   
+
+.toggle-swicther-container .bi-brightness-high {
+    right: 5px;
+}
+
+
 .about-title {
     display: flex;
 }
