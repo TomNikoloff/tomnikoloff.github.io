@@ -28,12 +28,12 @@
 }
 
 #dot_nav a.active .dot:nth-of-type(even) {
-    background: theme('colors.green');
+    background: theme('colors.purple.600');
     transform: scale(0.75);
 }
 
 #dot_nav a:hover .dot {
-    background: theme('colors.green');
+    background: theme('colors.purple.600');
     transform: scale(0.75);
 }
 
