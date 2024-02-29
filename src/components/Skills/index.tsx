@@ -157,7 +157,8 @@ const Skills = () => {
                                                         <span className='text-neutral-0'>databaseManagement:</span>
                                                         <span className='text-purple-600'> true</span>
                                                     </div> 
-                                                    <span className='text-neutral-0 reversed-bracket'>&#123;</span>
+                                                    <span className='reversed-bracket'>&#123;</span>
+                                                    <span>,</span>
                                                 </div>
      
                                                 <div className='ml-8'>
@@ -172,14 +173,17 @@ const Skills = () => {
                                                 <div className='ml-24'>
                                                     <span className='text-cyan'>this.</span>
                                                     <span className='text-neutral-0'>languages</span>
+                                                    <span className='text-green'> &&</span>
                                                 </div> 
                                                 <div className='ml-24'>
                                                     <span className='text-cyan'>this.</span>
                                                     <span className='text-neutral-0'>libraries</span>
+                                                    <span className='text-green'> &&</span>
                                                 </div> 
                                                 <div className='ml-24'>
                                                     <span className='text-cyan'>this.</span>
                                                     <span className='text-neutral-0'>frameworks</span>
+                                                    <span className='text-green'> &&</span>
                                                 </div> 
                                                 <div className='ml-24'>
                                                     <span className='text-cyan'>this.</span>
@@ -189,10 +193,10 @@ const Skills = () => {
                                                     <span>);</span>
                                                 </div> 
                                                 <div className='ml-8'>
-                                                    <span className='text-neutral-0 reversed-bracket'>&#123;</span>
+                                                    <span className='reversed-bracket'>&#123;</span>
                                                 </div> 
                                                 <div>
-                                                    <span className='text-neutral-0 reversed-bracket'>&#123;</span>
+                                                    <span className='reversed-bracket'>&#123;</span>
                                                 </div> 
                                             </code>
                                         </div>
