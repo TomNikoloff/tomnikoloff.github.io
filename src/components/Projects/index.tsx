@@ -20,8 +20,8 @@ const Projects = () => {
         <>
             <section>
                 <div className='area' data-section="projects">
-                    <div className='html-tags absolute top-12'>
-                        <span className='hidden sm:visible -ml-7'>
+                    <div className='html-tags absolute top-12 hidden sm:block'>
+                        <span className='-ml-7'>
                             &lt;section id = "projects"&gt;
                         </span>
                     </div>
