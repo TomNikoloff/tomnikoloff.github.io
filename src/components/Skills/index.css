@@ -1,0 +1,38 @@
+
+[data-section="skills"]::after {
+    content: "";
+    position: absolute;
+    margin: auto 0px;
+    top: 200px;
+    right: -100px;
+    bottom: 0;
+    opacity: 0.7;
+    filter: blur(10em);
+    background: rgb(130,68,255);
+    background: linear-gradient(126deg, rgba(130,68,255,1) 40%, rgba(249,38,174,1) 100%);
+    border-radius: 9999px;
+    width: 200px;
+    height: 200px;
+}
+
+[data-section="skills"] .background-text {
+    top: 10rem;
+    font-size: 15rem;
+    transform: rotateZ(-30deg);
+    left: 0;
+}
+
+.reversed-bracket {
+    display: inline-block;
+    transform: scaleX(-1); /* Flip horizontally */
+  }
+
+/*
+[data-section="skills"] .section-title h2 span:first-of-type {
+    color: theme('colors.purple.600');
+}
+
+[data-section="skills"] .section-title h2:last-of-type span:first-of-type {
+    color: theme('colors.pink');
+}
+*/

@@ -1,0 +1,30 @@
+/* Small devices (portrait tablets and large phones, 640px and up) */
+@media only screen and (min-width: 640px) {
+
+    .projects-title {
+        padding-left: 0;
+    }
+
+    .other-project-header {
+        font-size: 3rem;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1280px) {
+
+    .project-container:nth-of-type(odd) .project-content{
+        margin-right: -150px;
+    }
+    
+    .project-container:nth-of-type(even) .project-content {
+        margin-left: -150px;
+    }
+
+    [data-section="projects"] .background-text {
+        left: 3rem;
+        transform: rotateZ(25deg);
+    }
+
+}

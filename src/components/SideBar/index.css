@@ -1,0 +1,15 @@
+.vertical-container {
+    width: 40px;
+    position: fixed;
+    left: auto;
+    right: 10px;
+    z-index: 10;
+}
+
+@media (orientation:landscape) and (max-height: 600px){
+
+    .vertical-container {
+        display: none !important;
+    }
+  
+}

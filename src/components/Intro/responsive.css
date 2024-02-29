@@ -1,0 +1,96 @@
+
+@media (orientation:landscape) and (max-height: 600px){
+    .logo img{
+        width: 200px !important;
+    }
+
+    [data-section="intro"].area {
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    [data-section="intro"] .description {
+        font-size: 1.33rem;
+    }
+
+    .heading {
+        font-size: 7rem;
+    }
+
+    .logo {
+        right: 5%;
+        top: 13%;
+    }
+    
+    .logo img {
+        width: 200px;
+    }
+
+    .t-logo {
+        width: 60px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    [data-section="intro"] .description {
+        font-size: 1.65rem;
+    }
+
+    .logo {
+        right: 5%;
+        top: 12%;
+    }
+    
+    .logo img{
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    [data-section="intro"] .description {
+        font-size: 2rem;
+    }
+
+    .logo {
+        top: 10%;
+    }
+
+    .logo img{
+        width: 370px;
+    
+    }
+}
+
+@media only screen and (min-width: 1280px) { 
+    .logo {
+        top: 18%;
+    }
+    
+    .logo img{
+        width: 400px;
+    
+    }
+}
+
+  
+
+@media only screen and (min-width: 1536px) {
+    .logo {
+        top: 20%;
+    }
+    
+    .logo img{
+        width: 570px;
+    
+    }
+}
+  
+  /* Extra large devices (Desktops, 1600px and up) */
+  @media only screen and (min-width: 1600px) {
+    .logo img{
+        width: 700px;
+    }
+  }

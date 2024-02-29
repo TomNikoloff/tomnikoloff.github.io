@@ -1,0 +1,58 @@
+
+[data-section="intro"] {
+    height: 100vh;
+}
+
+.heading {
+    font-weight: 800;
+    line-height: 1;
+    position: relative;
+    font-family: 'Manrope', sans-serif;
+    font-size: 3.5rem;
+    color: theme('colors.neutral.0');
+}
+  
+.heading > span {
+    display: inline-block;
+}
+
+.heading > span:hover {
+    color: theme('colors.purple.600');
+    cursor: pointer;
+}
+
+.t-logo {
+    display: inline-block;
+    width: 40px;
+    vertical-align: middle;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+[data-section="intro"] .description {
+    font-size: 1rem;
+    color: theme('colors.neutral.300');
+    font-weight: 500;
+    font-family: 'Manrope', sans-serif;
+    line-height: 1.2;
+}
+
+.logo {
+    position: absolute;
+    top: 4%;
+    right: 7%;
+    transform: rotateZ(-30deg);
+    z-index: 1;
+    perspective: 25px;
+}
+
+.logo > div {
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+}
+
+.logo img {
+    width: 100px;
+}

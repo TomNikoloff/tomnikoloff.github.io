@@ -1,0 +1,23 @@
+
+[data-section="contact"] {
+    height: 100vh;
+}
+
+[data-section="contact"]::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    opacity: 0.7;
+    filter: blur(10em);
+    /*transform: translateY(120%) rotateX(95deg) scale(1, 0.35);*/
+    background: rgb(130,68,255);
+    background: linear-gradient(126deg, rgba(130,68,255,1) 40%, rgba(249,38,174,1) 100%);
+    border-radius: 9999px;
+    width: 50%;
+    height: 100px;
+}
+
+.email-btn {
+    padding: 1.25rem 2rem;
+    font-size: large;
+}

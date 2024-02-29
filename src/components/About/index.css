@@ -1,0 +1,11 @@
+
+[data-section="about"] .background-text {
+    left: 5%;
+    bottom: 40%;
+    font-size: 7rem;
+    transform: rotateZ(20deg);
+}
+
+[data-section="about"] .section-title {
+    display: flex;
+}

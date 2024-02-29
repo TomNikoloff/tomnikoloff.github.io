@@ -1,0 +1,36 @@
+.vertical-container.top {
+    top: 0px;
+}
+
+.vertical-container.top > div {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.vertical-container.top > div::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: theme('colors.neutral.0');
+}
+
+.vertical-container.top > div > a{
+    margin: 20px auto;
+    padding: 10px;
+    font-family: 'Manrope', sans-serif;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    writing-mode: vertical-rl;
+    color: theme('colors.neutral.0');
+    transition: 0.2s ease-in-out;
+}
+
+.vertical-container.top > div > a:hover{
+    color: theme('colors.purple.600');
+    transform: translateY(-5px);
+}
