@@ -746,7 +746,6 @@ button.btn {
   
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1280px) {
 
   p {
@@ -755,12 +754,10 @@ button.btn {
 
 }
 
-/* Extra large devices (Desktops, 1400px and up) */
 @media only screen and (min-width: 1536px) {
 
 }
 
-/* Extra large devices (Desktops, 1600px and up) */
 @media only screen and (min-width: 1600px) {
   
 
