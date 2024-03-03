@@ -4,6 +4,7 @@ import './index.css';
 import './responsive.css';
 
 import ProjectsData from '../../data/projects.json';
+import ProjectImages from '../../utils/projectImages';
 
 interface Project {
     title: string;
@@ -22,7 +23,7 @@ interface ProjectsData {
     other: Project[];
 }
 
-const NewProjects: React.FC = () => {
+const Projects: React.FC = () => {
 
     /*
     const openProject = (link: string) => {
@@ -68,8 +69,8 @@ const NewProjects: React.FC = () => {
                         <div className='projects-area'>
 
                             {ProjectsData.main.map((project, index) => (
-                                <>
-                                    <div className={`grid xl:grid-cols-2 gap-20 project-container ${index !== 0 ? 'mt-24' : ''}`} key={index}>
+                                <div key={project.title + index}>
+                                    <div className={`grid xl:grid-cols-2 gap-20 project-container ${index !== 0 ? 'mt-24' : ''}`}>
                                         <div className={`flex items-center ${index % 2 === 0 ? 'xl:order-first order-last' : 'order-last'}`}>
                                             <div className="project-content" data-aos={`${index % 2 === 0 ? 'zoom-out-right' : 'zoom-out-left'}`}>
                                                 <p className="project-type">{project.type}</p>
@@ -106,7 +107,7 @@ const NewProjects: React.FC = () => {
                                                     <div className="project-image-container" data-aos={`${index % 2 === 0 ? 'fade-left' : 'fade-right'}`}>
                                                         <div className="overlay"></div>
                                                         <div className="project-image">
-                                                            <img src={`../../assets/${project.image}`} />
+                                                            <ProjectImages image={project.image} />
                                                         </div>
                                                     </div>
                                                 </a>
@@ -114,7 +115,7 @@ const NewProjects: React.FC = () => {
                                                 <div className="project-image-container" data-aos="fade-left">
                                                     <div className="overlay"></div>
                                                     <div className="project-image">
-                                                        <img src={`../../assets/${project.image}`} />
+                                                        <ProjectImages image={project.image} />
                                                     </div>
                                                 </div>
                                             )}
@@ -123,9 +124,9 @@ const NewProjects: React.FC = () => {
 
 
                                     {index !== ProjectsData.main.length - 1 && (
-                                        <hr className="divide-y xl:invisible my-5" />
+                                        <hr key={`divider-${index}`} className="divide-y xl:invisible my-5" />
                                     )}
-                                </>
+                                </div>
                             ))}
                             
                             <div className="flex justify-center mt-16">
@@ -169,8 +170,8 @@ const NewProjects: React.FC = () => {
                             </div>
 
                             <div className="project-grid grid lg:grid-cols-3 gap-7 lg:gap-10 mt-16" >
-                                {ProjectsData.other.map((project) => (
-                                    <div>
+                                {ProjectsData.other.map((project, index) => (
+                                    <div key={project.title + index}>
                                         <div className="card p-7" data-aos="zoom-out-up">
                                             <div>
                                                 <div className="flex justify-between">
@@ -229,4 +230,4 @@ const NewProjects: React.FC = () => {
     );
 }
 
-export default NewProjects;
+export default Projects;
