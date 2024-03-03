@@ -1,0 +1,80 @@
+{
+    "main":[
+        {
+            "title": "React - Weather Application",
+            "type": "Featured Project",
+            "description": "A <a className='link link--anim' href='https://tom-nikoloff-react-weather.netlify.app/' target='blank' rel='noopener noreferrer'><span>weather application</span></a> created using React that allows the user to obtain the current, 3 hourly and 5 day forecasts for any specific location around the world. It provides a user-friendly interface for entering a location (such as a city or by using their current location) and then displays weather information, including temperature, humidity, wind speed, and conditions like rain, snow, or clear skies. The resulting weather can be toggled between Celcius and Fahrenheit.",
+            "technologies": ["React", "TypeScript", "Open Weather API", "Netlify", "Styled Components", "Geolocation API"],
+            "links": {
+                "live": "https://tom-nikoloff-react-weather.netlify.app/",
+                "github": "https://github.com/TomNikoloff/react-weather-app_ts"
+            },
+            "image": "ReactWeatherApp.png"
+        },
+        {
+            "title": "Caseflow CRM",
+            "type": "Work In Progress",
+            "description": "A completely custom mortgage and protection CRM platform built from the ground up with the aim to be more complete than any other currently on the market. The CRM is structured with a modular design, allowing for easy integration and customization of specific functionalities. Enhancing productivity through the implementation of iframes, enabling concurrent management of multiple leads, cases, and other tasks seamlessly. This ensures that users can work on various items simultaneously without the risk of losing any progress.",
+            "technologies": ["JavaScript", "PHP", "SQLite", "UiKit", "getAddress()", "PropertyData API", "Google Street View API"],
+            "image": "CRM.png"
+        },
+        {
+            "title": "Kata Flow",
+            "type": "Featured Project",
+            "description": "A lead form builder for <a className='link link--anim' href='https://www.charwinprivateclients.co.uk/' target='blank' rel='noopener noreferrer'><span>Charwin Private Clients Ltd</span></a>. Build a web form from scratch using a drag and drop card based system. Add calculations and logic in the form of variables, hidden fields, conditionals and more. Minipulate text and values using a twig based template lanaguage and custom filters. Dynamically change the style and layout of the cards, using a vast array of options. <a className='link link--anim' href='https://charwinbridging.co.uk/' target='blank' rel='noopener noreferrer'><span>Charwin Bridiging</span></a> and <a className='link link--anim' href='https://charwinsecuredloans.co.uk/' target='blank' rel='noopener noreferrer'><span>Charwin Secured Loans</span></a> are just a couple of the many forms created by the builder.",
+            "technologies": ["JavaScript", "GoJs", "UiKit", "PHP", "Twig", "Firebase"],
+            "image": "KataFlow.png"
+        },
+        {
+            "title": "Norfolk Knights",
+            "type": "Featured Project",
+            "description": "A website for <a className='link link--anim' href='https://www.norfolk-knights-wheelchair-rugby.co.uk/' target='_blank' rel='noopener noreferrer'><span>Norfolk Knights</span></a> the local wheelchair rugby team. Zoho Creator was used to create a simple management interface for the client. The information is then converted into Markdown files with YAML headers. The files are then fed into GRAV CMS to modify, remove or even build completley new sections or pages. This allows the client to manage and change their website on the fly.",
+            "technologies": ["GRAV CMS", "MD", "YAML", "Zoho Creator", "UiKit"],
+            "links": {
+                "live": "https://www.norfolk-knights-wheelchair-rugby.co.uk/"
+            },
+            "image": "NorfolkKnights.png"
+        },
+        {
+            "title": "Financial Calculators",
+            "type": "Work In Progress",
+            "description": "After stuggling to find a website with <a className='link link--anim' href='https://financial-calculators.co.uk/' target='blank' rel='noopener noreferrer'><span>financial calculators</span></a> that dynamically update without having to enter your desired values and then click a button to see the results. I decided to create my own. All the values dynamically update as the sliders are dragged, enter is pressed or the user clicks away from the inputs. The aim is build a vast array of calculators and tools, along with key finanical imformation.",
+            "technologies": ["HTML", "CSS", "JavaScript", "UiKit"],
+            "links": {
+                "live": "https://financial-calculators.co.uk/",
+                "github": "https://github.com/TomNikoloff/financial-calculators"
+            },
+            "image": "FinancialCalculators.png"
+        }
+    ],
+    "other":[
+        {
+            "title": "Memory Game",
+            "description": "A simple memory game built using React.",
+            "technologies": ["React", "Vite", "UiKit"],
+            "links": {
+                "live": "https://tomnikoloff.github.io/react-memory-game/",
+                "github": "https://github.com/TomNikoloff/react-memory-game"
+            }
+        },
+        {
+            "title": "To-Do List",
+            "description": "A simple to-do list built using React.",
+            "technologies": ["React", "Vite", "Bootstrap"],
+            "links": {
+                "live": "https://tomnikoloff.github.io/react-to-do-list/",
+                "github": "https://github.com/TomNikoloff/react-to-do-list"
+            }
+        },
+        {
+            "title": "Rock, Paper & Scissors",
+            "description": "A simple rock, paper and scissors game.",
+            "technologies": ["React", "Vite", "UiKit"],
+            "links": {
+                "live": "https://tomnikoloff.github.io/react-rock-paper-scissors/",
+                "github": "https://github.com/TomNikoloff/react-rock-paper-scissors"
+            }
+        }
+    ]
+}
+  

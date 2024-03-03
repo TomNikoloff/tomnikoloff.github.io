@@ -198,8 +198,12 @@
     color: theme('colors.pink');
 }
 
-.project-links a{
+.project-links a {
     margin-right: 10px;
+}
+
+.project-links a:hover {
+    color: theme('colors.purple.600');
 }
 
 .project-links a:first-child {
@@ -250,7 +254,7 @@
 
 .card:hover {
     box-shadow: var(--box--shadow--large);
-    cursor: pointer;
+    /*cursor: pointer;*/
     transform: translateY(-10px) !important;
 }
 
