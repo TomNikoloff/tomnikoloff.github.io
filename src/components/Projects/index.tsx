@@ -106,7 +106,7 @@ const NewProjects: React.FC = () => {
                                                     <div className="project-image-container" data-aos={`${index % 2 === 0 ? 'fade-left' : 'fade-right'}`}>
                                                         <div className="overlay"></div>
                                                         <div className="project-image">
-                                                            <img src={`/src/assets/${project.image}`} />
+                                                            <img src={`../../assets/${project.image}`} />
                                                         </div>
                                                     </div>
                                                 </a>
@@ -114,7 +114,7 @@ const NewProjects: React.FC = () => {
                                                 <div className="project-image-container" data-aos="fade-left">
                                                     <div className="overlay"></div>
                                                     <div className="project-image">
-                                                        <img src={`/src/assets/${project.image}`} />
+                                                        <img src={`../../assets/${project.image}`} />
                                                     </div>
                                                 </div>
                                             )}
