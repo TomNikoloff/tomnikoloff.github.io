@@ -1,5 +1,4 @@
 import parse from 'html-react-parser';
-import { MouseEvent } from 'react';
 
 import './index.css';
 import './responsive.css';
@@ -25,9 +24,11 @@ interface ProjectsData {
 
 const NewProjects: React.FC = () => {
 
+    /*
     const openProject = (link: string) => {
         window.open(link, '_blank');
     }
+    */
 
     return (
         <>
@@ -120,7 +121,10 @@ const NewProjects: React.FC = () => {
                                         </div>
                                     </div> 
 
-                                    <hr className="divide-y xl:invisible my-5" />
+
+                                    {index !== ProjectsData.main.length - 1 && (
+                                        <hr className="divide-y xl:invisible my-5" />
+                                    )}
                                 </>
                             ))}
                             
