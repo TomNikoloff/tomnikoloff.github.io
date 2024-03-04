@@ -1,4 +1,5 @@
 import parse from 'html-react-parser';
+import { Fragment } from 'react';
 
 import './index.css';
 import './responsive.css';
@@ -68,8 +69,8 @@ const Projects: React.FC = () => {
                         </div>
                         <div className='projects-area'>
                             {ProjectsData.main.map((project, index) => (
-                                <>
-                                    <div key={project.title + index} className={`grid xl:grid-cols-2 gap-20 project-container ${index !== 0 ? 'mt-24' : ''}`}>
+                                <Fragment key={project.title + index}>
+                                    <div className={`grid xl:grid-cols-2 gap-20 project-container ${index !== 0 ? 'mt-24' : ''}`}>
                                         <div className={`flex items-center ${index % 2 === 0 ? 'xl:order-first order-last' : 'order-last'}`}>
                                             <div className="project-content" data-aos={`${index % 2 === 0 ? 'zoom-out-right' : 'zoom-out-left'}`}>
                                                 <p className="project-type">{project.type}</p>
@@ -125,7 +126,7 @@ const Projects: React.FC = () => {
                                     {index !== ProjectsData.main.length - 1 && (
                                         <hr key={`divider-${index}`} className="divide-y xl:invisible my-5" />
                                     )}
-                                </>
+                                </Fragment>
                             ))}
                             
                             <div className="flex justify-center mt-16">
