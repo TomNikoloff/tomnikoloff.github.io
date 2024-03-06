@@ -116,7 +116,7 @@
     border-radius: 10px;
     background-color: theme('colors.blue.850');
     font-size: 18px;
-    border: 1px solid theme('colors.blue.750');
+    /*border: 1px solid theme('colors.blue.750');*/
 }
 
 .project-container:nth-of-type(3n+1) .project-description {

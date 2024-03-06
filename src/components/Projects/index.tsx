@@ -75,7 +75,7 @@ const Projects: React.FC = () => {
                                             <div className="project-content" data-aos={`${index % 2 === 0 ? 'zoom-out-right' : 'zoom-out-left'}`}>
                                                 <p className="project-type">{project.type}</p>
                                                 <h3 className="project-title">{project.title}</h3>
-                                                <div className="project-description">
+                                                <div className="project-description bg-gradient-to-r border border-blue-750 from-blue-750 to-purple-950 via-blue-850">
                                                     <p>
                                                         {parse(project.description)}
                                                     </p>
@@ -172,7 +172,7 @@ const Projects: React.FC = () => {
                             <div className="project-grid grid lg:grid-cols-3 gap-7 lg:gap-10 mt-16" >
                                 {ProjectsData.other.map((project, index) => (
                                     <div key={project.title + index}>
-                                        <div className="card p-7" data-aos="zoom-out-up">
+                                        <div className="card p-7 bg-gradient-to-r from-blue-750 to-purple-950 via-blue-850" data-aos="zoom-out-up">
                                             <div>
                                                 <div className="flex justify-between">
                                                     <div>
