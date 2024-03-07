@@ -1,4 +1,6 @@
-import './App.css';
+import './styles/App.css';
+import './styles/animations.css';
+import './styles/responsive.css';
 
 import Nav from './components/Nav';
 import Intro from './components/Intro/index';
@@ -13,6 +15,7 @@ import SideBar from './components/SideBar';
 import {useEffect} from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { addJelloAnimation } from './utils/animations';
 
 function App() {
 
@@ -22,6 +25,7 @@ function App() {
         duration: 750, // values from 0 to 3000, with step 50ms
         mirror: true
     });
+    addJelloAnimation();
   }, [])
 
   return (

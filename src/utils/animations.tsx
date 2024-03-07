@@ -1,44 +1,70 @@
 
 export const addJelloAnimation = () => {
-    const handleAnimationEnd = (letter: HTMLElement) => {
+
+    const handleAnimationEnd = (e: AnimationEvent) => {
+        const letter = e.target as HTMLElement;
         letter.classList.remove('jello-vertical');
+        console.log(letter)
     };
 
-    const handleMouseOver = (letter: HTMLElement) => {
+    const handleMouseOver = (e: MouseEvent) => {
+        const letter = e.target as HTMLElement;
+        console.log(letter)
         letter.classList.add('jello-vertical');
     };
 
-    const jellowHeaderMain = document.querySelector('h1')?.querySelectorAll('span');
-    if (jellowHeaderMain) {
-        jellowHeaderMain.forEach((letter: HTMLElement) => {
-        letter.addEventListener('animationend', () => handleAnimationEnd(letter));
-        letter.addEventListener('mouseover', () => handleMouseOver(letter));
+    const jelloHeaderMain = document.querySelector('h1')?.querySelectorAll('span');
+    if(jelloHeaderMain){
+        jelloHeaderMain.forEach(letter => {
+            letter.addEventListener('animationend', handleAnimationEnd);
+            letter.addEventListener('mouseover', handleMouseOver);
         });
     }
 
     const jelloHeaders = document.querySelectorAll('h2');
-    jelloHeaders.forEach((header: HTMLElement) => {
-            const jelloLetters = header.querySelectorAll('span');
-            jelloLetters.forEach((letter: HTMLElement) => {
-            letter.addEventListener('animationend', () => handleAnimationEnd(letter));
-            letter.addEventListener('mouseover', () => handleMouseOver(letter));
-            });
+    jelloHeaders.forEach(header => {
+        const jelloLetters = header.querySelectorAll('span');
+
+        jelloLetters.forEach(letter => {
+            letter.addEventListener('animationend', handleAnimationEnd);
+            letter.addEventListener('mouseover', handleMouseOver);
+        });
     });
 
-  // Cleanup function
+    const jelloHeadersOther = document.querySelectorAll('h3');
+    jelloHeadersOther.forEach(header => {
+        const jelloLetters = header.querySelectorAll('span');
+
+        jelloLetters.forEach(letter => {
+            letter.addEventListener('animationend', handleAnimationEnd);
+            letter.addEventListener('mouseover', handleMouseOver);
+        });
+    });
+
     return () => {
-        if (jellowHeaderMain) {
-            jellowHeaderMain.forEach((letter: HTMLElement) => {
-                letter.removeEventListener('animationend', () => handleAnimationEnd(letter));
-                letter.removeEventListener('mouseover', () => handleMouseOver(letter));
+
+        if (jelloHeaderMain) {
+            jelloHeaderMain.forEach(letter => {
+                letter.removeEventListener('animationend', handleAnimationEnd);
+                letter.removeEventListener('mouseover', handleMouseOver);
             });
         }
 
-        jelloHeaders.forEach((header: HTMLElement) => {
-        const jelloLetters = header.querySelectorAll('span');
-            jelloLetters.forEach((letter: HTMLElement) => {
-                letter.removeEventListener('animationend', () => handleAnimationEnd(letter));
-                letter.removeEventListener('mouseover', () => handleMouseOver(letter));
+        jelloHeaders.forEach(header => {
+            const jelloLetters = header.querySelectorAll('span');
+
+            jelloLetters.forEach(letter => {
+                letter.removeEventListener('animationend', handleAnimationEnd);
+                letter.removeEventListener('mouseover', handleMouseOver);
+            });
+        });
+
+        jelloHeadersOther.forEach(header => {
+            const jelloLetters = header.querySelectorAll('span');
+
+            jelloLetters.forEach(letter => {
+                letter.removeEventListener('animationend', handleAnimationEnd);
+                letter.removeEventListener('mouseover', handleMouseOver);
             });
         });
     };

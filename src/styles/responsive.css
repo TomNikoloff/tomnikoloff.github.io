@@ -1,0 +1,92 @@
+/* Responsive */
+
+@media only screen and (max-width: 640px) {
+
+}
+
+@media only screen and (min-width: 640px) {
+
+  :root {
+      --box--shadow--large: 0px 0px 100px 25px black;
+  }
+
+  section {
+    padding: 0 30px;
+  }
+  
+  .area {
+      padding: 6rem 3.5rem 6rem 4rem;
+  }
+
+  .content {
+    margin-left: 20px;
+  }
+
+  .section-title h2 {
+      font-size: 4rem;
+  }
+
+  section::before {
+    top: -100px;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  .area {
+      padding: 6rem 3.5rem 6rem 4rem;
+  }
+
+  .area p {
+    font-size: 18px;
+  }
+  
+
+}
+
+@media (orientation:landscape) and (max-height: 600px){
+
+  .area {
+    padding: 9rem 3.5rem 9rem 4rem;
+    /*height: auto;*/
+  }
+
+  .html-tags.section {
+    display: none;
+  }
+
+  p {
+      font-size: 16px;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .area{
+      padding: 9rem 3.5rem 9rem 4rem;
+  }
+
+  .section-title h2 {
+      font-size: 5rem;
+  }
+  
+}
+
+@media only screen and (min-width: 1280px) {
+
+  p {
+      font-size: 18px;
+  }    
+
+}
+
+@media only screen and (min-width: 1536px) {
+
+}
+
+@media only screen and (min-width: 1600px) {
+  
+
+}

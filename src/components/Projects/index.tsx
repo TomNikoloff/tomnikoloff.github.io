@@ -75,7 +75,7 @@ const Projects: React.FC = () => {
                                             <div className="project-content" data-aos={`${index % 2 === 0 ? 'zoom-out-right' : 'zoom-out-left'}`}>
                                                 <p className="project-type">{project.type}</p>
                                                 <h3 className="project-title">{project.title}</h3>
-                                                <div className="project-description bg-gradient-to-r border border-blue-750 from-blue-750 to-purple-950 via-blue-850">
+                                                <div className="project-description border border-blue-750 from-blue-750 to-purple-950 via-blue-850 bg-gradient-to-r">
                                                     <p>
                                                         {parse(project.description)}
                                                     </p>
