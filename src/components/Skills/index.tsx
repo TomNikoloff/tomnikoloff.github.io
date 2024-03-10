@@ -164,46 +164,78 @@ const Skills = () => {
                                                     <span className='reversed-bracket'>&#123;</span>
                                                     <span>,</span>
                                                 </div>
-     
                                                 <div className='ml-8'>
                                                     <span className='text-yellow'>employable:</span>
                                                     <span className='text-orange'> function</span>
                                                     <span>() &#123;</span>
                                                 </div> 
-                                                <div className='ml-16'>
-                                                    <span className='text-orange'>return</span>
-                                                    <span> (</span>
-                                                </div> 
-                                                <div className='ml-24'>
-                                                    <span className='text-cyan'>this.</span>
-                                                    <span className='text-neutral-0'>languages.length </span>
-                                                    <span className='text-orange'>&gt;=</span>
-                                                    <span className='text-purple-600'> 3</span>
-                                                    <span className='text-orange'> &&</span>
-                                                </div> 
-                                                <div className='ml-24'>
-                                                    <span className='text-cyan'>this.</span>
-                                                    <span className='text-neutral-0'>libraries.</span>
-                                                    <span className='text-yellow'>includes</span> 
-                                                    <span className='text-neutral-0'>(</span>
-                                                    <span>'</span>
-                                                    <span className='text-green'>React</span>
-                                                    <span>'</span>
-                                                    <span className='text-neutral-0'>)</span>
-                                                    <span className='text-orange'> &&</span>
-                                                </div> 
-                                                <div className='ml-24'>
-                                                    <span className='text-cyan'>this.</span>
-                                                    <span className='text-neutral-0'>skills.hardWorker</span>
-                                                    <span className='text-orange'> &&</span>
-                                                </div> 
-                                                <div className='ml-24'>
-                                                    <span className='text-cyan'>this.</span>
-                                                    <span className='text-neutral-0'>skills.problemSolver</span>
+
+                                                <div className='sm:hidden'>
+                                                    <div className='ml-16'>
+                                                        <span className='text-orange'>return</span>
+                                                        <span> [</span>
+                                                    </div> 
+                                                    <div className='ml-24'>
+                                                        <span className='text-cyan'>this.</span>
+                                                        <span className='text-neutral-0'>languages</span>
+                                                        <span>,</span>
+                                                    </div> 
+                                                    <div className='ml-24'>
+                                                        <span className='text-cyan'>this.</span>
+                                                        <span className='text-neutral-0'>libraries</span>
+                                                        <span>,</span>
+                                                    </div> 
+                                                    <div className='ml-24'>
+                                                        <span className='text-cyan'>this.</span>
+                                                        <span className='text-neutral-0'>frameworks</span>
+                                                        <span>,</span>
+                                                    </div> 
+                                                    <div className='ml-24'>
+                                                        <span className='text-cyan'>this.</span>
+                                                        <span className='text-neutral-0'>skills</span>
+                                                    </div> 
+                                                    <div className='ml-16'>
+                                                        <span>];</span>
+                                                    </div> 
                                                 </div>
-                                                <div className='ml-16'>
-                                                    <span>);</span>
-                                                </div> 
+
+                                                <div className='hidden sm:block'>
+                                                    <div className='ml-16'>
+                                                        <span className='text-orange'>return</span>
+                                                        <span> (</span>
+                                                    </div> 
+                                                    <div className='ml-24'>
+                                                        <span className='text-cyan'>this.</span>
+                                                        <span className='text-neutral-0'>languages.length </span>
+                                                        <span className='text-orange'>&gt;=</span>
+                                                        <span className='text-purple-600'> 3</span>
+                                                        <span className='text-orange'> &&</span>
+                                                    </div> 
+                                                    <div className='ml-24'>
+                                                        <span className='text-cyan'>this.</span>
+                                                        <span className='text-neutral-0'>libraries.</span>
+                                                        <span className='text-yellow'>includes</span> 
+                                                        <span className='text-neutral-0'>(</span>
+                                                        <span>'</span>
+                                                        <span className='text-green'>React</span>
+                                                        <span>'</span>
+                                                        <span className='text-neutral-0'>)</span>
+                                                        <span className='text-orange'> &&</span>
+                                                    </div> 
+                                                    <div className='ml-24'>
+                                                        <span className='text-cyan'>this.</span>
+                                                        <span className='text-neutral-0'>skills.hardWorker</span>
+                                                        <span className='text-orange'> &&</span>
+                                                    </div> 
+                                                    <div className='ml-24'>
+                                                        <span className='text-cyan'>this.</span>
+                                                        <span className='text-neutral-0'>skills.problemSolver</span>
+                                                    </div>
+                                                    <div className='ml-16'>
+                                                        <span>);</span>
+                                                    </div> 
+                                                </div>
+
                                                 <div className='ml-8'>
                                                     <span className='reversed-bracket'>&#123;</span>
                                                 </div> 
