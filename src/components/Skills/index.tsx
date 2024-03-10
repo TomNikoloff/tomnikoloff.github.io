@@ -162,32 +162,36 @@ const Skills = () => {
                                                 </div>
      
                                                 <div className='ml-8'>
-                                                    <span className='text-yellow'>summary:</span>
+                                                    <span className='text-yellow'>employable:</span>
                                                     <span className='text-orange'> function</span>
                                                     <span>() &#123;</span>
                                                 </div> 
                                                 <div className='ml-16'>
-                                                    <span className='text-orange'>return:</span>
+                                                    <span className='text-orange'>return</span>
                                                     <span> (</span>
                                                 </div> 
                                                 <div className='ml-24'>
                                                     <span className='text-cyan'>this.</span>
-                                                    <span className='text-neutral-0'>languages</span>
+                                                    <span className='text-neutral-0'>languages.length </span>
+                                                    <span className='text-green'>&gt;=</span>
+                                                    <span className='text-purple-600'> 3</span>
                                                     <span className='text-green'> &&</span>
                                                 </div> 
                                                 <div className='ml-24'>
                                                     <span className='text-cyan'>this.</span>
-                                                    <span className='text-neutral-0'>libraries</span>
+                                                    <span className='text-neutral-0'>libraries.</span>
+                                                    <span className='text-yellow'>includes</span> 
+                                                    <span className='text-neutral-0'>('React')</span>
                                                     <span className='text-green'> &&</span>
                                                 </div> 
                                                 <div className='ml-24'>
                                                     <span className='text-cyan'>this.</span>
-                                                    <span className='text-neutral-0'>frameworks</span>
+                                                    <span className='text-neutral-0'>skills.problemSolver</span>
                                                     <span className='text-green'> &&</span>
                                                 </div> 
                                                 <div className='ml-24'>
                                                     <span className='text-cyan'>this.</span>
-                                                    <span className='text-neutral-0'>skills</span>
+                                                    <span className='text-neutral-0'>skills.hardWorker</span>
                                                 </div>
                                                 <div className='ml-16'>
                                                     <span>);</span>
