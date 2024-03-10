@@ -144,18 +144,22 @@ const Skills = () => {
                                                     <div className='ml-8'>
                                                         <span className='text-neutral-0'>hardWorker:</span>
                                                         <span className='text-purple-600'> true</span>
+                                                        <span>,</span>
                                                     </div> 
                                                     <div className='ml-8'>
                                                         <span className='text-neutral-0'>problemSolver:</span>
                                                         <span className='text-purple-600'> true</span>
+                                                        <span>,</span>
                                                     </div> 
                                                     <div className='ml-8'>
                                                         <span className='text-neutral-0'>APIs:</span>
                                                         <span className='text-purple-600'> true</span>
+                                                        <span>,</span>
                                                     </div> 
                                                     <div className='ml-8'>
                                                         <span className='text-neutral-0'>databaseManagement:</span>
                                                         <span className='text-purple-600'> true</span>
+                                                        <span>,</span>
                                                     </div> 
                                                     <span className='reversed-bracket'>&#123;</span>
                                                     <span>,</span>
@@ -182,7 +186,9 @@ const Skills = () => {
                                                     <span className='text-neutral-0'>libraries.</span>
                                                     <span className='text-yellow'>includes</span> 
                                                     <span className='text-neutral-0'>(</span>
-                                                    <span className='text-green'>'React'</span>
+                                                    <span>'</span>
+                                                    <span className='text-green'>React</span>
+                                                    <span>'</span>
                                                     <span className='text-neutral-0'>)</span>
                                                     <span className='text-orange'> &&</span>
                                                 </div> 
