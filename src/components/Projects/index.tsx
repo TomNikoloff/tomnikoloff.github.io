@@ -70,10 +70,10 @@ const Projects: React.FC = () => {
                                 </span>
                             </div>
                         </div>
-                        <div className='projects-area -ml-8 -mr-5 sm:mx-0'>
+                        <div className='projects-area'>
                             {ProjectsData.main.map((project, index) => (
                                 <Fragment key={project.title + index}>
-                                    <div className={`grid xl:grid-cols-2 gap-20 project-container ${index !== 0 ? 'mt-16 sm:mt-24' : ''}`}>
+                                    <div className={`grid xl:grid-cols-2 gap-10 sm:gap-20 project-container ${index !== 0 ? 'mt-16 sm:mt-24' : ''}`}>
                                         <div className={`flex items-center ${index % 2 === 0 ? 'xl:order-first order-last' : 'order-last'}`}>
                                             <div className="project-content" data-aos={`${index % 2 === 0 ? 'zoom-out-right' : 'zoom-out-left'}`}>
                                                 <p className="project-type">{project.type}</p>

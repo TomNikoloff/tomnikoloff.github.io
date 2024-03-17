@@ -5,6 +5,10 @@
         padding-left: 0;
     }
 
+    .projects-area {
+        margin: 0;
+    }
+
     .other-project-header {
         font-size: 3rem;
     }
