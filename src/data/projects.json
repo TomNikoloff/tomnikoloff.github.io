@@ -1,9 +1,9 @@
 {
     "main":[
         {
-            "title": "React - Weather Application",
+            "title": "Weather Application",
             "type": "Featured Project",
-            "description": "A <a className='link link--anim' href='https://tom-nikoloff-react-weather.netlify.app/' target='blank' rel='noopener noreferrer'><span>weather application</span></a> created using React that allows the user to obtain the current, 3 hourly and 5 day forecasts for any specific location around the world. It provides a user-friendly interface for entering a location (such as a city or by using their current location) and then displays weather information, including temperature, humidity, wind speed, and conditions like rain, snow, or clear skies. The resulting weather can be toggled between Celcius and Fahrenheit.",
+            "description": "A <a className='link link--anim' href='https://tom-nikoloff-react-weather.netlify.app/' target='blank' rel='noopener noreferrer'><span>weather application</span></a> created using <span className='text-pink font-semibold'>React</span> that allows the user to obtain the current, 3 hourly and 5 day forecasts for any specific location around the world. It provides a user-friendly interface for entering a location (such as a city or by using their current location) and then displays weather information, including temperature, humidity, wind speed, and conditions like rain, snow, or clear skies. The resulting weather can be toggled between Celcius and Fahrenheit.",
             "technologies": ["React", "TypeScript", "Open Weather API", "Netlify", "Styled Components", "Geolocation API"],
             "links": {
                 "live": "https://tom-nikoloff-react-weather.netlify.app/",

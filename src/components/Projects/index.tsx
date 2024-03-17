@@ -104,7 +104,7 @@ const Projects: React.FC = () => {
                                                 )}
                                             </div>
                                         </div>
-                                        <div className="relativ">
+                                        <div className="relative">
                                             {project.links && project.links.live ? (
                                                 <a href={project.links.live} target="_blank" rel="noopener noreferrer">
                                                     <div className="project-image-container" data-aos={`${index % 2 === 0 ? 'fade-left' : 'fade-right'}`}>
