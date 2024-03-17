@@ -16,14 +16,16 @@
             "type": "Work In Progress",
             "description": "A completely custom mortgage and protection CRM platform built from the ground up with the aim to be more complete than any other currently on the market. The CRM is structured with a modular design, allowing for easy integration and customization of specific functionalities. Enhancing productivity through the implementation of iframes, enabling concurrent management of multiple leads, cases, and other tasks seamlessly. This ensures that users can work on various items simultaneously without the risk of losing any progress.",
             "technologies": ["JavaScript", "PHP", "SQLite", "UiKit", "getAddress()", "PropertyData API", "Google Street View API"],
-            "image": "CRM.png"
+            "image": "CRM-1.png",
+            "slides":["CRM-1.png", "CRM-2.png", "CRM-3.png"]
         },
         {
             "title": "Kata Flow",
             "type": "Featured Project",
             "description": "A lead form builder for <a className='link link--anim' href='https://www.charwinprivateclients.co.uk/' target='blank' rel='noopener noreferrer'><span>Charwin Private Clients Ltd</span></a>. Build a web form from scratch using a drag and drop card based system. Add calculations and logic in the form of variables, hidden fields, conditionals and more. Minipulate text and values using a twig based template lanaguage and custom filters. Dynamically change the style and layout of the cards, using a vast array of options. <a className='link link--anim' href='https://charwinbridging.co.uk/' target='blank' rel='noopener noreferrer'><span>Charwin Bridiging</span></a> and <a className='link link--anim' href='https://charwinsecuredloans.co.uk/' target='blank' rel='noopener noreferrer'><span>Charwin Secured Loans</span></a> are just a couple of the many forms created by the builder.",
             "technologies": ["JavaScript", "GoJs", "UiKit", "PHP", "Twig", "Firebase"],
-            "image": "KataFlow.png"
+            "image": "KataFlow.png",
+            "slides":["KataFlow.png", "KataFlow-2.png", "KataFlow-3.png", "KataFlow-4.png"]
         },
         {
             "title": "Norfolk Knights",

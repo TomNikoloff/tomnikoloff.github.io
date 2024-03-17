@@ -7,6 +7,8 @@ import './responsive.css';
 import ProjectsData from '../../data/projects.json';
 import ProjectImages from '../../utils/projectImages';
 
+import Carousel from '../Carousel';
+
 interface Project {
     title: string;
     type: string;
@@ -17,6 +19,7 @@ interface Project {
         github?:string;
     },
     image?:string;
+    slides?: string[];
 }
 
 interface ProjectsData {
@@ -105,22 +108,27 @@ const Projects: React.FC = () => {
                                             {project.links && project.links.live ? (
                                                 <a href={project.links.live} target="_blank" rel="noopener noreferrer">
                                                     <div className="project-image-container" data-aos={`${index % 2 === 0 ? 'fade-left' : 'fade-right'}`}>
-                                                        <div className="overlay"></div>
                                                         <div className="project-image">
                                                             <ProjectImages image={project.image} />
                                                         </div>
                                                     </div>
                                                 </a>
+                                            ) : project.slides ? (
+                                                <div className="project-image" data-aos="fade-left">
+                                                    {project.slides && <Carousel slides={project.slides}/>}
+                                                </div>
                                             ) : (
                                                 <div className="project-image-container" data-aos="fade-left">
-                                                    <div className="overlay"></div>
                                                     <div className="project-image">
                                                         <ProjectImages image={project.image} />
                                                     </div>
                                                 </div>
                                             )}
+
                                         </div>
+                                        
                                     </div> 
+                                   
 
 
                                     {index !== ProjectsData.main.length - 1 && (

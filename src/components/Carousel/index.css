@@ -1,0 +1,13 @@
+
+.slider-dot {
+    transition: 0.3s ease-in-out;
+}
+
+.slider-dot:hover {
+    background: theme('colors.purple.600');
+    transform: scale(0.75);
+}
+
+.slider-dot.active:hover {
+    transform: scale(1);
+}
