@@ -55,7 +55,7 @@ const Carousel = ({ slides } : Props) => {
                                 setCurrent(index);
                             }}
                             key={"circle_" + index}
-                            className={`rounded-full w-5 h-5 cursor-pointer border border-blue-500 slider-dot  ${
+                            className={`rounded-full cursor-pointer border border-blue-500 slider-dot  ${
                                 index === current ? "bg-purple-600 active" : "bg-neutral-400"
                             }`}
                         ></div>

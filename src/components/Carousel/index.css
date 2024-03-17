@@ -1,5 +1,7 @@
 
 .slider-dot {
+    width: 18px;
+    height: 18px;
     transition: 0.3s ease-in-out;
 }
 
