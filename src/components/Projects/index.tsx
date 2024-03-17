@@ -70,10 +70,10 @@ const Projects: React.FC = () => {
                                 </span>
                             </div>
                         </div>
-                        <div className='projects-area'>
+                        <div className='projects-area -ml-8 -mr-5 sm:mx-0'>
                             {ProjectsData.main.map((project, index) => (
                                 <Fragment key={project.title + index}>
-                                    <div className={`grid xl:grid-cols-2 gap-20 project-container ${index !== 0 ? 'mt-24' : ''}`}>
+                                    <div className={`grid xl:grid-cols-2 gap-20 project-container ${index !== 0 ? 'mt-16 sm:mt-24' : ''}`}>
                                         <div className={`flex items-center ${index % 2 === 0 ? 'xl:order-first order-last' : 'order-last'}`}>
                                             <div className="project-content" data-aos={`${index % 2 === 0 ? 'zoom-out-right' : 'zoom-out-left'}`}>
                                                 <p className="project-type">{project.type}</p>
@@ -104,7 +104,7 @@ const Projects: React.FC = () => {
                                                 )}
                                             </div>
                                         </div>
-                                        <div className="relative">
+                                        <div className="relativ">
                                             {project.links && project.links.live ? (
                                                 <a href={project.links.live} target="_blank" rel="noopener noreferrer">
                                                     <div className="project-image-container" data-aos={`${index % 2 === 0 ? 'fade-left' : 'fade-right'}`}>

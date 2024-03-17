@@ -9,6 +9,35 @@
         font-size: 3rem;
     }
 
+    .project-container:nth-of-type(odd) .project-content {
+        text-align: left !important;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+    .project-container:nth-of-type(even) .project-content {
+        text-align: right !important;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .project-container:nth-of-type(even) .project-tech-stack {
+        justify-content: end;
+    }
+    
+    .project-container:nth-of-type(even) .project-tech-stack li {
+        margin: 0px 0px 5px 20px;
+    }
+
+    .project-container:nth-of-type(even) .project-links {
+        justify-content: flex-end;
+    }    
+
+    .project-container:nth-of-type(2n) .project-links a:first-child {
+        margin-left: 20px;
+        margin-right: 0px;
+    }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

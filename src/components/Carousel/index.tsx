@@ -35,7 +35,7 @@ const Carousel = ({ slides } : Props) => {
                 </button>
             </div>
             */}
-            <div className="overflow-hidden relative">
+            <div className="overflow-hidden relative rounded-md">
                 <div 
                     className={`flex translate ease-out duration-500`}
                     style={{

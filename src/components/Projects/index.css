@@ -49,9 +49,13 @@
     box-shadow: 0px 0px 300px 50px black;
 }
 
+.project-image {
+    box-shadow: var(--box--shadow--large);
+}
+
 .project-image img {
     border-radius: 5px;
-    box-shadow: var(--box--shadow--large);
+    /*box-shadow: var(--box--shadow--large);*/
     border: 2px solid rgba(13, 28, 54, 0.7);
 }
 
@@ -96,18 +100,6 @@
 .project-container .project-content{
     position: relative;
     z-index: 10;
-}
-
-.project-container:nth-of-type(odd) .project-content {
-    text-align: left;
-    margin-right: 0;
-    margin-left: 0;
-}
-
-.project-container:nth-of-type(even) .project-content {
-    text-align: right;
-    margin-left: 0;
-    margin-right: 0;
 }
 
 .project-container  .project-description {
@@ -155,23 +147,11 @@
     margin: 0px 20px 5px 0px;
 }
 
-.project-container:nth-of-type(even) .project-tech-stack {
-    justify-content: end;
-}
-
-.project-container:nth-of-type(even) .project-tech-stack li {
-    margin: 0px 0px 5px 20px;
-}
-
 .project-links {
     display: flex;
     align-items: center;
     position: relative;
     margin-top: 10px;
-}
-
-.project-container:nth-of-type(even) .project-links {
-    justify-content: flex-end;
 }
 
 .project-links .icon-link{
@@ -208,11 +188,6 @@
 
 .project-links a:first-child {
     margin-right: 20px;
-}
-
-.project-container:nth-of-type(2n) .project-links a:first-child {
-    margin-left: 20px;
-    margin-right: 0px;
 }
 
 .project-slide-btn {
