@@ -47,7 +47,7 @@ const Carousel = ({ slides } : Props) => {
                     })}
                 </div>
             </div>
-            <div className="absolute bottom-0 flex justify-center gap-3 w-full -mb-2 z-50">
+            <div className="absolute bottom-0 flex justify-center gap-3 w-full -mb-7  z-50">
                 {slides.map((_, index) => {
                     return (
                         <div 

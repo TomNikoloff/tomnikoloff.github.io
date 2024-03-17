@@ -114,7 +114,7 @@ const Projects: React.FC = () => {
                                                     </div>
                                                 </a>
                                             ) : project.slides ? (
-                                                <div className="project-image" data-aos="fade-left">
+                                                <div className="project-image mb-2 sm:mb-0" data-aos="fade-left">
                                                     {project.slides && <Carousel slides={project.slides}/>}
                                                 </div>
                                             ) : (
