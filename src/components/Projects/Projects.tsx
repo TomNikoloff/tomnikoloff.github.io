@@ -1,13 +1,12 @@
 import parse from 'html-react-parser';
 import { Fragment } from 'react';
 
-import './index.css';
-import './responsive.css';
+import './Projects.css';
 
 import ProjectsData from '../../data/projects.json';
 import ProjectImages from '../../utils/projectImages';
 
-import Carousel from '../Carousel';
+import Carousel from '../Carousel/Carousel';
 
 interface Project {
     title: string;

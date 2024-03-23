@@ -1,5 +1,5 @@
 import { useState } from "react";
-import './index.css';
+import './Carousel.css';
 
 interface Props {
     slides: string[]

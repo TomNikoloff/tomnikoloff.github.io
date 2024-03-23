@@ -1,5 +1,4 @@
-import './index.css';
-import './responsive.css';
+import './Skills.css';
 
 const Skills = () => {
     return(

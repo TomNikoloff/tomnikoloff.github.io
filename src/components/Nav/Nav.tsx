@@ -1,4 +1,4 @@
-import './index.css';
+import './Nav.css';
 import { useState, useEffect } from 'react';
 
 interface ScrollNavigationProps {}

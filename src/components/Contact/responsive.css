@@ -1,8 +1,0 @@
-
-@media (orientation:landscape) and (max-height: 600px){
-
-    [data-section="contact"].area {
-      padding: 3rem 3.5rem 9rem 4rem;
-    }
-  
-  }

@@ -1,4 +1,4 @@
-import './index.css';
+import './Email.css';
 
 const Email = () => {
     return(

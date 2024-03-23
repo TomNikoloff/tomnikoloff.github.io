@@ -1,6 +1,6 @@
-import './index.css';
-import SectionNav from '../UI/SectionNav/index';
-import Email from '../UI/Email/index';
+import './SideBar.css';
+import SectionNav from '../UI/SectionNav/SectionNav';
+import Email from '../UI/Email/Email';
 
 const SideBar = () => {
     return(

@@ -1,14 +1,14 @@
-import './styles/App.css';
+import './styles/global.css';
 import './styles/animations.css';
 import './styles/responsive.css';
 
-import Nav from './components/Nav';
-import Intro from './components/Intro/index';
-import About from './components/About/index';
-import Skills from './components/Skills/index';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import SideBar from './components/SideBar';
+import Nav from './components/Nav/Nav';
+import Intro from './components/Intro/Intro';
+import About from './components/About/About';
+import Skills from './components/Skills/Skills';
+import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
+import SideBar from './components/SideBar/SideBar';
 
 
 // Animations

@@ -1,6 +1,5 @@
-import './index.css';
-import './responsive.css';
-import Footer from '../Footer';
+import './Contact.css';
+import Footer from '../Footer/Footer';
 
 const Contact = () => {
     return(

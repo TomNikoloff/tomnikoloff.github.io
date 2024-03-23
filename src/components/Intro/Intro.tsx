@@ -1,5 +1,4 @@
-import './index.css';
-import './responsive.css';
+import './Intro.css';
 import TLogo from '../../assets/t-logo.png';
 import Logo from '../../assets/logo1.png';
 

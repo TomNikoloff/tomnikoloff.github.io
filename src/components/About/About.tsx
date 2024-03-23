@@ -1,5 +1,4 @@
-import './index.css';
-import './responsive.css';
+import './About.css';
 import Workspace from '../../assets/workspace.webp';
 
 const About = () => {
