@@ -63,16 +63,16 @@
 }
 
 @media only screen and (min-width: 1280px) {
-    [data-section="about"] {
-        height: 100vh;
-    }
-
     [data-section="about"] .background-text {
         font-size: 24rem;
     }
 }
 
 @media only screen and (min-width: 1536px) {
+    [data-section="about"] {
+        height: 100vh;
+    }
+    
     [data-section="about"] .background-text {
         right: 0;
         bottom: -3rem;
