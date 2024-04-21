@@ -10,6 +10,10 @@ import KataFlow2 from '../assets/KataFlow-2.png';
 import KataFlow3 from '../assets/KataFlow-3.png';
 import KataFlow4 from '../assets/KataFlow-4.png';
 
+import Charwin1 from '../assets/Charw.in-1.png';
+import Charwin2 from '../assets/Charw.in-2.png';
+import Charwin3 from '../assets/Charw.in-3.png';
+
 import NorfolkKnights from '../assets/NorfolkKnights.png';
 import FinancialCalculators from '../assets/FinancialCalculators.png';
 
@@ -49,6 +53,18 @@ const ProjectImage = (image: any) => {
 
         case 'KataFlow-4.png':
             Image = KataFlow4;
+            break;
+
+        case 'Charw.in-1.png':
+            Image = Charwin1;
+            break;
+
+        case 'Charw.in-2.png':
+            Image = Charwin2;
+            break;
+
+        case 'Charw.in-3.png':
+            Image = Charwin3;
             break;
 
         case 'NorfolkKnights.png':

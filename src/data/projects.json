@@ -38,6 +38,14 @@
             "image": "NorfolkKnights.png"
         },
         {
+            "title": "Charw.in API",
+            "type": "Featured Project",
+            "description": "Charw.in API is a developer tool designed for creating shortened URLs that redirect users to pre-filled web forms, specifically tailored for Charwin customers. This API enables the dynamic generation of custom links that can embed form data, facilitating direct and efficient customer interactions. It supports various HTTP methods for link creation and management, offers robust analytics for tracking link usage, and ensures security with configurable access permissions. ",
+            "technologies": ["JavaScript", "PHP", "SQLite", "UiKit"],
+            "image": "Charw.in-1.png",
+            "slides":["Charw.in-1.png", "Charw.in-2.png", "Charw.in-3.png"]
+        },
+        {
             "title": "Financial Calculators",
             "type": "Work In Progress",
             "description": "After stuggling to find a website with <a className='link link--anim' href='https://financial-calculators.co.uk/' target='blank' rel='noopener noreferrer'><span>financial calculators</span></a> that dynamically update without having to enter your desired values and then click a button to see the results. I decided to create my own. All the values dynamically update as the sliders are dragged, enter is pressed or the user clicks away from the inputs. The aim is build a vast array of calculators and tools, along with key finanical imformation.",

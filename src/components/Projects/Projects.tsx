@@ -71,69 +71,71 @@ const Projects: React.FC = () => {
                         </div>
                         <div className='projects-area'>
                             {ProjectsData.main.map((project, index) => (
-                                <Fragment key={project.title + index}>
-                                    <div className={`grid xl:grid-cols-2 gap-10 sm:gap-20 project-container ${index !== 0 ? 'mt-16 sm:mt-24' : ''}`}>
-                                        <div className={`flex items-center ${index % 2 === 0 ? 'xl:order-first order-last' : 'order-last'}`}>
-                                            <div className="project-content" data-aos={`${index % 2 === 0 ? 'zoom-out-right' : 'zoom-out-left'}`}>
-                                                <p className="project-type">{project.type}</p>
-                                                <h3 className="project-title">{project.title}</h3>
-                                                <div className="project-description border border-blue-750 from-blue-750 to-purple-950 via-blue-850 bg-gradient-to-r">
-                                                    <p>
-                                                        {parse(project.description)}
-                                                    </p>
-                                                </div>
-                                                <ul className="project-tech-stack">
-                                                    {project.technologies.map((tech, techIndex) => (
-                                                        <li key={techIndex}>{tech}</li>
-                                                    ))}
-                                                </ul>
-                                                {project.links && (
-                                                    <div className="project-links">
-                                                        {project.links.live && (
-                                                            <a className="icon-link" href={project.links.live} target="_blank" rel="noopener noreferrer">
-                                                                <i className="bi bi-box-arrow-up-right"></i>
-                                                            </a>
-                                                        )}
-                                                        {project.links.github && (
-                                                            <a className="icon-link" href={project.links.github} target="_blank" rel="noopener noreferrer">
-                                                                <i className="bi bi-github"></i>
-                                                            </a>
-                                                        )}
+                                project.title.trim() !== 'Financial Calculators' ? (
+                                    <Fragment key={project.title + index}>
+                                        <div className={`grid xl:grid-cols-2 gap-10 sm:gap-20 project-container ${index !== 0 ? 'mt-16 sm:mt-24' : ''}`}>
+                                            <div className={`flex items-center ${index % 2 === 0 ? 'xl:order-first order-last' : 'order-last'}`}>
+                                                <div className="project-content" data-aos={`${index % 2 === 0 ? 'zoom-out-right' : 'zoom-out-left'}`}>
+                                                    <p className="project-type">{project.type}</p>
+                                                    <h3 className="project-title">{project.title}</h3>
+                                                    <div className="project-description border border-blue-750 from-blue-750 to-purple-950 via-blue-850 bg-gradient-to-r">
+                                                        <p>
+                                                            {parse(project.description)}
+                                                        </p>
                                                     </div>
-                                                )}
+                                                    <ul className="project-tech-stack">
+                                                        {project.technologies.map((tech, techIndex) => (
+                                                            <li key={techIndex}>{tech}</li>
+                                                        ))}
+                                                    </ul>
+                                                    {project.links && (
+                                                        <div className="project-links">
+                                                            {project.links.live && (
+                                                                <a className="icon-link" href={project.links.live} target="_blank" rel="noopener noreferrer">
+                                                                    <i className="bi bi-box-arrow-up-right"></i>
+                                                                </a>
+                                                            )}
+                                                            {project.links.github && (
+                                                                <a className="icon-link" href={project.links.github} target="_blank" rel="noopener noreferrer">
+                                                                    <i className="bi bi-github"></i>
+                                                                </a>
+                                                            )}
+                                                        </div>
+                                                    )}
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div className="relative">
-                                            {project.links && project.links.live ? (
-                                                <a href={project.links.live} target="_blank" rel="noopener noreferrer">
-                                                    <div className="project-image-container" data-aos={`${index % 2 === 0 ? 'fade-left' : 'fade-right'}`}>
+                                            <div className="relative">
+                                                {project.links && project.links.live ? (
+                                                    <a href={project.links.live} target="_blank" rel="noopener noreferrer">
+                                                        <div className="project-image-container" data-aos={`${index % 2 === 0 ? 'fade-left' : 'fade-right'}`}>
+                                                            <div className="project-image">
+                                                                <ProjectImages image={project.image} />
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                ) : project.slides ? (
+                                                    <div className="project-image mb-2 sm:mb-0" data-aos="fade-left">
+                                                        {project.slides && <Carousel slides={project.slides}/>}
+                                                    </div>
+                                                ) : (
+                                                    <div className="project-image-container" data-aos="fade-left">
                                                         <div className="project-image">
                                                             <ProjectImages image={project.image} />
                                                         </div>
                                                     </div>
-                                                </a>
-                                            ) : project.slides ? (
-                                                <div className="project-image mb-2 sm:mb-0" data-aos="fade-left">
-                                                    {project.slides && <Carousel slides={project.slides}/>}
-                                                </div>
-                                            ) : (
-                                                <div className="project-image-container" data-aos="fade-left">
-                                                    <div className="project-image">
-                                                        <ProjectImages image={project.image} />
-                                                    </div>
-                                                </div>
-                                            )}
+                                                )}
 
-                                        </div>
-                                        
-                                    </div> 
-                                   
+                                            </div>
+                                            
+                                        </div> 
+                                    
 
 
-                                    {index !== ProjectsData.main.length - 1 && (
-                                        <hr key={`divider-${index}`} className="divide-y xl:invisible my-5" />
-                                    )}
-                                </Fragment>
+                                        {index !== ProjectsData.main.length - 1 && (
+                                            <hr key={`divider-${index}`} className="divide-y xl:invisible my-5" />
+                                        )}
+                                    </Fragment>
+                                ) : null
                             ))}
                             
                             <div className="flex justify-center mt-16">
