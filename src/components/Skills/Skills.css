@@ -22,10 +22,12 @@
     left: 0;
 }
 
+/* Using &#125; for reversed bracket
 .reversed-bracket {
     display: inline-block;
-    transform: scaleX(-1); /* Flip horizontally */
-  }
+    transform: scaleX(-1);
+} 
+*/
 
 /*
 [data-section="skills"] .section-title h2 span:first-of-type {

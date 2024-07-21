@@ -89,159 +89,159 @@ const Skills = () => {
                                             </div>
                                         </div>
                                         <div className="px-2 py-2 sm:px-8 sm:py-8 border-t-[2px] border-blue-750 to-blue-750 overflow-hidden">
-                                            <code className="font-mono">
-                                                <div>
-                                                    <span className='mr-2 text-pink'>const</span>
-                                                    <span className='mr-2 text-neutral-0'>developer</span>
-                                                    <span className='mr-2 text-pink'>=</span>
-                                                    <span className='mr-2'>&#123;</span>
-                                                </div>
+                                        <code className="font-mono">
+                                            <div>
+                                                <span className='mr-2 text-pink'>const</span>
+                                                <span className='mr-2 text-neutral-0'>developer</span>
+                                                <span className='mr-2 text-pink'>=</span>
+                                                <span className='mr-2'>&#123;</span>
+                                            </div>
+                                            <div className='ml-8'>
+                                                <span className='text-neutral-0'>name:</span>
+                                                <span>'</span>
+                                                <span className='text-green'>Thomas Nikoloff</span>
+                                                <span>',</span>
+                                            </div>
+                                            <div className='ml-8'>
+                                                <span className='text-neutral-0'>languages:</span>
+                                                <span>[</span>
+                                                <span>'</span>
+                                                <span className='text-green'>HTML5</span>
+                                                <span>', '</span>
+                                                <span className='text-green'>CSS</span>
+                                                <span>', '</span>
+                                                <span className='text-green'>JavaScript</span>
+                                                <span>', '</span>
+                                                <span className='text-green'>TypeScript</span>
+                                                <span>', '</span>
+                                                <span className='text-green'>PHP</span>
+                                                <span>', '</span>
+                                                <span className='text-green'>SQL</span>
+                                                <span>'],</span>
+                                            </div>
+                                            <div className='ml-8'>
+                                                <span className='text-neutral-0'>libraries:</span>
+                                                <span>[</span>
+                                                <span>'</span>
+                                                <span className='text-green'>React</span>
+                                                <span>', '</span>
+                                                <span className='text-green'>Styled Components</span>
+                                                <span>', '</span>
+                                                <span className='text-green'>GoJs</span>
+                                                <span>'],</span>
+                                            </div>
+                                            <div className='ml-8'>
+                                                <span className='text-neutral-0'>frameworks:</span>
+                                                <span>[</span>
+                                                <span>'</span>
+                                                <span className='text-green'>Tailwind CSS</span>
+                                                <span>', '</span>
+                                                <span className='text-green'>UiKit</span>
+                                                <span>', '</span>
+                                                <span className='text-green'>Bootstrap</span>
+                                                <span>'],</span>
+                                            </div>
+                                            <div className='ml-8'>
+                                                <span className='text-neutral-0'>skills: &#123;</span>
                                                 <div className='ml-8'>
-                                                    <span className='text-neutral-0'>name:</span>
-                                                    <span>'</span>
-                                                    <span className='text-green'>Thomas Nikoloff</span>
-                                                    <span>',</span>
-                                                </div> 
-                                                <div className='ml-8'>
-                                                    <span className='text-neutral-0'>languages:</span>
-                                                    <span>['</span>
-                                                    <span className='text-green'>HTML5</span>
-                                                    <span>', '</span>
-                                                    <span className='text-green'>CSS</span>
-                                                    <span>', '</span>
-                                                    <span className='text-green'>JavaScript</span>
-                                                    <span>', '</span>
-                                                    <span className='text-green'>TypeScript</span>
-                                                    <span>', '</span>
-                                                    <span className='text-green'>PHP</span>
-                                                    <span>', '</span>
-                                                    <span className='text-green'>SQL</span>
-                                                    <span>'],</span>
-                                                </div> 
-                                                <div className='ml-8'>
-                                                    <span className='text-neutral-0'>libraries:</span>
-                                                    <span>['</span>
-                                                    <span className='text-green'>React</span>
-                                                    <span>', '</span>
-                                                    <span className='text-green'>Styled Components</span>
-                                                    <span>', '</span>
-                                                    <span className='text-green'>GoJs</span>
-                                                    <span>'],</span>
-                                                </div> 
-                                                <div className='ml-8'>
-                                                    <span className='text-neutral-0'>frameworks:</span>
-                                                    <span>['</span>
-                                                    <span className='text-green'>Tailwind CSS</span>
-                                                    <span>', '</span>
-                                                    <span className='text-green'>UiKit</span>
-                                                    <span>', '</span>
-                                                    <span className='text-green'>Bootstrap</span>
-                                                    <span>'],</span>
-                                                </div> 
-                                                <div className='ml-8'>
-                                                    <span className='text-neutral-0'>skills: &#123;</span>
-                                                    <div className='ml-8'>
-                                                        <span className='text-neutral-0'>hardWorker:</span>
-                                                        <span className='text-purple-600'> true</span>
-                                                        <span>,</span>
-                                                    </div> 
-                                                    <div className='ml-8'>
-                                                        <span className='text-neutral-0'>problemSolver:</span>
-                                                        <span className='text-purple-600'> true</span>
-                                                        <span>,</span>
-                                                    </div> 
-                                                    <div className='ml-8'>
-                                                        <span className='text-neutral-0'>APIs:</span>
-                                                        <span className='text-purple-600'> true</span>
-                                                        <span>,</span>
-                                                    </div> 
-                                                    <div className='ml-8'>
-                                                        <span className='text-neutral-0'>databaseManagement:</span>
-                                                        <span className='text-purple-600'> true</span>
-                                                        <span>,</span>
-                                                    </div> 
-                                                    <span className='reversed-bracket'>&#123;</span>
+                                                    <span className='text-neutral-0'>hardWorker:</span>
+                                                    <span className='text-purple-600'> true</span>
                                                     <span>,</span>
                                                 </div>
                                                 <div className='ml-8'>
-                                                    <span className='text-yellow'>employable:</span>
-                                                    <span className='text-orange'> function</span>
-                                                    <span>() &#123;</span>
-                                                </div> 
-
-                                                <div className='sm:hidden'>
-                                                    <div className='ml-16'>
-                                                        <span className='text-orange'>return</span>
-                                                        <span> [</span>
-                                                    </div> 
-                                                    <div className='ml-24'>
-                                                        <span className='text-cyan'>this.</span>
-                                                        <span className='text-neutral-0'>languages</span>
-                                                        <span>,</span>
-                                                    </div> 
-                                                    <div className='ml-24'>
-                                                        <span className='text-cyan'>this.</span>
-                                                        <span className='text-neutral-0'>libraries</span>
-                                                        <span>,</span>
-                                                    </div> 
-                                                    <div className='ml-24'>
-                                                        <span className='text-cyan'>this.</span>
-                                                        <span className='text-neutral-0'>frameworks</span>
-                                                        <span>,</span>
-                                                    </div> 
-                                                    <div className='ml-24'>
-                                                        <span className='text-cyan'>this.</span>
-                                                        <span className='text-neutral-0'>skills</span>
-                                                    </div> 
-                                                    <div className='ml-16'>
-                                                        <span>];</span>
-                                                    </div> 
+                                                    <span className='text-neutral-0'>problemSolver:</span>
+                                                    <span className='text-purple-600'> true</span>
+                                                    <span>,</span>
                                                 </div>
-
-                                                <div className='hidden sm:block'>
-                                                    <div className='ml-16'>
-                                                        <span className='text-orange'>return</span>
-                                                        <span> (</span>
-                                                    </div> 
-                                                    <div className='ml-24'>
-                                                        <span className='text-cyan'>this.</span>
-                                                        <span className='text-neutral-0'>languages.length </span>
-                                                        <span className='text-orange'>&gt;=</span>
-                                                        <span className='text-purple-600'> 3</span>
-                                                        <span className='text-orange'> &&</span>
-                                                    </div> 
-                                                    <div className='ml-24'>
-                                                        <span className='text-cyan'>this.</span>
-                                                        <span className='text-neutral-0'>libraries.</span>
-                                                        <span className='text-yellow'>includes</span> 
-                                                        <span className='text-neutral-0'>(</span>
-                                                        <span>'</span>
-                                                        <span className='text-green'>React</span>
-                                                        <span>'</span>
-                                                        <span className='text-neutral-0'>)</span>
-                                                        <span className='text-orange'> &&</span>
-                                                    </div> 
-                                                    <div className='ml-24'>
-                                                        <span className='text-cyan'>this.</span>
-                                                        <span className='text-neutral-0'>skills.hardWorker</span>
-                                                        <span className='text-orange'> &&</span>
-                                                    </div> 
-                                                    <div className='ml-24'>
-                                                        <span className='text-cyan'>this.</span>
-                                                        <span className='text-neutral-0'>skills.problemSolver</span>
-                                                    </div>
-                                                    <div className='ml-16'>
-                                                        <span>);</span>
-                                                    </div> 
-                                                </div>
-
                                                 <div className='ml-8'>
-                                                    <span className='reversed-bracket'>&#123;</span>
-                                                </div> 
-                                                <div>
-                                                    <span className='reversed-bracket'>&#123;</span>
-                                                </div> 
-                                            </code>
+                                                    <span className='text-neutral-0'>APIs:</span>
+                                                    <span className='text-purple-600'> true</span>
+                                                    <span>,</span>
+                                                </div>
+                                                <div className='ml-8'>
+                                                    <span className='text-neutral-0'>databaseManagement:</span>
+                                                    <span className='text-purple-600'> true</span>
+                                                    <span>,</span>
+                                                </div>
+                                                <span className='text-neutral-0'>&#125;,</span>
+                                            </div>
+                                            <div className='ml-8'>
+                                                <span className='text-yellow'>employable:</span>
+                                                <span className='text-orange'> function</span>
+                                                <span>() &#123;</span>
+                                            </div>
+                                            <div className='sm:hidden'>
+                                                <div className='ml-16'>
+                                                    <span className='text-orange'>return</span>
+                                                    <span> [</span>
+                                                </div>
+                                                <div className='ml-24'>
+                                                    <span className='text-cyan'>this.</span>
+                                                    <span className='text-neutral-0'>languages</span>
+                                                    <span>,</span>
+                                                </div>
+                                                <div className='ml-24'>
+                                                    <span className='text-cyan'>this.</span>
+                                                    <span className='text-neutral-0'>libraries</span>
+                                                    <span>,</span>
+                                                </div>
+                                                <div className='ml-24'>
+                                                    <span className='text-cyan'>this.</span>
+                                                    <span className='text-neutral-0'>frameworks</span>
+                                                    <span>,</span>
+                                                </div>
+                                                <div className='ml-24'>
+                                                    <span className='text-cyan'>this.</span>
+                                                    <span className='text-neutral-0'>skills</span>
+                                                </div>
+                                                <div className='ml-16'>
+                                                    <span>];</span>
+                                                </div>
+                                            </div>
+                                            <div className='hidden sm:block'>
+                                                <div className='ml-16'>
+                                                    <span className='text-orange'>return</span>
+                                                    <span> (</span>
+                                                </div>
+                                                <div className='ml-24'>
+                                                    <span className='text-cyan'>this.</span>
+                                                    <span className='text-neutral-0'>languages.length </span>
+                                                    <span className='text-orange'>&gt;=</span>
+                                                    <span className='text-purple-600'> 3</span>
+                                                    <span className='text-orange'> &&</span>
+                                                </div>
+                                                <div className='ml-24'>
+                                                    <span className='text-cyan'>this.</span>
+                                                    <span className='text-neutral-0'>libraries.</span>
+                                                    <span className='text-yellow'>includes</span>
+                                                    <span className='text-neutral-0'>(</span>
+                                                    <span>'</span>
+                                                    <span className='text-green'>React</span>
+                                                    <span>'</span>
+                                                    <span className='text-neutral-0'>)</span>
+                                                    <span className='text-orange'> &&</span>
+                                                </div>
+                                                <div className='ml-24'>
+                                                    <span className='text-cyan'>this.</span>
+                                                    <span className='text-neutral-0'>skills.hardWorker</span>
+                                                    <span className='text-orange'> &&</span>
+                                                </div>
+                                                <div className='ml-24'>
+                                                    <span className='text-cyan'>this.</span>
+                                                    <span className='text-neutral-0'>skills.problemSolver</span>
+                                                </div>
+                                                <div className='ml-16'>
+                                                    <span>);</span>
+                                                </div>
+                                            </div>
+                                            <div className='ml-8'>
+                                                <span className='text-neutral-0'>&#125;</span>
+                                            </div>
+                                            <div>
+                                                <span className='text-neutral-0'>&#125;</span>
+                                            </div>
+                                        </code>
+
                                         </div>
                                     </div>
                                 </div>
