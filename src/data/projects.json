@@ -15,10 +15,29 @@
             "title": "Caseflow CRM",
             "type": "Work In Progress",
             "description": "A completely custom mortgage and protection CRM platform built from the ground up with the aim to be more complete than any other currently on the market. The CRM is structured with a modular design, allowing for easy integration and customization of specific functionalities. Enhancing productivity through the implementation of iframes, enabling concurrent management of multiple leads, cases, and other tasks seamlessly. This ensures that users can work on various items simultaneously without the risk of losing any progress.",
-            "technologies": ["JavaScript", "PHP", "SQLite", "UiKit", "getAddress()", "PropertyData API", "Google Street View API"],
-            "image": "CRM-1.png",
-            "slides":["CRM-1.png", "CRM-2.png", "CRM-3.png"]
+            "technologies": [
+                "JavaScript",
+                "PHP",
+                "SQLite",
+                "UiKit",
+                "getAddress()",
+                "PropertyData API",
+                "Google Street View API"
+            ],
+            "image": "CRM-Transactions.png",
+            "slides": [
+                "CRM-Transactions.png",
+                "CRM-Analytics.png",
+                "CRM-Search.png",
+                "CRM-Adviser_Overview.png",
+                "CRM-Case_Creation.png",
+                "CRM-Case_Overview.png",
+                "CRM-Factfind_1.png",
+                "CRM-Factfind_2.png",
+                "CRM-Factfind_3.png"
+            ]
         },
+
         {
             "title": "Kata Flow",
             "type": "Featured Project",
