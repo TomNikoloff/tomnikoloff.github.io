@@ -1,6 +1,6 @@
 import './Intro.css';
-import TLogo from '../../assets/t-logo.png';
-import Logo from '../../assets/logo1.png';
+import TLogo from '../../assets/Modern-TLogo_1.png';
+import Logo from '../../assets/Modern-Logo_3-no_bg-cropped-2.png';
 
 const Intro = () => {
     return (

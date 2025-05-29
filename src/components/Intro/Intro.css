@@ -26,7 +26,9 @@
     width: 40px;
     vertical-align: middle;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+
+    margin-right: -5px;
 }
 
 [data-section="intro"] .description {
@@ -87,7 +89,10 @@
     }
 
     .t-logo {
-        width: 60px;
+        /* width: 60px; */
+
+        width: 70px;
+        margin-bottom: 20px;
     }
 }
 
