@@ -1,5 +1,5 @@
 // Images
-import ReactWeatherApp from '../assets/ReactWeatherApp.png';
+import ReactWeatherApp from '../assets/react-weather-app.png';
 
 import CRM1 from '../assets/CRM-1.png';
 import CRM2 from '../assets/CRM-2.png';

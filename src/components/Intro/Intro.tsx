@@ -53,7 +53,6 @@ const Intro = () => {
                                     src={TLogoPng}
                                     alt="T logo"
                                     loading="eager"
-                                    fetchPriority="high"
                                 />
                             </picture>
                             {/*<span className='text-purple-600 flicker-in'>T</span>*/}
@@ -96,7 +95,6 @@ const Intro = () => {
                             src={LogoPng}
                             alt="Main logo"
                             loading="eager"
-                            fetchPriority="high"
                         />
                     </picture>
 
