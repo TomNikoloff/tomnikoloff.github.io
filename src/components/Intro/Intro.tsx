@@ -1,6 +1,12 @@
 import './Intro.css';
-import TLogo from '../../assets/Modern-TLogo_1.png';
-import Logo from '../../assets/Modern-Logo_3-no_bg-cropped-2.png';
+// import TLogo from '../../assets/images/logo/modern-tlogo-min.png';
+// import Logo from '../../assets/images/logo/modern-logo-min.png';
+
+import TLogoWebp from '../../assets/images/logo/modern-tlogo-webp.webp';
+import TLogoPng  from '../../assets/images/logo/modern-tlogo-min.png';
+
+import LogoWebp  from '../../assets/images/logo/modern-logo-webp.webp';
+import LogoPng   from '../../assets/images/logo/modern-logo-min.png';
 
 const Intro = () => {
     return (
@@ -36,7 +42,20 @@ const Intro = () => {
                             <span>I</span>
                             <span className='text-pink'>'</span>
                             <span className='mr-5'>m</span>
-                            <img className='flicker-in t-logo' src={TLogo}/>
+                            {/* <img className='flicker-in t-logo' src={TLogo}/> */}
+                            {/* “T” Logo with WebP → PNG fallback */}
+                            <picture className="flicker-in t-logo">
+                                <source
+                                    srcSet={TLogoWebp}
+                                    type="image/webp"
+                                />
+                                <img
+                                    src={TLogoPng}
+                                    alt="T logo"
+                                    loading="eager"
+                                    fetchPriority="high"
+                                />
+                            </picture>
                             {/*<span className='text-purple-600 flicker-in'>T</span>*/}
                             <span >o</span>
                             <span>m</span>
@@ -61,11 +80,26 @@ const Intro = () => {
                             </span>
                         </div>
                     </div>
-                    <div className='flicker-in logo'>
+                    {/* <div className='flicker-in logo'>
                         <div>
                             <img src={Logo} alt='logo' />
                         </div>
-                    </div>
+                    </div> */}
+
+                    {/* Main Logo with WebP → PNG fallback */}
+                    <picture className="flicker-in logo">
+                        <source
+                            srcSet={LogoWebp}
+                            type="image/webp"
+                        />
+                        <img
+                            src={LogoPng}
+                            alt="Main logo"
+                            loading="eager"
+                            fetchPriority="high"
+                        />
+                    </picture>
+
                     <div className='html-tags section absolute bottom-12 -ml-7 hidden sm:block'>
                         <span>
                             &lt;/section&gt;

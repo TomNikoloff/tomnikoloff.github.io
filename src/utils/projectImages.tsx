@@ -26,7 +26,6 @@ import Charwin2 from '../assets/Charw.in-2.png';
 import Charwin3 from '../assets/Charw.in-3.png';
 
 import NorfolkKnights from '../assets/NorfolkKnights.png';
-import FinancialCalculators from '../assets/FinancialCalculators.png';
 
 const ProjectImage = (image: any) => {
 

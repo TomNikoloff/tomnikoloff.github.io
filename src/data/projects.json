@@ -44,7 +44,7 @@
             "description": "A lead form builder for <a className='link link--anim' href='https://www.charwinprivateclients.co.uk/' target='blank' rel='noopener noreferrer'><span>Charwin Private Clients Ltd</span></a>. Build a web form from scratch using a drag and drop card based system. Add calculations and logic in the form of variables, hidden fields, conditionals and more. Minipulate text and values using a twig based template lanaguage and custom filters. Dynamically change the style and layout of the cards, using a vast array of options. <a className='link link--anim' href='https://charwinbridging.co.uk/' target='blank' rel='noopener noreferrer'><span>Charwin Bridiging</span></a> and <a className='link link--anim' href='https://charwinsecuredloans.co.uk/' target='blank' rel='noopener noreferrer'><span>Charwin Secured Loans</span></a> are just a couple of the many forms created by the builder.",
             "technologies": ["JavaScript", "GoJs", "UiKit", "PHP", "Twig", "Firebase"],
             "image": "KataFlow.png",
-            "slides":["KataFlow.png", "KataFlow-2.png", "KataFlow-3.png", "KataFlow-4.png"]
+            "slides":["KataFlow.png", "KataFlow-2.png", "KataFlow-4.png"]
         },
         {
             "title": "Norfolk Knights",
@@ -62,7 +62,7 @@
             "description": "Charw.in API is a developer tool designed for creating shortened URLs that redirect users to pre-filled web forms, specifically tailored for Charwin customers. This API enables the dynamic generation of custom links that can embed form data, facilitating direct and efficient customer interactions. It supports various HTTP methods for link creation and management, offers robust analytics for tracking link usage, and ensures security with configurable access permissions. ",
             "technologies": ["JavaScript", "PHP", "SQLite", "UiKit"],
             "image": "Charw.in-1.png",
-            "slides":["Charw.in-1.png", "Charw.in-2.png", "Charw.in-3.png"]
+            "slides":["Charw.in-1.png", "Charw.in-2.png"]
         },
         {
             "title": "Financial Calculators",
