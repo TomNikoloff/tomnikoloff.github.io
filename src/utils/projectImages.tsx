@@ -118,10 +118,6 @@ const ProjectImage = (image: any) => {
             Image = NorfolkKnights;
             break;
 
-        case 'FinancialCalculators.png':
-            Image = FinancialCalculators;
-            break;
-
     }
 
     return <img src={Image} />;
