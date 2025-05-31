@@ -1,5 +1,7 @@
 import './About.css';
-import Workspace from '../../assets/workspace.webp';
+
+import WorkspaceWebp from '../../assets/images/workspace.webp';
+import WorkspacePng from '../../assets/images/workspace.png';
 
 const About = () => {
     return(
@@ -68,7 +70,21 @@ const About = () => {
                             </div>
                             <div className='flex justify-center items-center'>
                                 <div data-aos="zoom-out-up">
-                                    <img src={Workspace} alt='workspace' />
+                                    {/* <img src={WorkspacePng} alt='workspace' /> */}
+
+                                    {/* Main Logo with WebP → PNG fallback */}
+                                    <picture>
+                                        <source
+                                            srcSet={WorkspaceWebp}
+                                            type="image/webp"
+                                        />
+                                        <img
+                                            src={WorkspacePng}
+                                            alt="Workspace Image"
+                                            loading="lazy"
+                                        />
+                                    </picture>
+
                                 </div>
                             </div>
                         </div>

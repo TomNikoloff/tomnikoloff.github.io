@@ -1,6 +1,4 @@
 import './Intro.css';
-// import TLogo from '../../assets/images/logo/modern-tlogo-min.png';
-// import Logo from '../../assets/images/logo/modern-logo-min.png';
 
 import TLogoWebp from '../../assets/images/logo/modern-tlogo-webp.webp';
 import TLogoPng  from '../../assets/images/logo/modern-tlogo-min.png';
