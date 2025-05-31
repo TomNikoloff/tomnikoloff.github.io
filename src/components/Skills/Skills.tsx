@@ -56,16 +56,16 @@ const Skills = () => {
                                 </div>
                                 <div data-aos="fade-right">
                                     <p className='mb-5'>
-                                    I possess a well-rounded skill set, encompassing front-end technologies like HTML, CSS, JavaScript and ReactJS, 
-                                        as well as proficiency in back-end systems such as PHP, SQLite, and Firebase. 
-                                        While my primary expertise lies in front-end development,
-                                        my true passion lies in crafting flawlessly detailed websites and apps, prioritizing intuitiveness, 
-                                        semantic structure, and responsiveness.
+                                        I have a well-rounded skill set and currently work full-stack, leading the development of a fully custom CRM system. 
+                                        My day to day work spans both front-end and back-end development. While I’m particularly strong on the front end, where 
+                                        I focus on clean structure, responsiveness, and intuitive user experiences, I regularly contribute to the full 
+                                        technical stack, from database design to API integration. I'm also building a new user-facing factfind platform using 
+                                        React, Tailwind CSS, and Express.js, designed to collect and manage client data efficiently.
                                     </p>
                                     <p>
-                                        Furthermore, I am committed to lifelong learning and personal growth. I actively seek opportunities to broaden my 
-                                        expertise and enhance my skills. Through self-directed study and by engaging in hands-on projects, 
-                                        I continually delve into new subjects, striving to deepen my understanding and proficiency.
+                                        I'm committed to continuous learning and growth, regularly exploring new tools and concepts through self-directed 
+                                        study and real-world projects. Whether refining a UI or optimising backend performance. I take pride in delivering 
+                                        maintainable, user-focused solutions.
                                     </p>
                                 </div>
                                 <div className='html-tags'>

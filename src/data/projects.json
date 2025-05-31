@@ -14,7 +14,7 @@
         {
             "title": "Caseflow CRM",
             "type": "Work In Progress",
-            "description": "A completely custom mortgage and protection CRM platform built from the ground up with the aim to be more complete than any other currently on the market. The CRM is structured with a modular design, allowing for easy integration and customization of specific functionalities. Enhancing productivity through the implementation of iframes, enabling concurrent management of multiple leads, cases, and other tasks seamlessly. This ensures that users can work on various items simultaneously without the risk of losing any progress.",
+            "description": "A fully custom mortgage and protection CRM built from the ground up to outperform existing solutions on the market. Designed with a modular architecture, it allows for seamless integration and customisation of features based on user needs. Productivity is enhanced through a dynamic iframe-based system, enabling users to manage multiple leads, cases, and tasks simultaneously—without losing progress or interrupting workflow. The platform is supported by local, staging, and live environments, allowing for robust testing and smooth deployment.",
             "technologies": [
                 "JavaScript",
                 "PHP",

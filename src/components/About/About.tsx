@@ -47,22 +47,16 @@ const About = () => {
                                     </div>
                                     <div data-aos="fade-right">
                                         <p className='mb-5'>
-                                            My fascination with technology and computers traces back to my early days, sparked by a love for 
-                                            PC gaming. During the lockdown, I ventured into learning web development, dedicating my free time to honing my 
-                                            skills. This pursuit cemented my ambition – I was determined to pursue a career in this field. In early 2022, 
-                                            I took the leap, setting my sights on becoming a full-time developer. By April of that year, I secured my first 
-                                            role as a junior developer, marking a pivotal moment that has propelled me forward ever since.
+                                            I’ve always had a strong interest in technology, which naturally led me to explore web development during the
+                                            lockdown. I spent my free time building projects and sharpening my skills, and it quickly became clear this
+                                            was more than a hobby, it was the career I wanted to pursue. In early 2022, I committed fully to this path
+                                            and landed my first junior developer role by April, marking a pivotal moment that set everything in motion.
                                         </p>
-                                        {/*
                                         <p>
-                                            I embody reliability, conscientiousness, and a strong work ethic, 
-                                            thriving both in collaborative team environments and when driving projects independently.
-                                            My approach involves infusing enthusiasm and unwavering commitment into every task at hand. 
-                                            I'm drawn to challenges, proactively tackling them head-on, fueled by the drive to unearth effective solutions.
-                                        </p>
-                                        */}
-                                        <p>
-                                            When I'm not at my computer, I'm am usually in the gym, hanging out with family or going for long walks with my golden retriever, Lola.
+                                            When I’m not at my computer, I’m usually in the gym, spending time with family, or out on long walks with my 
+                                            golden retriever, Lola. I also enjoy hiking, climbing mountains, and being near water, whether that’s 
+                                            paddleboarding, wild swimming, or simply getting outdoors. I train in Brazilian Jiu-Jitsu and am currently 
+                                            learning German due to my Swiss heritage.
                                         </p>
                                     </div>
                                     <div className='html-tags'>
