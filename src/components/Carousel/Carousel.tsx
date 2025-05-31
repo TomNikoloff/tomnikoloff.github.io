@@ -2,10 +2,11 @@ import { useState } from "react";
 import './Carousel.css';
 
 interface Props {
-    slides: string[]
+    slides: ImageKey[]
 }
 
 import ProjectImages from '../../utils/projectImages';
+import { ImageKey } from '../../utils/projectImages';
 
 const Carousel = ({ slides } : Props) => {
 
@@ -43,7 +44,8 @@ const Carousel = ({ slides } : Props) => {
                     }}
                 >
                     {slides.map((s, index) => {
-                        return <ProjectImages key={index} image={s} />;
+                        return <ProjectImages key={index} image={s} imgProps={{loading: 'lazy' }}/>
+                        // return <ProjectImages key={index} image={s} />;
                     })}
                 </div>
             </div>

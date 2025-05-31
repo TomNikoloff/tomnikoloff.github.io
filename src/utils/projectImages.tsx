@@ -1,126 +1,165 @@
-// Images
-import ReactWeatherApp from '../assets/react-weather-app.png';
+// src/components/ProjectImage.tsx
+import React from 'react';
 
-import CRM1 from '../assets/CRM-1.png';
-import CRM2 from '../assets/CRM-2.png';
-import CRM3 from '../assets/CRM-3.png';
+// Import both WebP and PNG versions side-by-side.
+import ReactWeatherAppPng from '../assets/images/projects/react-weather-app.png';
+import ReactWeatherAppWebp from '../assets/images/projects/react-weather-app.webp';
 
-// new CRM overview & analytics images
-import CRMAdviserOverview from '../assets/New_CRM_Examples/CRM-Adviser_Overview.png';
-import CRMAnalytics from '../assets/New_CRM_Examples/CRM-Analytics.png';
-import CRMCaseCreation from '../assets/New_CRM_Examples/CRM-Case_Creation.png';
-import CRMCaseOverview from '../assets/New_CRM_Examples/CRM-Case_Overview.png';
-import CRMFactfind1 from '../assets/New_CRM_Examples/CRM-Factfind_1.png';
-import CRMFactfind2 from '../assets/New_CRM_Examples/CRM-Factfind_2.png';
-import CRMFactfind3 from '../assets/New_CRM_Examples/CRM-Factfind_3.png';
-import CRMSearch from '../assets/New_CRM_Examples/CRM-Search.png';
-import CRMTransactions from '../assets/New_CRM_Examples/CRM-Transactions.png';
+import CRMAdviserOverviewPng from '../assets/images/projects/crm-adviser-overview.png';
+import CRMAnalyticsPng        from '../assets/images/projects/crm-analytics.png';
+import CRMCaseCreationPng     from '../assets/images/projects/crm-case-creation.png';
+import CRMCaseOverviewPng     from '../assets/images/projects/crm-case-overview.png';
+import CRMFactfind1Png        from '../assets/images/projects/crm-factfind.png';
+import CRMFactfind2Png        from '../assets/images/projects/crm-factfind-2.png';
+import CRMFactfind3Png        from '../assets/images/projects/crm-factfind-3.png';
+import CRMSearchPng           from '../assets/images/projects/crm-search.png';
+import CRMTransactionsPng     from '../assets/images/projects/crm-transactions.png';
 
-import KataFlow from '../assets/KataFlow.png';
-import KataFlow2 from '../assets/KataFlow-2.png';
-import KataFlow3 from '../assets/KataFlow-3.png';
-import KataFlow4 from '../assets/KataFlow-4.png';
+import KataFlowPng   from '../assets/images/projects/kataflow.png';
+import KataFlow2Png  from '../assets/images/projects/kataflow-2.png';
+import KataFlow4Png  from '../assets/images/projects/kataflow-4.png';
 
-import Charwin1 from '../assets/Charw.in-1.png';
-import Charwin2 from '../assets/Charw.in-2.png';
-import Charwin3 from '../assets/Charw.in-3.png';
+import Charwin1Png   from '../assets/images/projects/charw.in-1.png';
+import Charwin2Png   from '../assets/images/projects/charw.in-2.png';
 
-import NorfolkKnights from '../assets/NorfolkKnights.png';
+import NorfolkKnightsPng from '../assets/images/projects/norfolk-knights.png';
+import NorfolkKnightsWebp from '../assets/images/projects/norfolk-knights.webp';
 
-const ProjectImage = (image: any) => {
+export type ImageKey =
+	| 'ReactWeatherApp'
+	| 'CRM-Adviser_Overview'
+	| 'CRM-Analytics'
+	| 'CRM-Case_Creation'
+	| 'CRM-Case_Overview'
+	| 'CRM-Factfind_1'
+	| 'CRM-Factfind_2'
+	| 'CRM-Factfind_3'
+	| 'CRM-Search'
+	| 'CRM-Transactions'
+	| 'KataFlow'
+	| 'KataFlow-2'
+	| 'KataFlow-4'
+	| 'Charw.in-1'
+	| 'Charw.in-2'
+	| 'NorfolkKnights';
 
-    let Image;
+const IMAGE_MAP: Record<
+	ImageKey,
+	{
+		png: string;
+		webp?: string;
+		alt?: string;
+	}
+> = {
+	// ReactWeatherApp has both WebP and PNG
+	'ReactWeatherApp': {
+		webp: ReactWeatherAppWebp,
+		png: ReactWeatherAppPng,
+		alt: 'Screenshot of React Weather App',
+	},
 
-    switch (image.image){
+	// CRM examples (PNG only for now)
+	'CRM-Adviser_Overview': {
+		png: CRMAdviserOverviewPng,
+		alt: 'CRM Adviser Overview',
+	},
+	'CRM-Analytics': {
+		png: CRMAnalyticsPng,
+		alt: 'CRM Analytics Dashboard',
+	},
+	'CRM-Case_Creation': {
+		png: CRMCaseCreationPng,
+		alt: 'CRM Case Creation Screen',
+	},
+	'CRM-Case_Overview': {
+		png: CRMCaseOverviewPng,
+		alt: 'CRM Case Overview',
+	},
+	'CRM-Factfind_1': {
+		png: CRMFactfind1Png,
+		alt: 'CRM Factfind Step 1',
+	},
+	'CRM-Factfind_2': {
+		png: CRMFactfind2Png,
+		alt: 'CRM Factfind Step 2',
+	},
+	'CRM-Factfind_3': {
+		png: CRMFactfind3Png,
+		alt: 'CRM Factfind Step 3',
+	},
+	'CRM-Search': {
+		png: CRMSearchPng,
+		alt: 'CRM Search Interface',
+	},
+	'CRM-Transactions': {
+		png: CRMTransactionsPng,
+		alt: 'CRM Transactions List',
+	},
 
-        case 'ReactWeatherApp.png':
-            Image = ReactWeatherApp;
-            break;
+	// KataFlow
+	'KataFlow': {
+		png: KataFlowPng,
+		alt: 'KataFlow Screenshot 1',
+	},
+	'KataFlow-2': {
+		png: KataFlow2Png,
+		alt: 'KataFlow Screenshot 2',
+	},
+	'KataFlow-4': {
+		png: KataFlow4Png,
+		alt: 'KataFlow Screenshot 4',
+	},
 
-        // new CRM files
-        case 'CRM-Adviser_Overview.png':
-            Image = CRMAdviserOverview;
-            break;
+	// Charw.in
+	'Charw.in-1': {
+		png: Charwin1Png,
+		alt: 'Charw.in Screenshot 1',
+	},
+	'Charw.in-2': {
+		png: Charwin2Png,
+		alt: 'Charw.in Screenshot 2',
+	},
 
-        case 'CRM-Analytics.png':
-            Image = CRMAnalytics;
-            break;
+	// Norfolk Knights
+	'NorfolkKnights': {
+		png: NorfolkKnightsPng,
+		webp: NorfolkKnightsWebp,
+		alt: 'Norfolk Knights Logo',
+	},
+};
 
-        case 'CRM-Case_Creation.png':
-            Image = CRMCaseCreation;
-            break;
+type ProjectImageProps = {
+	image: ImageKey;
+	className?: string;
+	imgProps?: React.ImgHTMLAttributes<HTMLImageElement>;
+};
 
-        case 'CRM-Case_Overview.png':
-            Image = CRMCaseOverview;
-            break;
+const ProjectImage: React.FC<ProjectImageProps> = ({ image, className, imgProps }) => {
+	const entry = IMAGE_MAP[image];
+	if (!entry) {
+		return <React.Fragment />;
+	}
 
-        case 'CRM-Factfind_1.png':
-            Image = CRMFactfind1;
-            break;
+	const { webp, png, alt } = entry;
 
-        case 'CRM-Factfind_2.png':
-            Image = CRMFactfind2;
-            break;
-
-        case 'CRM-Factfind_3.png':
-            Image = CRMFactfind3;
-            break;
-
-        case 'CRM-Search.png':
-            Image = CRMSearch;
-            break;
-
-        case 'CRM-Transactions.png':
-            Image = CRMTransactions;
-            break;
-
-        case 'CRM-1.png':
-            Image = CRM1;
-            break;
-
-        case 'CRM-2.png':
-            Image = CRM2;
-            break;
-
-        case 'CRM-3.png':
-            Image = CRM3;
-            break;
-
-        case 'KataFlow.png':
-            Image = KataFlow;
-            break;
-
-        case 'KataFlow-2.png':
-            Image = KataFlow2;
-            break;
-
-        case 'KataFlow-3.png':
-            Image = KataFlow3;
-            break;
-
-        case 'KataFlow-4.png':
-            Image = KataFlow4;
-            break;
-
-        case 'Charw.in-1.png':
-            Image = Charwin1;
-            break;
-
-        case 'Charw.in-2.png':
-            Image = Charwin2;
-            break;
-
-        case 'Charw.in-3.png':
-            Image = Charwin3;
-            break;
-
-        case 'NorfolkKnights.png':
-            Image = NorfolkKnights;
-            break;
-
-    }
-
-    return <img src={Image} />;
+	return (
+        webp ? (
+            <picture className={className}>
+                {webp && <source srcSet={webp} type="image/webp" />}
+                <img
+                    src={png}
+                    alt={alt ?? 'Project screenshot'}
+                    {...imgProps}
+                />
+            </picture>
+        ) : (
+            <img
+                src={png}
+                alt={alt ?? 'Project screenshot'}
+                {...imgProps}
+            />
+        )
+	);
 };
 
 export default ProjectImage;

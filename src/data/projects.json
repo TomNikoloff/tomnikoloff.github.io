@@ -9,7 +9,7 @@
                 "live": "https://tom-nikoloff-react-weather.netlify.app/",
                 "github": "https://github.com/TomNikoloff/react-weather-app_ts"
             },
-            "image": "ReactWeatherApp.png"
+            "image": "ReactWeatherApp"
         },
         {
             "title": "Caseflow CRM",
@@ -24,17 +24,17 @@
                 "PropertyData API",
                 "Google Street View API"
             ],
-            "image": "CRM-Transactions.png",
+            "image": "CRM-Transactions",
             "slides": [
-                "CRM-Transactions.png",
-                "CRM-Analytics.png",
-                "CRM-Search.png",
-                "CRM-Adviser_Overview.png",
-                "CRM-Case_Creation.png",
-                "CRM-Case_Overview.png",
-                "CRM-Factfind_1.png",
-                "CRM-Factfind_2.png",
-                "CRM-Factfind_3.png"
+                "CRM-Transactions",
+                "CRM-Analytics",
+                "CRM-Search",
+                "CRM-Adviser_Overview",
+                "CRM-Case_Creation",
+                "CRM-Case_Overview",
+                "CRM-Factfind_1",
+                "CRM-Factfind_2",
+                "CRM-Factfind_3"
             ]
         },
 
@@ -43,8 +43,8 @@
             "type": "Featured Project",
             "description": "A lead form builder for <a className='link link--anim' href='https://www.charwinprivateclients.co.uk/' target='blank' rel='noopener noreferrer'><span>Charwin Private Clients Ltd</span></a>. Build a web form from scratch using a drag and drop card based system. Add calculations and logic in the form of variables, hidden fields, conditionals and more. Minipulate text and values using a twig based template lanaguage and custom filters. Dynamically change the style and layout of the cards, using a vast array of options. <a className='link link--anim' href='https://charwinbridging.co.uk/' target='blank' rel='noopener noreferrer'><span>Charwin Bridiging</span></a> and <a className='link link--anim' href='https://charwinsecuredloans.co.uk/' target='blank' rel='noopener noreferrer'><span>Charwin Secured Loans</span></a> are just a couple of the many forms created by the builder.",
             "technologies": ["JavaScript", "GoJs", "UiKit", "PHP", "Twig", "Firebase"],
-            "image": "KataFlow.png",
-            "slides":["KataFlow.png", "KataFlow-2.png", "KataFlow-4.png"]
+            "image": "KataFlow",
+            "slides":["KataFlow", "KataFlow-2", "KataFlow-4"]
         },
         {
             "title": "Norfolk Knights",
@@ -54,26 +54,15 @@
             "links": {
                 "live": "https://www.norfolk-knights-wheelchair-rugby.co.uk/"
             },
-            "image": "NorfolkKnights.png"
+            "image": "NorfolkKnights"
         },
         {
             "title": "Charw.in API",
             "type": "Featured Project",
             "description": "Charw.in API is a developer tool designed for creating shortened URLs that redirect users to pre-filled web forms, specifically tailored for Charwin customers. This API enables the dynamic generation of custom links that can embed form data, facilitating direct and efficient customer interactions. It supports various HTTP methods for link creation and management, offers robust analytics for tracking link usage, and ensures security with configurable access permissions. ",
             "technologies": ["JavaScript", "PHP", "SQLite", "UiKit"],
-            "image": "Charw.in-1.png",
-            "slides":["Charw.in-1.png", "Charw.in-2.png"]
-        },
-        {
-            "title": "Financial Calculators",
-            "type": "Work In Progress",
-            "description": "After stuggling to find a website with <a className='link link--anim' href='https://financial-calculators.co.uk/' target='blank' rel='noopener noreferrer'><span>financial calculators</span></a> that dynamically update without having to enter your desired values and then click a button to see the results. I decided to create my own. All the values dynamically update as the sliders are dragged, enter is pressed or the user clicks away from the inputs. The aim is build a vast array of calculators and tools, along with key finanical imformation.",
-            "technologies": ["HTML", "CSS", "JavaScript", "UiKit"],
-            "links": {
-                "live": "https://financial-calculators.co.uk/",
-                "github": "https://github.com/TomNikoloff/financial-calculators"
-            },
-            "image": "FinancialCalculators.png"
+            "image": "Charw.in-1",
+            "slides":["Charw.in-1", "Charw.in-2"]
         }
     ],
     "other":[

@@ -6,6 +6,8 @@ import './Projects.css';
 import ProjectsData from '../../data/projects.json';
 import ProjectImages from '../../utils/projectImages';
 
+import { ImageKey } from '../../utils/projectImages';
+
 import Carousel from '../Carousel/Carousel';
 
 interface Project {
@@ -17,8 +19,8 @@ interface Project {
         live?:string;
         github?:string;
     },
-    image?:string;
-    slides?: string[];
+    image?:ImageKey;
+    slides?: ImageKey[];
 }
 
 interface ProjectsData {
@@ -109,18 +111,27 @@ const Projects: React.FC = () => {
                                                     <a href={project.links.live} target="_blank" rel="noopener noreferrer">
                                                         <div className="project-image-container" data-aos={`${index % 2 === 0 ? 'fade-left' : 'fade-right'}`}>
                                                             <div className="project-image">
-                                                                <ProjectImages image={project.image} />
+                                                                <ProjectImages
+                                                                    image={project.image as ImageKey}
+                                                                    imgProps={{loading: 'lazy' }}
+                                                                />
+
+                                                                {/* <ProjectImages image={project.image} /> */}
                                                             </div>
                                                         </div>
                                                     </a>
                                                 ) : project.slides ? (
                                                     <div className="project-image mb-2 sm:mb-0" data-aos="fade-left">
-                                                        {project.slides && <Carousel slides={project.slides}/>}
+                                                        {project.slides && <Carousel slides={project.slides as ImageKey[]}/>}
                                                     </div>
                                                 ) : (
                                                     <div className="project-image-container" data-aos="fade-left">
                                                         <div className="project-image">
-                                                            <ProjectImages image={project.image} />
+                                                            <ProjectImages
+                                                                image={project.image as ImageKey}
+                                                                imgProps={{loading: 'lazy' }}
+                                                            />
+                                                            {/* <ProjectImages image={project.image} /> */}
                                                         </div>
                                                     </div>
                                                 )}

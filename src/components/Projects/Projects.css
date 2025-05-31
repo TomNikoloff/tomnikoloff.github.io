@@ -64,6 +64,18 @@
     border: 2px solid rgba(13, 28, 54, 0.7);
 }
 
+.project-image picture {
+    border-radius: 5px;
+    /*box-shadow: var(--box--shadow--large);*/
+    border: 2px solid rgba(13, 28, 54, 0.7);
+
+    max-width: 100%;
+    height: auto;
+
+    display: block;
+    height: auto;
+}
+
 .project-overlay-contents {
     display: none;
 }
